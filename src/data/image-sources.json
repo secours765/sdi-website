@@ -116,5 +116,299 @@
     "source": "SDI Vortrag Egerkingen2024.odp, Folie 1, media/image1.png",
     "sourceSha256": "3d07a2b08f1d7b6127c6a2f0373c1243717026ff02c78bb855953931b0165dea",
     "processing": "PNG verkleinert; keine EXIF/XMP/IPTC"
+  },
+  {
+    "file": "images/galerie-kamerun-01.webp",
+    "source": "Projekte/Kamerun/Fotos/kamerun1-022.jpg",
+    "sourceSha256": "194851a318b4d945a269db617e715327098ea6bc14245a540c99ffcbb6b648bc",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt; schwarze Diaränder beschnitten"
+  },
+  {
+    "file": "images/galerie-kamerun-02.webp",
+    "source": "Projekte/Kamerun/Fotos/kamerun1-023.jpg",
+    "sourceSha256": "89e2d3da608367994abe4fd826a476d0121c1818fd9f96bd8062dbd1058c563e",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt; schwarze Diaränder beschnitten"
+  },
+  {
+    "file": "images/galerie-kamerun-03.webp",
+    "source": "Projekte/Kamerun/Fotos/kamerun1-024.jpg",
+    "sourceSha256": "aed677d405bab774e5bb44ed7c1145e0b9cd57db50be6bda6fe6543fca55bdca",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt; schwarze Diaränder beschnitten"
+  },
+  {
+    "file": "images/galerie-kamerun-04.webp",
+    "source": "Projekte/Kamerun/Fotos/kamerun1-029.jpg",
+    "sourceSha256": "6ca82cca3167f50853d7f47590e7ca4db3cd0170f81278d36e00d9de1a38acaa",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt; schwarze Diaränder beschnitten"
+  },
+  {
+    "file": "images/galerie-kamerun-05.webp",
+    "source": "Projekte/Kamerun/Fotos/kamerun1-030.jpg",
+    "sourceSha256": "a539df6df444c4ed3deb8e015c23b46c2417042c65e2e91b593205fbf1b40e2c",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt; schwarze Diaränder beschnitten"
+  },
+  {
+    "file": "images/galerie-kamerun-06.webp",
+    "source": "Projekte/Kamerun/Fotos/kamerun1-031.jpg",
+    "sourceSha256": "c6a87cdaa78214ef0d2dfa0fb4696909f92d51edb61d683dc0ab56a63ecf79c9",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt; schwarze Diaränder beschnitten"
+  },
+  {
+    "file": "images/galerie-kamerun-07.webp",
+    "source": "Projekte/Kamerun/Fotos/kamerun1-032.jpg",
+    "sourceSha256": "a6653e762ef1c31e614da35f900cf1f34a4bcf996a327c419d69e6a8e2c98811",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt; schwarze Diaränder beschnitten"
+  },
+  {
+    "file": "images/galerie-uganda-01.webp",
+    "source": "Projekte/Uganda/Fotos/1.JPG",
+    "sourceSha256": "a973c83d72baa66f8ef7b5fe53a43810445e7c90d48f602259a752a6c6af61db",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-uganda-02.webp",
+    "source": "Projekte/Uganda/Fotos/2.JPG",
+    "sourceSha256": "f92df893da63caae187d3fb8eb31313ec7f2e849930cfbe83d86250e2b5f4561",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-uganda-03.webp",
+    "source": "Projekte/Uganda/Fotos/3.JPG",
+    "sourceSha256": "e9aebfdc690b0e6625326fcfc3cc633a1484f987536851bd29bd4617058b60f9",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-uganda-04.webp",
+    "source": "Projekte/Uganda/Fotos/4.JPG",
+    "sourceSha256": "ce473bbbcc9519e33e0bbe9de79d72adfbf58c3eb4f1ea9bc8e9a64e415fdc3d",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-uganda-05.webp",
+    "source": "Projekte/Uganda/Fotos/5.JPG",
+    "sourceSha256": "b57d3c3b883bb18d7f8073cf9429ce88cea0fc0cb4c1019373d17996681b4c6e",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-uganda-06.webp",
+    "source": "Projekte/Uganda/Fotos/6.JPG",
+    "sourceSha256": "b55d731279bf18e2874bd39f86f7a0ef6d12cd58c26cca0b476eb495255c0c08",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-uganda-07.webp",
+    "source": "Projekte/Uganda/Fotos/6a.jpeg",
+    "sourceSha256": "4566a721c7ac0a33465e7cc7994df0298948ba0eda324e9a653419361c35f7c8",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-uganda-08.webp",
+    "source": "Projekte/Uganda/Fotos/7.jpeg",
+    "sourceSha256": "4c54f9e08e3e3d040900bd83f01f4d2b6660e78a6a6c36b4c82773576e87db94",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-uganda-09.webp",
+    "source": "Projekte/Uganda/Fotos/8.jpeg",
+    "sourceSha256": "ec622ac36a09eca21a62e4162c2a5fc06d0e93fe05c2ba353e2b5a6519e049ae",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-uganda-10.webp",
+    "source": "Projekte/Uganda/Fotos/9.jpeg",
+    "sourceSha256": "496398cbe2b7da58e9addbf9845690af6d5d556fd21b0ee64fc54b0eedad04c7",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-uganda-11.webp",
+    "source": "Projekte/Uganda/Fotos/12.jpeg",
+    "sourceSha256": "d0aa56b2f89425a94eb848e2bec987d40443feff861ff00f02453ebc0b2a4a2e",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-uganda-12.webp",
+    "source": "Projekte/Uganda/Fotos/IMG-20220427-WA0002.jpg",
+    "sourceSha256": "c5269407c26a9311ed009034f88d8d7568056c519c43b5484968fc8163e1421c",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-uganda-13.webp",
+    "source": "Projekte/Uganda/Fotos/IMG-20220427-WA0003.jpg",
+    "sourceSha256": "859bdee360a7081a815ea625ef9e7fc84d2c447bbc2f204e4f3113888d24761d",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-uganda-14.webp",
+    "source": "Projekte/Uganda/Fotos/IMG-20220529-WA0000.jpg",
+    "sourceSha256": "8334347b619fc970960834872b474064206a5da219d376c44a1cd6fb50530a5c",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-uganda-15.webp",
+    "source": "Projekte/Uganda/Fotos/IMG-20220529-WA0001.jpg",
+    "sourceSha256": "39742fbc96cb0ba98f0d8de3df1c6ee4a028c063be9fd21579789f1dd19b11fa",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-uganda-16.webp",
+    "source": "Projekte/Uganda/Fotos/IMG-20230221-WA0023.jpg",
+    "sourceSha256": "eb2d01d9be89de9bbaae5d5a2b14b5ebe95e96a9dd1a031131e1f01fb2b43565",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-uganda-17.webp",
+    "source": "Projekte/Uganda/Fotos/IMG-20230221-WA0024.jpg",
+    "sourceSha256": "bedc7d679c75ec5948f30df4378e6205e85924a47da66ea3490287cca7eb6564",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-uganda-18.webp",
+    "source": "Projekte/Uganda/Fotos/IMG-20230318-WA0017.jpg",
+    "sourceSha256": "e166fbfc11522b78b118bcf7c0034acea8e292175bd180f0a7a6c3e25bd0bb64",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-uganda-19.webp",
+    "source": "Projekte/Uganda/Fotos/IMG-20230319-WA0004.jpg",
+    "sourceSha256": "9c102a99bf7e15ee35771c9e8bd7362ebd861e285f2544589b7318cfcbe3d7e7",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-uganda-20.webp",
+    "source": "Projekte/Uganda/Fotos/IMG-20230324-WA0004.jpg",
+    "sourceSha256": "ebfe3ff907ffd16fbe2a9c92c92a1cb67e53c3c063c24d4c400f6d5a3c7af808",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-suedsudan-01.webp",
+    "source": "Projekte/Südsudan/Fotos/14.jpeg",
+    "sourceSha256": "569fc8a3ebce6d076cd72436f8fd632dbf482c1287ed067e3fef3fb83d3436cb",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-suedsudan-02.webp",
+    "source": "Projekte/Südsudan/Fotos/14a.jpeg",
+    "sourceSha256": "664ba2555c008c8171ddb6582a30af5284b60997dda7f85362607db13979feb9",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-suedsudan-03.webp",
+    "source": "Projekte/Südsudan/Fotos/15.jpeg",
+    "sourceSha256": "5dfc76538cc47ef9b0e11ef5648defd78290a2438d403aa8e4fa939378aa1f08",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-suedsudan-04.webp",
+    "source": "Projekte/Südsudan/Fotos/16.jpeg",
+    "sourceSha256": "79506ade87242d61db44cfea9cd973517d8691614e489d935b82d461a1f80db7",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-suedsudan-05.webp",
+    "source": "Projekte/Südsudan/Fotos/16a.jpeg",
+    "sourceSha256": "ee932427a7bf5a54477d180b78033e5832db1b6fdaec15e494a956893bd390de",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-suedsudan-06.webp",
+    "source": "Projekte/Südsudan/Fotos/IMG-20250301-WA0002.jpg",
+    "sourceSha256": "15bab6e1637464877f4db6142f80198a2a561603bef007632af0b25efc50543d",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-suedsudan-07.webp",
+    "source": "Projekte/Südsudan/Fotos/IMG-20250301-WA0004.jpg",
+    "sourceSha256": "7a5524f6008beea3b630a46fc5ea6179e1e881e7df9e19e43252ae481994a3eb",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-suedsudan-08.webp",
+    "source": "Projekte/Südsudan/Fotos/IMG-20250301-WA0005.jpg",
+    "sourceSha256": "f0efa9a561651711e8194c443a72b380015ead1639b00595d44b0c6b7a50da43",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-suedsudan-09.webp",
+    "source": "Projekte/Südsudan/Fotos/IMG-20250301-WA0006.jpg",
+    "sourceSha256": "96c93df3233e97910393fe008ab85b2c75253c8be944baec3a4423c3dfb5c908",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-suedsudan-10.webp",
+    "source": "Projekte/Südsudan/Fotos/IMG-20250301-WA0010.jpg",
+    "sourceSha256": "53d9123b57b2cadd397b192b57faad30e2133da29bbfc315887b41b0d9742cc0",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-suedsudan-11.webp",
+    "source": "Projekte/Südsudan/Fotos/IMG-20250301-WA0018.jpg",
+    "sourceSha256": "c0dbd857493ec0da45b9c19ee23e7108a8e15facff1cbaa91fb004ca7f78b618",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-suedsudan-12.webp",
+    "source": "Projekte/Südsudan/Fotos/IMG-20250301-WA0020.jpg",
+    "sourceSha256": "617f612856b27d752c98d8e2e3ac033dae2dfca2435f392b7e28f3ee7172f363",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-suedsudan-13.webp",
+    "source": "Projekte/Südsudan/Fotos/IMG-20250301-WA0021.jpg",
+    "sourceSha256": "861aaf4f4cd2f595e76e4c71c3a74affc8076dd9f9bec7209eee3e9b8e78bc26",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-suedsudan-14.webp",
+    "source": "Projekte/Südsudan/Fotos/IMG-20250301-WA0022.jpg",
+    "sourceSha256": "f96c7cc43e82edd60073fe80a7fd24fac23cd33e7b063d56382e8133cb0940fd",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-suedsudan-15.webp",
+    "source": "Projekte/Südsudan/Fotos/IMG-20250301-WA0026.jpg",
+    "sourceSha256": "d6700058dd23ff76a6d942d14220e39829779f3e4a31682927ea5253dea4c49f",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-suedsudan-16.webp",
+    "source": "Projekte/Südsudan/Fotos/IMG-20250301-WA0028.jpg",
+    "sourceSha256": "20a1a0120bc46169549f1dbc56896216a8add7f2b5f510b2fdc803cdc2576c8f",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-suedsudan-17.webp",
+    "source": "Projekte/Südsudan/Fotos/IMG-20250301-WA0029.jpg",
+    "sourceSha256": "3aa0c92b7bc2ed4a20b741dbed810c740c8b3a3005beb47330f6e6cde7386e0e",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-suedsudan-18.webp",
+    "source": "Projekte/Südsudan/Fotos/IMG-20250301-WA0030.jpg",
+    "sourceSha256": "65e8b6fbe5e5e827048854faf87fa949568b3c8b90d8e6072cb7865c53361f50",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-suedsudan-19.webp",
+    "source": "Projekte/Südsudan/Fotos/IMG-20250301-WA0031.jpg",
+    "sourceSha256": "f43afab924016f64ad6b0ab5bda57721d5f59da73c00facbf051d6e900fd786a",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-suedsudan-20.webp",
+    "source": "Projekte/Südsudan/Fotos/IMG-20250301-WA0036.jpg",
+    "sourceSha256": "129c97db50dec4a8a4e2913f500a33f85cf7b5bb79c7553f22368a0a4ffa5b91",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-suedsudan-21.webp",
+    "source": "Projekte/Südsudan/Fotos/IMG-20250301-WA0037.jpg",
+    "sourceSha256": "ba8a934011d8df9859a1933680ff3921f64a2d0f261306fb5edb9f3911240606",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/galerie-suedsudan-22.webp",
+    "source": "Projekte/Südsudan/Fotos/IMG-20250301-WA0038.jpg",
+    "sourceSha256": "60009e25e0a228f43be5dafbe308307b5b37e5c57ebfe3b4ab4a99200ebdd863",
+    "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
   }
 ]

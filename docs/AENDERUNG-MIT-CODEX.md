@@ -1,5 +1,9 @@
 # Änderung mit Codex durchführen
 
+## Aktuelle lokale Revision
+
+Die Galerie-Überarbeitung auf `work/lokaler-entwurf-galerien` bleibt auf ausdrücklichen Wunsch nur lokal. Sie entfernt Mitarbeit-/Bewerbungsangebote und ergänzt Länder-Galerien. Nicht nach `main` übernehmen und auch den Arbeitszweig nicht pushen, solange dafür keine neue ausdrückliche Freigabe vorliegt. Die folgenden Veröffentlichungsschritte beschreiben den späteren allgemeinen Ablauf; sie sind keine aktuelle Freigabe.
+
 ## Der normale Ablauf
 
 1. **Projekt öffnen und Zustand prüfen.** In VS Code den Ordner „SDI-Website“ öffnen. Codex beauftragen: „Lies AGENTS.md und prüfe zuerst den Git-Zustand. Veröffentliche noch nichts.“
@@ -23,7 +27,7 @@
 
    Schlägt `--ff-only` fehl, Unterschiede prüfen und den Grund klären. Keine Historie erzwingen.
 
-3. **Änderung genau beschreiben.** Beispiel: „Ändere nur die Einleitung auf der Mitmachen-Seite in folgenden bestätigten Text: … Zeige mir den Vergleich und prüfe lokal. Noch nicht veröffentlichen.“ Neue Tatsachen mit Quelle oder Bestätigung angeben.
+3. **Änderung genau beschreiben.** Beispiel: „Ändere nur die Einleitung auf der Downloadseite in folgenden bestätigten Text: … Zeige mir den Vergleich und prüfe lokal. Noch nicht veröffentlichen.“ Neue Tatsachen mit Quelle oder Bestätigung angeben.
 
 4. **Lokal ansehen und prüfen.** Mit `npm.cmd run dev` die betroffene Seite öffnen. Anschließend:
 

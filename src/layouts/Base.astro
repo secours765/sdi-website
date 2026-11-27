@@ -4,7 +4,7 @@ import { url } from '../lib/paths.js';
 import site from '../data/site.json';
 const {title = 'Zahnmedizin verbindet.', description = 'SDI Deutschland unterstützt zahnmedizinische Versorgung, Ausbildung und Vorsorge in Kamerun und Uganda. Ein neues Vorhaben im Südsudan ist in Vorbereitung.'} = Astro.props;
 const current = Astro.url.pathname;
-const navigation = [['Wir über uns','wir-ueber-uns/'],['Projekte','projekte/'],['Downloads','downloads/'],['Mitmachen','mitmachen/']];
+const navigation = [['Wir über uns','wir-ueber-uns/'],['Projekte','projekte/'],['Downloads','downloads/'],['Galerie','galerie/']];
 ---
 <!doctype html>
 <html lang="de">
@@ -20,17 +20,23 @@ const navigation = [['Wir über uns','wir-ueber-uns/'],['Projekte','projekte/'],
 </div>
 </header>
 <main id="inhalt"><slot/></main>
-<footer class="site-footer"><div class="container footer-grid"><div><a class="footer-brand" href={url()}>SDI Deutschland<span>Zahnmedizin verbindet.</span></a><p>Für zahnmedizinische Versorgung,<br/>die vor Ort weiterwächst.</p></div><div><h2>Entdecken</h2><a href={url('wir-ueber-uns/')}>Wir über uns</a><a href={url('projekte/')}>Unsere Projekte</a><a href={url('downloads/')}>Dokumentation</a></div><div><h2>Unterstützen</h2><a href={url('mitmachen/')}>Mitmachen</a><a href={url('spenden/')}>Spenden</a><a href={url('kontakt/')}>Kontakt</a></div><div><h2>In Verbindung</h2><a href={'mailto:'+site.email}>{site.email}</a><a href={site.swissUrl} rel="external">SDI Schweiz (extern)</a><p class="footer-note">Donnersbergstraße 6<br/>67117 Limburgerhof</p></div></div><div class="container footer-bottom"><span>Secours Dentaire International · Deutschland</span><div><a href={url('impressum/')}>Impressum</a><a href={url('datenschutz/')}>Datenschutz</a></div></div></footer>
+<footer class="site-footer"><div class="container footer-grid"><div><a class="footer-brand" href={url()}>SDI Deutschland<span>Zahnmedizin verbindet.</span></a><p>Für zahnmedizinische Versorgung,<br/>die vor Ort weiterwächst.</p></div><div><h2>Entdecken</h2><a href={url('wir-ueber-uns/')}>Wir über uns</a><a href={url('projekte/')}>Unsere Projekte</a><a href={url('downloads/')}>Dokumentation</a></div><div><h2>Unterstützen</h2><a href={url('galerie/')}>Galerie</a><a href={url('spenden/')}>Spenden</a><a href={url('kontakt/')}>Kontakt</a></div><div><h2>In Verbindung</h2><p class="contact-email">{site.email}</p><a href={site.swissUrl} rel="external">SDI Schweiz (extern)</a><p class="footer-note">Donnersbergstraße 6<br/>67117 Limburgerhof</p></div></div><div class="container footer-bottom"><span>Secours Dentaire International · Deutschland</span><div><a href={url('impressum/')}>Impressum</a><a href={url('datenschutz/')}>Datenschutz</a></div></div></footer>
 <div id="copy-status" class="toast" role="status" aria-live="polite"></div>
-<dialog id="lightbox" aria-label="Vergrößerte Projektaufnahme"><div class="lightbox-toolbar"><p id="lightbox-caption"></p><button class="lightbox-close" autofocus>Schließen</button></div><img id="lightbox-image" alt=""/></dialog>
+<dialog id="lightbox" aria-label="Vergrößerte Projektaufnahme"><div class="lightbox-toolbar"><p id="lightbox-caption"></p><button class="lightbox-close" autofocus>Schließen</button></div><img id="lightbox-image" alt=""/><div class="lightbox-controls"><button type="button" class="lightbox-previous">Vorheriges Bild</button><span id="lightbox-count" aria-live="polite"></span><button type="button" class="lightbox-next">Nächstes Bild</button></div></dialog>
 <script>
 const toggle=document.querySelector('.menu-toggle');
 toggle?.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')!=='true';toggle.setAttribute('aria-expanded',String(open));document.querySelector('#navigation')?.classList.toggle('is-open',open);});
 document.addEventListener('keydown',(event)=>{if(event.key==='Escape'){toggle?.setAttribute('aria-expanded','false');document.querySelector('#navigation')?.classList.remove('is-open');}});
 document.querySelectorAll('[data-copy]').forEach(button=>button.addEventListener('click',async()=>{const text=(button as HTMLElement).dataset.copy||'';const status=document.querySelector('#copy-status');try{await navigator.clipboard.writeText(text);if(status)status.textContent='Kopiert: '+text;}catch{if(status)status.textContent='Bitte die sichtbare Angabe markieren und kopieren.';}setTimeout(()=>{if(status)status.textContent='';},5000);}));
 const dialog=document.querySelector<HTMLDialogElement>('#lightbox');
-document.querySelectorAll<HTMLAnchorElement>('[data-lightbox]').forEach(link=>link.addEventListener('click',event=>{if(!dialog?.showModal)return;event.preventDefault();const img=dialog.querySelector<HTMLImageElement>('img');if(img){img.src=link.href;img.alt=link.dataset.caption||'';}const caption=dialog.querySelector('#lightbox-caption');if(caption)caption.textContent=link.dataset.caption||'';dialog.showModal();}));
-dialog?.querySelector('button')?.addEventListener('click',()=>dialog.close());
+const photos=[...document.querySelectorAll<HTMLAnchorElement>('[data-lightbox]')];
+let selectedPhoto=0;
+function showPhoto(index:number){selectedPhoto=(index+photos.length)%photos.length;const link=photos[selectedPhoto];const img=dialog?.querySelector<HTMLImageElement>('img');if(img){img.src=link.href;img.alt=link.dataset.caption||'';}const caption=dialog?.querySelector('#lightbox-caption');if(caption)caption.textContent=link.dataset.caption||'';const count=dialog?.querySelector('#lightbox-count');if(count)count.textContent=(selectedPhoto+1)+' / '+photos.length;}
+photos.forEach((link,index)=>link.addEventListener('click',event=>{if(!dialog?.showModal)return;event.preventDefault();showPhoto(index);dialog.showModal();}));
+dialog?.querySelector('.lightbox-close')?.addEventListener('click',()=>dialog.close());
+dialog?.querySelector('.lightbox-previous')?.addEventListener('click',()=>showPhoto(selectedPhoto-1));
+dialog?.querySelector('.lightbox-next')?.addEventListener('click',()=>showPhoto(selectedPhoto+1));
+dialog?.addEventListener('keydown',event=>{if(event.key==='ArrowRight'){event.preventDefault();showPhoto(selectedPhoto+1);}if(event.key==='ArrowLeft'){event.preventDefault();showPhoto(selectedPhoto-1);}});
 dialog?.addEventListener('click',event=>{if(event.target===dialog)dialog.close();});
 </script>
 </body></html>

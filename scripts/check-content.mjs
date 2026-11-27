@@ -24,7 +24,7 @@ for(const d of docs){
   if(d.format==='PDF')assert.equal(data.subarray(0,5).toString(),'%PDF-',d.id+' PDF-Signatur');
  }
  if(d.availability==='release')assert(d.downloadUrl.startsWith('https://github.com/secours765/sdi-website/releases/download/'));
- if(['protected','source-only','unavailable'].includes(d.availability))assert(!d.localHref,'Ausnahme unzulässig lokal bereitgestellt');
+ if(['protected','source-only','unavailable','withdrawn'].includes(d.availability))assert(!d.localHref,'Ausnahme unzulässig lokal bereitgestellt');
 }
 for(const file of await fs.readdir(new URL('../public/images/',import.meta.url))){
  const m=await sharp(new URL('../public/images/'+file,import.meta.url).pathname.replace(/^\/([A-Z]:)/,'$1').replaceAll('%20',' ')).metadata();

@@ -1,10 +1,13 @@
 # SDI Deutschland – Website
 
-**Status: Website noch nicht veröffentlicht.** Der Entwurf wird lokal entwickelt. GitHub Pages, andere Website-Deployments, STRATO und DNS bleiben bis zur ausdrücklichen Abnahme unverändert. Das öffentliche Repository [secours765/sdi-website](https://github.com/secours765/sdi-website) ist angelegt; der geprüfte Erstpush und die weiteren Testergebnisse werden im [Abnahmeprotokoll](docs/ABNAHME.md) festgehalten.
+**Status: Website noch nicht veröffentlicht.** Der Entwurf wird lokal entwickelt. GitHub Pages, andere Website-Deployments, STRATO und DNS bleiben bis zur ausdrücklichen Abnahme unverändert. Das öffentliche Repository [secours765/sdi-website](https://github.com/secours765/sdi-website) enthält den geprüften Erststand auf `main` (Commit `b9056173179bdf96ea2a64cac6f0575a33ebe573`, GitHub-Build erfolgreich). Die aktuelle Überarbeitung liegt ausschließlich lokal auf `work/lokaler-entwurf-galerien`: Informations- und Spendenauftritt mit Länder-Galerien, ohne Mitmachen- oder Bewerbungsangebote. Diese Änderungen wurden nicht gepusht. Ein frischer GitHub-Klon enthält deshalb weiterhin den früheren Erststand. Details stehen im [Abnahmeprotokoll](docs/ABNAHME.md).
 
-Dieses eigenständige Projekt gehört zu SDI Deutschland und ist von JM APPS und anderen Projekten getrennt. Die Website stellt die Arbeit von Secours Dentaire International in Kamerun und Uganda sowie das **Vorhaben im Südsudan in Vorbereitung** vor. Sie bietet Dokumentdownloads, direkte E-Mail-Anfragen und deutsche Überweisungsdaten. Es gibt keinen Zahlungsdienst, kein Versandformular, kein Benutzerkonto und kein Tracking.
+Dieses eigenständige Projekt gehört zu SDI Deutschland und ist von JM APPS und anderen Projekten getrennt. Die Website stellt die Arbeit von Secours Dentaire International in Kamerun und Uganda sowie das **Vorhaben im Südsudan in Vorbereitung** vor. Sie bietet Projektinformationen, Länder-Galerien, Dokumentdownloads, allgemeine Kontaktinformationen und deutsche Überweisungsdaten. Mitarbeit, Bewerbungen und Einsatzangebote werden auf ausdrücklichen Nutzerwunsch nicht angeboten; zugehörige Links und E-Mail-Aufrufe gehören nicht zum aktuellen Entwurf. Es gibt keinen Zahlungsdienst, kein Versandformular, kein Benutzerkonto und kein Tracking.
 
 ## Lokal starten
+
+Am einfachsten im Websiteordner **Start-Vorschau.cmd** doppelt anklicken. Das Fenster lässt den lokalen Server laufen. Aktuelle Adresse: **http://127.0.0.1:4321/**; Länder-Galerien unter **http://127.0.0.1:4321/galerie/**.
+
 
 Im Terminal den **neuen Websiteordner** öffnen, nicht den Originalmaterialordner „SDI Homepage“:
 
@@ -51,12 +54,13 @@ Astro erzeugt statische HTML-Dateien. CSS und wenig JavaScript übernehmen Navig
 
 | Bereich | Zweck |
 | --- | --- |
-| Startseite | Vorstellung, Projekte, Mitmachen und Spenden |
+| Startseite | Vorstellung, Projekte, Galerie und Spenden |
 | Wir über uns | Ziele, Arbeitsweise, Verbindung zu SDI Schweiz, Ansprechpartner |
 | Projekte | Übersicht und eigene Seiten für Kamerun, Uganda und Südsudan |
 | Uganda | Quellenbasierte Entwicklungsgeschichte mit Meilensteinen und Bildern |
 | Downloads | Dokumentkatalog mit Suche, Kategorien, Sprache und Quellenhinweisen |
-| Mitmachen | Ablauf und projektbezogene E-Mail-Anfragen |
+| Galerie `/galerie/` | Fotoübersicht mit Einstieg in die drei Länder-Galerien |
+| Länder-Galerien | `/galerie/kamerun/`, `/galerie/uganda/`, `/galerie/suedsudan/` mit weiteren Projektfotos und Vergrößerung |
 | Spenden | Deutsche Bankverbindung, Kopieren und EPC-QR-Code |
 | Kontakt | Sichtbare E-Mail-Adressen und direkte Kontaktwege |
 | Impressum und Datenschutz | Abgeglichene deutsche Angaben mit dokumentierten Freigabepunkten |
@@ -68,6 +72,7 @@ Astro erzeugt statische HTML-Dateien. CSS und wenig JavaScript übernehmen Navig
 | `src/data/site.json` | Organisationsangaben, Kontakte, Spendenangaben und Entwurfsstatus |
 | `src/data/team.json` | Namen, belegte Beschreibungen, Kontakte und zugeordnete Portraits |
 | `src/data/projects.json` | Projekttexte, Status, Chronologie und Bildzuordnung |
+| `src/data/galleries.json` | Länder-Galerien, Fotoauswahl, Bildunterschriften und Alternativtexte |
 | `src/data/downloads.json` | Titel, Kategorien, Sprachen, Originalquellen, Größen und Prüfsummen |
 | `src/pages/` | Seitenaufbau und gegebenenfalls ergänzende Seitentexte |
 | `src/components/` | Wiederverwendbare Gestaltung und Interaktion |

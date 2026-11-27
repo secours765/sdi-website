@@ -2,6 +2,13 @@
 
 Diese Regeln gelten für das gesamte Repository. Ausdrückliche aktuelle Nutzeranweisungen gehen vor. Notwendige reversible Arbeiten, lokale Prüfungen und bereits autorisierte Schritte selbstständig erledigen; keine zusätzlichen allgemeinen Freigaben erfinden.
 
+## Aktueller Auftrag: lokale Galerie-Revision
+
+- Die aktuelle Nutzerkorrektur ersetzt die früher beauftragten Mitmachen-/Bewerbungsangebote: **nur informieren und Spenden ermöglichen**. Keine Mitarbeitangebote, Bewerbungsseiten, Einsatzwerbung oder dafür bestimmte Links, Schaltflächen und E-Mail-Aufrufe ergänzen oder wiederherstellen. Allgemeine Kontaktangaben können bestehen bleiben.
+- Die Galerie ist über einen sichtbaren Einstieg erreichbar. `/galerie/` führt zu `/galerie/kamerun/`, `/galerie/uganda/` und `/galerie/suedsudan/`. Bilddaten zentral in `src/data/galleries.json` pflegen; Länderzuordnung und Herkunft belegen.
+- Die Überarbeitung einschließlich Galerieausbau und Timeline-Darstellung bleibt **ausschließlich lokal** auf `work/lokaler-entwurf-galerien`. **Kein Push dieser Änderungen** ohne neue ausdrückliche Freigabe; auch ein Push des Arbeitszweigs ist aktuell nicht beauftragt.
+- Der öffentlich gesicherte Erststand auf `main` ist `b9056173179bdf96ea2a64cac6f0575a33ebe573`. Die Erstpush-Freigabe ist für die neue lokale Revision keine Uploadfreigabe.
+- Tests des Erststands belegen nicht automatisch die neue Revision. Nach Änderungen gezielt erneut prüfen, besonders Länder-Galerien, entfernte Mitarbeitverweise und die Überschneidung von Timeline-Linie/Jahreszahlen auf schmalen Bildschirmen.
 ## Fakten und Quellen
 
 - Vereinsangaben, Personen, Funktionen, Projektdaten, Jahreszahlen, Bankdaten und Zitate nur anhand belegter Quellen pflegen. Keine Lücken mit plausiblen Erfindungen schließen.

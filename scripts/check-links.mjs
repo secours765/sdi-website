@@ -10,6 +10,8 @@ for(const file of html){
  const $=load(await fs.readFile(file,'utf8'));
  assert.equal($('html').attr('lang'),'de',file);
  assert.equal($('h1').length,1,'Genau eine H1: '+file);
+ assert.equal($('a[href^="mailto:"],a[href*="mitmachen"]').length,0,'Entfernte Aktionslinks: '+file);
+ assert(!$('select option').toArray().some(el=>$(el).text()==='Mitmachen'),'Entfernte Kategorie: '+file);
  for(const el of $('a[href],img[src],script[src],link[href]').toArray()){
   const ref=$(el).attr('href')||$(el).attr('src');
   if(!ref||/^(https?:|mailto:|tel:|data:)/.test(ref))continue;

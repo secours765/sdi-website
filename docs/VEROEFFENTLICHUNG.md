@@ -6,7 +6,11 @@
 
 Quellcode und eingecheckte Dateien sind in einem öffentlichen Repository weltweit lesbar. Andere Personen erhalten dadurch keine Schreibrechte. Eigentümer bleibt `secours765`; weitere Mitbearbeiter nur nach ausdrücklicher Benennung.
 
-Das öffentliche Repository [secours765/sdi-website](https://github.com/secours765/sdi-website) wurde unter dem authentifizierten Eigentümer secours765 angelegt. GitHub Pages ist deaktiviert. Erstpush, Schutzfunktionen und abschließende Prüfungen werden im Abnahmeprotokoll festgehalten.
+Das öffentliche Repository [secours765/sdi-website](https://github.com/secours765/sdi-website) wurde unter dem authentifizierten Eigentümer secours765 angelegt. Der geprüfte Erststand `b9056173179bdf96ea2a64cac6f0575a33ebe573` ist auf `main` gepusht; die GitHub-Buildprüfung war erfolgreich. GitHub Pages ist deaktiviert. Secret Scanning und Push Protection sind aktiviert. `main` ist vor Force-Push und Löschen geschützt; die Regeln gelten auch für Administratoren und erfordern keine zweite prüfende Person. Nur secours765 ist als Mitbearbeiter aufgeführt.
+
+Die neue Überarbeitung liegt **nur lokal** auf `work/lokaler-entwurf-galerien`. Sie entfernt Mitmachen-/Bewerbungsangebote und ergänzt Länder-Galerien. **Weder diesen Arbeitszweig noch seine Änderungen pushen**, solange keine neue ausdrückliche Freigabe vorliegt. Der aktuelle lokale Entwurf ist damit bewusst vom öffentlich gesicherten Erststand zu unterscheiden.
+
+Die 13 vorgesehenen großen Dokumentdateien werden in einen GitHub-Release-Entwurf hochgeladen. Dieser Release ist noch nicht veröffentlicht; geplante Asset-URLs gelten bis zur Veröffentlichung und Prüfung nicht als erreichbare öffentliche Downloads.
 
 ## GitHub-Anmeldung und Sicherheit
 
