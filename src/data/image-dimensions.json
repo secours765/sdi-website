@@ -514,5 +514,13 @@
   "images/uganda-team.webp": {
     "width": 1008,
     "height": 567
+  },
+  "images/peter-mentges.webp": {
+    "width": 960,
+    "height": 636
+  },
+  "images/armin-reinartz.webp": {
+    "width": 960,
+    "height": 720
   }
 }

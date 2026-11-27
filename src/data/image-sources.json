@@ -418,5 +418,21 @@
     "processing": "Responsive WebP derivative of selected image, resized to 800px, EXIF/XMP/IPTC removed",
     "width": 800,
     "height": 600
+  },
+  {
+    "file": "images/peter-mentges.webp",
+    "source": "Peter.JPG",
+    "sourceSha256": "f00a6fd8d43731e04e8e96dbd97c821f70484f30cc9726e4160b944d3fb25d7c",
+    "processing": "WebP, orientation applied, resized without cropping, EXIF/XMP/IPTC removed",
+    "width": 960,
+    "height": 636
+  },
+  {
+    "file": "images/armin-reinartz.webp",
+    "source": "Armin.jpg",
+    "sourceSha256": "96c93df3233e97910393fe008ab85b2c75253c8be944baec3a4423c3dfb5c908",
+    "processing": "WebP, orientation applied, resized without cropping, EXIF/XMP/IPTC removed",
+    "width": 960,
+    "height": 720
   }
 ]
