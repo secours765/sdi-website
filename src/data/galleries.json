@@ -9,43 +9,43 @@
         "src": "images/galerie-kamerun-01.webp",
         "thumb": "images/galerie-kamerun-01-thumb.webp",
         "alt": "Historischer Behandlungsraum in Kamerun.",
-        "caption": "Historischer Behandlungsraum in Kamerun."
+        "caption": "Zahnklinik vor der Erneuerung"
       },
       {
         "src": "images/galerie-kamerun-02.webp",
         "thumb": "images/galerie-kamerun-02-thumb.webp",
         "alt": "Ausstattung eines Behandlungsraums.",
-        "caption": "Ausstattung eines Behandlungsraums."
+        "caption": "Zahnklinik vor der Erneuerung"
       },
       {
         "src": "images/galerie-kamerun-03.webp",
         "thumb": "images/galerie-kamerun-03-thumb.webp",
         "alt": "Einblick in die damaligen Klinikräume.",
-        "caption": "Einblick in die damaligen Klinikräume."
+        "caption": "Zahnklinik vor der Erneuerung"
       },
       {
         "src": "images/galerie-kamerun-04.webp",
         "thumb": "images/galerie-kamerun-04-thumb.webp",
         "alt": "Zahnmedizinische Zusammenarbeit vor Ort.",
-        "caption": "Zahnmedizinische Zusammenarbeit vor Ort."
+        "caption": "Zahnklinik nach der Erneuerung"
       },
       {
         "src": "images/galerie-kamerun-05.webp",
         "thumb": "images/galerie-kamerun-05-thumb.webp",
         "alt": "Einblick in eine Behandlung.",
-        "caption": "Einblick in eine Behandlung."
+        "caption": "Zahnklinik nach der Erneuerung"
       },
       {
         "src": "images/galerie-kamerun-06.webp",
         "thumb": "images/galerie-kamerun-06-thumb.webp",
         "alt": "Zusammenarbeit im Behandlungsraum.",
-        "caption": "Zusammenarbeit im Behandlungsraum."
+        "caption": "Zahnklinik nach der Erneuerung"
       },
       {
         "src": "images/galerie-kamerun-07.webp",
         "thumb": "images/galerie-kamerun-07-thumb.webp",
         "alt": "Begegnung vor der Zahnklinik.",
-        "caption": "Begegnung vor der Zahnklinik."
+        "caption": "Team vor dem Eingang"
       }
     ]
   },
@@ -106,20 +106,14 @@
       {
         "src": "images/galerie-uganda-10.webp",
         "thumb": "images/galerie-uganda-10-thumb.webp",
-        "alt": "Arbeit an einer Behandlungseinheit.",
-        "caption": "Arbeit an einer Behandlungseinheit."
+        "alt": "Aufbau des digitalen Röntgengerätes",
+        "caption": "Aufbau des digitalen Röntgengerätes"
       },
       {
         "src": "images/galerie-uganda-11.webp",
         "thumb": "images/galerie-uganda-11-thumb.webp",
         "alt": "Panoramaröntgengerät in den Klinikräumen.",
         "caption": "Panoramaröntgengerät in den Klinikräumen."
-      },
-      {
-        "src": "images/galerie-uganda-12.webp",
-        "thumb": "images/galerie-uganda-12-thumb.webp",
-        "alt": "Aufbau des digitalen Röntgengerätes",
-        "caption": "Aufbau des digitalen Röntgengerätes"
       },
       {
         "src": "images/galerie-uganda-13.webp",
@@ -134,8 +128,8 @@
         "caption": "Zahnlabor nach dem Umbau"
       },
       {
-        "src": "images/galerie-uganda-17.webp",
-        "thumb": "images/galerie-uganda-17-thumb.webp",
+        "src": "images/uganda-labor.webp",
+        "thumb": "images/uganda-labor.webp",
         "alt": "Arbeitsplatz im Dentallabor",
         "caption": "Arbeitsplatz im Dentallabor"
       },
