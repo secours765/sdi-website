@@ -98,19 +98,20 @@
     {
       "period": "Seit 1989",
       "title": "Zahnmedizinische Zusammenarbeit in Kamerun",
-      "text": "Der deutsche Bestandstext beschreibt die Unterstützung von Zahnkliniken in Kamerun seit 1989.",
+      "text": "Seit 1989 werden Zahnkliniken in Kamerun unterstützt.",
       "sources": [
         "Alte Homepage/Projekte.html"
       ]
     },
     {
       "period": "1990",
-      "title": "Frühe Einblicke in die Arbeit vor Ort",
-      "text": "Die Präsentationen zeigen die damaligen Behandlungsräume und dokumentieren die Zusammenarbeit.",
+      "title": "Aufbau der Klinik in Kumba",
+      "text": "Die damaligen Behandlungsräume geben Einblicke in die Zusammenarbeit vor Ort.",
       "sources": [
         "SDI Vortrag 2015.pptx, Folie 7",
         "SDI Vortrag 2016.4.pptx, Folie 3"
-      ]
+      ],
+      "emphasis": true
     },
     {
       "period": "1996",
@@ -121,9 +122,16 @@
       ]
     },
     {
+      "period": "1999",
+      "title": "Aufbau der Zahnklinik in Duala",
+      "sources": [
+        "Nutzerbestätigung vom 28.11.2026"
+      ]
+    },
+    {
       "period": "1999–2008",
       "title": "Unterstützung aus Deutschland",
-      "text": "Die deutsche Präsentation dokumentiert finanzielle und materielle Unterstützung der Kliniken sowie Reisen der Projektleiter.",
+      "text": "Die Kliniken erhalten finanzielle und materielle Unterstützung; außerdem finden Reisen der Projektleiter statt.",
       "sources": [
         "SDI Vortrag 2016.4.pptx, Folie 9"
       ]
