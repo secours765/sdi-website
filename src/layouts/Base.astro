@@ -1,0 +1,36 @@
+---
+import '../styles/global.css';
+import { url } from '../lib/paths.js';
+import site from '../data/site.json';
+const {title = 'Zahnmedizin verbindet.', description = 'SDI Deutschland unterstützt zahnmedizinische Versorgung, Ausbildung und Vorsorge in Kamerun und Uganda. Ein neues Vorhaben im Südsudan ist in Vorbereitung.'} = Astro.props;
+const current = Astro.url.pathname;
+const navigation = [['Wir über uns','wir-ueber-uns/'],['Projekte','projekte/'],['Downloads','downloads/'],['Mitmachen','mitmachen/']];
+---
+<!doctype html>
+<html lang="de">
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="description" content={description}/><meta name="robots" content="noindex, nofollow"/><meta name="theme-color" content="#b92235"/><title>{title} · SDI Deutschland</title><link rel="icon" href={url('images/sdi-logo.png')}/></head>
+<body>
+<a class="skip-link" href="#inhalt">Zum Inhalt</a>
+<div class="draft-bar"><div class="container">Lokaler Entwurf <span>Gemeinsam prüfen. Noch nicht veröffentlicht.</span></div></div>
+<header class="site-header">
+<div class="container header-inner">
+<a class="brand" href={url()} aria-label="SDI Deutschland – Startseite"><img src={url('images/sdi-logo.png')} alt="" width="64" height="64"/><span><strong>SDI<span class="brand-country"> Deutschland</span></strong><small>Secours Dentaire International</small></span></a>
+<button class="menu-toggle" aria-expanded="false" aria-controls="navigation"><span class="menu-icon" aria-hidden="true"></span>Menü</button>
+<nav id="navigation" aria-label="Hauptnavigation">{navigation.map(([label,path])=><a href={url(path)} aria-current={current.startsWith(url(path))?'page':undefined}>{label}</a>)}<a class="button button-small" href={url('spenden/')}>Spenden</a></nav>
+</div>
+</header>
+<main id="inhalt"><slot/></main>
+<footer class="site-footer"><div class="container footer-grid"><div><a class="footer-brand" href={url()}>SDI Deutschland<span>Zahnmedizin verbindet.</span></a><p>Für zahnmedizinische Versorgung,<br/>die vor Ort weiterwächst.</p></div><div><h2>Entdecken</h2><a href={url('wir-ueber-uns/')}>Wir über uns</a><a href={url('projekte/')}>Unsere Projekte</a><a href={url('downloads/')}>Dokumentation</a></div><div><h2>Unterstützen</h2><a href={url('mitmachen/')}>Mitmachen</a><a href={url('spenden/')}>Spenden</a><a href={url('kontakt/')}>Kontakt</a></div><div><h2>In Verbindung</h2><a href={'mailto:'+site.email}>{site.email}</a><a href={site.swissUrl} rel="external">SDI Schweiz (extern)</a><p class="footer-note">Donnersbergstraße 6<br/>67117 Limburgerhof</p></div></div><div class="container footer-bottom"><span>Secours Dentaire International · Deutschland</span><div><a href={url('impressum/')}>Impressum</a><a href={url('datenschutz/')}>Datenschutz</a></div></div></footer>
+<div id="copy-status" class="toast" role="status" aria-live="polite"></div>
+<dialog id="lightbox" aria-label="Vergrößerte Projektaufnahme"><div class="lightbox-toolbar"><p id="lightbox-caption"></p><button class="lightbox-close" autofocus>Schließen</button></div><img id="lightbox-image" alt=""/></dialog>
+<script>
+const toggle=document.querySelector('.menu-toggle');
+toggle?.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')!=='true';toggle.setAttribute('aria-expanded',String(open));document.querySelector('#navigation')?.classList.toggle('is-open',open);});
+document.addEventListener('keydown',(event)=>{if(event.key==='Escape'){toggle?.setAttribute('aria-expanded','false');document.querySelector('#navigation')?.classList.remove('is-open');}});
+document.querySelectorAll('[data-copy]').forEach(button=>button.addEventListener('click',async()=>{const text=(button as HTMLElement).dataset.copy||'';const status=document.querySelector('#copy-status');try{await navigator.clipboard.writeText(text);if(status)status.textContent='Kopiert: '+text;}catch{if(status)status.textContent='Bitte die sichtbare Angabe markieren und kopieren.';}setTimeout(()=>{if(status)status.textContent='';},5000);}));
+const dialog=document.querySelector<HTMLDialogElement>('#lightbox');
+document.querySelectorAll<HTMLAnchorElement>('[data-lightbox]').forEach(link=>link.addEventListener('click',event=>{if(!dialog?.showModal)return;event.preventDefault();const img=dialog.querySelector<HTMLImageElement>('img');if(img){img.src=link.href;img.alt=link.dataset.caption||'';}const caption=dialog.querySelector('#lightbox-caption');if(caption)caption.textContent=link.dataset.caption||'';dialog.showModal();}));
+dialog?.querySelector('button')?.addEventListener('click',()=>dialog.close());
+dialog?.addEventListener('click',event=>{if(event.target===dialog)dialog.close();});
+</script>
+</body></html>

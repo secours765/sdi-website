@@ -1,0 +1,104 @@
+[
+  {
+    "slug": "uganda",
+    "name": "Uganda",
+    "location": "Mukono · Uganda",
+    "status": "Langjähriges Projekt",
+    "image": "images/uganda-gemeinschaft.webp",
+    "imageCaption": "Begegnung im Umfeld des Uganda-Projekts. Aufnahmejahr nicht gesichert.",
+    "summary": "Aus einer ersten Begegnung wird eine langfristige Partnerschaft: Klinik, Ausbildung und Vorsorge in Mukono.",
+    "intro": "Gemeinsam mit der Klinik in Mukono wächst eine Zusammenarbeit, die Versorgung ermöglicht und Eigenständigkeit stärkt.",
+    "background": "2013 beginnt der Kontakt zur Klinik von Dr. Mubiru. Seit 2014 unterstützt SDI Deutschland den Ausbau der Räume, die Ausstattung und die Ausbildung vor Ort. Die Entwicklung reicht von den ersten Behandlungseinheiten bis zu einem Dentallabor und einer Photovoltaikanlage.",
+    "current": "Der bereitgestellte Bericht „Uganda 2026“ beschreibt eine selbstfinanzierte Klinik mit vier Behandlungszimmern. Die Partnerschaft besteht weiter: bei Materialversorgung, Ersatzteilen und technischer Weiterentwicklung. Die Solaranlage wurde laut Bericht erneuert.",
+    "currentLabel": "Berichtsstand 2026",
+    "timelineKey": "uganda",
+    "gallery": [
+      {
+        "src": "images/uganda-labor.webp",
+        "thumb": "images/uganda-labor-thumb.webp",
+        "alt": "Ein Mitarbeiter am Arbeitsplatz im Dentallabor in Uganda",
+        "caption": "Einblicke in das Dentallabor. Aufnahmejahr nicht gesichert."
+      },
+      {
+        "src": "images/uganda-solar.webp",
+        "thumb": "images/uganda-solar-thumb.webp",
+        "alt": "Solarmodule auf dem Dach der Klinik in Mukono",
+        "caption": "Solarstrom für die Klinik. Dokumentiert in der Entwicklungsgeschichte 2023."
+      },
+      {
+        "src": "images/uganda-roentgen.webp",
+        "thumb": "images/uganda-roentgen-thumb.webp",
+        "alt": "Panoramaröntgengerät im Klinikraum",
+        "caption": "Ausstattung für die Diagnostik. Aufnahmejahr nicht gesichert."
+      }
+    ]
+  },
+  {
+    "slug": "kamerun",
+    "name": "Kamerun",
+    "location": "Kamerun",
+    "status": "Langjähriges Projekt",
+    "image": "images/kamerun-team.webp",
+    "imageCaption": "Historische Aufnahme aus dem Kamerun-Material. Genaues Aufnahmejahr nicht gesichert.",
+    "summary": "Langjährige zahnmedizinische Zusammenarbeit, getragen von persönlichem Austausch und Unterstützung vor Ort.",
+    "intro": "Eine lange gemeinsame Geschichte – mit zahnmedizinischer Versorgung, Unterstützung der Kliniken und Vorsorge.",
+    "background": "Die deutschen Unterlagen beschreiben die Unterstützung von Zahnkliniken in Kamerun seit 1989 und die Zusammenarbeit mit der Presbyterian Church of Cameroon. Diese Geschichte beginnt vor der Gründung des deutschen Vereins 1999. Die historischen Bilder geben Einblicke in die damalige Arbeit.",
+    "current": "Kamerun ist nach der aktuellen Angabe des Vereins ein langjährig bestehendes Projekt. Die hier gezeigten Meilensteine und Fotos dokumentieren seine Geschichte. Einzelheiten zu heutigen Standorten, Ausstattung und konkreten Einsätzen werden vor einer Veröffentlichung ergänzt.",
+    "currentLabel": "Aktueller Projektstatus",
+    "timelineKey": "cameroon",
+    "gallery": [
+      {
+        "src": "images/kamerun-raum.webp",
+        "thumb": "images/kamerun-raum-thumb.webp",
+        "alt": "Historischer Behandlungsraum aus dem Kamerun-Projekt",
+        "caption": "Ein Behandlungsraum in den historischen Projektunterlagen."
+      },
+      {
+        "src": "images/kamerun-behandlung.webp",
+        "thumb": "images/kamerun-behandlung-thumb.webp",
+        "alt": "Historische Aufnahme einer zahnmedizinischen Behandlung in Kamerun",
+        "caption": "Zahnmedizinische Zusammenarbeit vor Ort. Historische Aufnahme."
+      },
+      {
+        "src": "images/kamerun-team.webp",
+        "thumb": "images/kamerun-team-thumb.webp",
+        "alt": "Gruppenfoto vor dem Klinikgebäude in Kamerun",
+        "caption": "Begegnung vor der Klinik. Aufnahmejahr nicht gesichert."
+      }
+    ]
+  },
+  {
+    "slug": "suedsudan",
+    "name": "Südsudan",
+    "location": "Nzara · Südsudan",
+    "status": "In Vorbereitung",
+    "image": "images/suedsudan-gebaeude.webp",
+    "imageCaption": "Bestandsgebäude beim Erkundungsbesuch – keine von SDI eröffnete Klinik.",
+    "summary": "Erste Kontakte und Erkundungen in Nzara. Gemeinsam werden die Möglichkeiten einer künftigen Zusammenarbeit geprüft.",
+    "intro": "Zuhören, kennenlernen und gemeinsam planen: Im Südsudan steht die Zusammenarbeit noch am Anfang.",
+    "background": "Das St. Theresa Hospital in Nzara bat 2025 um Unterstützung. Zwei Erkundungsbesuche von Armin Reinartz und Alexander Schafigh dienten dazu, die Situation vor Ort und Möglichkeiten der Zusammenarbeit kennenzulernen.",
+    "current": "Das Vorhaben befindet sich in Vorbereitung. Mögliche Erweiterungen, zusätzliche Geräte und Schulungen werden geprüft. Ein entsprechend aufgebautes laufendes SDI-Projekt, feste Einsatzplätze oder ein Eröffnungstermin sind bisher nicht bestätigt.",
+    "currentLabel": "In Vorbereitung",
+    "timelineKey": "southSudan",
+    "gallery": [
+      {
+        "src": "images/suedsudan-gespraech.webp",
+        "thumb": "images/suedsudan-gespraech-thumb.webp",
+        "alt": "Gespräch mit den Ansprechpartnern am Tisch während eines Erkundungsbesuchs",
+        "caption": "Austausch mit Ansprechpartnern vor Ort im Rahmen der Erkundung."
+      },
+      {
+        "src": "images/suedsudan-partner.webp",
+        "thumb": "images/suedsudan-partner-thumb.webp",
+        "alt": "Besucher und lokale Ansprechpartner vor einem Gebäude in Nzara",
+        "caption": "Kennenlernen in Nzara. Foto aus dem Material zu den Besuchen 2025."
+      },
+      {
+        "src": "images/suedsudan-gebaeude.webp",
+        "thumb": "images/suedsudan-gebaeude-thumb.webp",
+        "alt": "Bestehendes Gebäude mit grünem Dach auf dem Krankenhausgelände",
+        "caption": "Vorhandene Infrastruktur. Ein Ausgangspunkt für die weitere Planung."
+      }
+    ]
+  }
+]

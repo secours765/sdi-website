@@ -1,0 +1,120 @@
+[
+  {
+    "file": "images/uganda-gemeinschaft.webp",
+    "source": "Projekte/Uganda/Fotos/2.JPG",
+    "sourceSha256": "f92df893da63caae187d3fb8eb31313ec7f2e849930cfbe83d86250e2b5f4561",
+    "processing": "WebP, orientation applied, EXIF/XMP/IPTC removed",
+    "width": 1080,
+    "height": 810
+  },
+  {
+    "file": "images/uganda-labor.webp",
+    "source": "Projekte/Uganda/Fotos/IMG-20230221-WA0024.jpg",
+    "sourceSha256": "bedc7d679c75ec5948f30df4378e6205e85924a47da66ea3490287cca7eb6564",
+    "processing": "WebP, orientation applied, EXIF/XMP/IPTC removed",
+    "width": 504,
+    "height": 283
+  },
+  {
+    "file": "images/uganda-solar.webp",
+    "source": "Projekte/Uganda/Fotos/IMG-20230319-WA0004.jpg",
+    "sourceSha256": "9c102a99bf7e15ee35771c9e8bd7362ebd861e285f2544589b7318cfcbe3d7e7",
+    "processing": "WebP, orientation applied, EXIF/XMP/IPTC removed",
+    "width": 1280,
+    "height": 960
+  },
+  {
+    "file": "images/uganda-roentgen.webp",
+    "source": "Projekte/Uganda/Fotos/12.jpeg",
+    "sourceSha256": "d0aa56b2f89425a94eb848e2bec987d40443feff861ff00f02453ebc0b2a4a2e",
+    "processing": "WebP, orientation applied, EXIF/XMP/IPTC removed",
+    "width": 480,
+    "height": 640
+  },
+  {
+    "file": "images/uganda-solar-neu.webp",
+    "source": "Projekte/Uganda/Fotos/6a.jpeg",
+    "sourceSha256": "4566a721c7ac0a33465e7cc7994df0298948ba0eda324e9a653419361c35f7c8",
+    "processing": "WebP, orientation applied, EXIF/XMP/IPTC removed",
+    "width": 640,
+    "height": 480
+  },
+  {
+    "file": "images/kamerun-team.webp",
+    "source": "Projekte/Kamerun/Fotos/kamerun1-032.jpg",
+    "sourceSha256": "a6653e762ef1c31e614da35f900cf1f34a4bcf996a327c419d69e6a8e2c98811",
+    "processing": "WebP, orientation applied, EXIF/XMP/IPTC removed; black slide border cropped",
+    "width": 1600,
+    "height": 1058
+  },
+  {
+    "file": "images/kamerun-raum.webp",
+    "source": "Projekte/Kamerun/Fotos/kamerun1-022.jpg",
+    "sourceSha256": "194851a318b4d945a269db617e715327098ea6bc14245a540c99ffcbb6b648bc",
+    "processing": "WebP, orientation applied, EXIF/XMP/IPTC removed; black slide border cropped",
+    "width": 1600,
+    "height": 1058
+  },
+  {
+    "file": "images/kamerun-behandlung.webp",
+    "source": "Projekte/Kamerun/Fotos/kamerun1-029.jpg",
+    "sourceSha256": "6ca82cca3167f50853d7f47590e7ca4db3cd0170f81278d36e00d9de1a38acaa",
+    "processing": "WebP, orientation applied, EXIF/XMP/IPTC removed; black slide border cropped",
+    "width": 1600,
+    "height": 1058
+  },
+  {
+    "file": "images/suedsudan-gebaeude.webp",
+    "source": "Projekte/Südsudan/Fotos/16a.jpeg",
+    "sourceSha256": "ee932427a7bf5a54477d180b78033e5832db1b6fdaec15e494a956893bd390de",
+    "processing": "WebP, orientation applied, EXIF/XMP/IPTC removed",
+    "width": 640,
+    "height": 480
+  },
+  {
+    "file": "images/suedsudan-gespraech.webp",
+    "source": "Projekte/Südsudan/Fotos/IMG-20250301-WA0006.jpg",
+    "sourceSha256": "96c93df3233e97910393fe008ab85b2c75253c8be944baec3a4423c3dfb5c908",
+    "processing": "WebP, orientation applied, EXIF/XMP/IPTC removed",
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "file": "images/suedsudan-partner.webp",
+    "source": "Projekte/Südsudan/Fotos/16.jpeg",
+    "sourceSha256": "79506ade87242d61db44cfea9cd973517d8691614e489d935b82d461a1f80db7",
+    "processing": "WebP, orientation applied, EXIF/XMP/IPTC removed",
+    "width": 640,
+    "height": 480
+  },
+  {
+    "file": "images/uganda-2013.webp",
+    "source": "Allgemein__vorträge-SDI__Vortrag_2015/ppt_media_image34.jpeg",
+    "sourceSha256": "b4725a69980d6360d622e7a70ec5baf568ca4db4ae96f6243469609fa5c7bcd5",
+    "processing": "WebP, orientation applied, EXIF/XMP/IPTC removed",
+    "width": 872,
+    "height": 654
+  },
+  {
+    "file": "images/uganda-2014.webp",
+    "source": "Allgemein__vorträge-SDI__Vortrag_2015/ppt_media_image43.jpeg",
+    "sourceSha256": "c1911418ec4d1480f57bf6c20bba327cf9d89fd47123297e1297788d42c9a519",
+    "processing": "WebP, orientation applied, EXIF/XMP/IPTC removed",
+    "width": 999,
+    "height": 750
+  },
+  {
+    "file": "images/uganda-team.webp",
+    "source": "Allgemein__vorträge-SDI_Vortrag_Egerkingen2024/media_image3.jpg",
+    "sourceSha256": "259739beebff345469febe86d091d3abf019d5fd2a1f1adc15e71ae580e23658",
+    "processing": "WebP, orientation applied, EXIF/XMP/IPTC removed",
+    "width": 1008,
+    "height": 567
+  },
+  {
+    "file": "images/sdi-logo.png",
+    "source": "SDI Vortrag Egerkingen2024.odp, Folie 1, media/image1.png",
+    "sourceSha256": "3d07a2b08f1d7b6127c6a2f0373c1243717026ff02c78bb855953931b0165dea",
+    "processing": "PNG verkleinert; keine EXIF/XMP/IPTC"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "name": "SDI Deutschland",
+  "fullName": "Secours Dentaire International, Deutschland e.V.",
+  "tagline": "Zahnmedizin verbindet.",
+  "email": "peter.mentges@t-online.de",
+  "secondaryEmail": "arminreinartz@t-online.de",
+  "swissUrl": "https://www.secoursdentaire.ch/",
+  "donation": {
+    "recipient": "Secours Dentaire International, e.V.",
+    "iban": "DE20545700240086320900",
+    "bic": "DEUTDEDB545",
+    "bank": "Deutsche Bank",
+    "source": "Bisherige deutsche Seite „Wir über uns“ und Vortrag 2016, Folie 19",
+    "verifiedOwner": false,
+    "ibanConfirmedOn": "2026-11-27"
+  },
+  "draft": true,
+  "address": {
+    "street": "Donnersbergstraße 6",
+    "postalCode": "67117",
+    "city": "Limburgerhof",
+    "confirmedOn": "2026-11-27"
+  }
+}

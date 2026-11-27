@@ -1,0 +1,8 @@
+import fs from 'node:fs/promises';
+import QRCode from 'qrcode';
+import jsQR from 'jsqr';
+import {PNG} from 'pngjs';
+import assert from 'node:assert/strict';
+export function validIban(iban){const value=iban.replace(/\s/g,'').toUpperCase();if(!/^DE\d{20}$/.test(value))return false;const digits=(value.slice(4)+value.slice(0,4)).replace(/[A-Z]/g,c=>String(c.charCodeAt(0)-55));let remainder=0;for(const digit of digits)remainder=(remainder*10+Number(digit))%97;return remainder===1;}
+export async function checkQr(){const {donation}=JSON.parse(await fs.readFile(new URL('../src/data/site.json',import.meta.url),'utf8'));assert(validIban(donation.iban),'IBAN-Prüfziffer ungültig');assert(donation.recipient&&donation.recipient.length<=70);assert(/^[A-Z]{6}[A-Z0-9]{2}([A-Z0-9]{3})?$/.test(donation.bic));const payload=['BCD','002','1','SCT',donation.bic,donation.recipient,donation.iban,'','','','Spende SDI Deutschland'].join('\n');assert(Buffer.byteLength(payload,'utf8')<=331);const file=new URL('../public/images/spenden-qr.png',import.meta.url);if(process.argv.includes('--generate'))await QRCode.toFile(file.pathname.replace(/^\/([A-Z]:)/,'$1').replaceAll('%20',' '),[{data:Buffer.from(payload,'utf8'),mode:'byte'}],{errorCorrectionLevel:'M',margin:4,scale:8});const decoded=PNG.sync.read(await fs.readFile(file));const result=jsQR(new Uint8ClampedArray(decoded.data),decoded.width,decoded.height);assert(result,'QR-Code nicht lesbar');assert.equal(result.data,payload,'QR-Payload stimmt nicht mit bestätigten Daten überein');assert.equal(result.data.split('\n')[7],'','Betrag muss frei bleiben');console.log('IBAN mod97 und EPC-QR-Decodierung erfolgreich; Betrag frei.');return payload;}
+if(process.argv[1]?.endsWith('qr.mjs'))await checkQr();
