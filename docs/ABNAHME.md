@@ -77,3 +77,11 @@ Windows 11 / PowerShell 5.1; Node 26.13.1, npm 11.20.0, Git 2.56.1.windows.1, gh
 Banking-App-Scan und Kontoinhaberabgleich ohne Zahlung sowie persönliche Pflegeübung wurden nicht als erledigt bestätigt. Impressumsangaben folgen dem Nutzerauftrag und der Altquelle; dies ist keine juristische Vollständigkeitsprüfung. Nicht belegte Registerdaten oder Vorstandsämter wurden nicht ergänzt. Fehlende Einzelportraits sind kein technischer Fehler und wurden nicht erfunden.
 
 Künftige Änderungen bleiben auf Arbeitszweigen und in der Vorschau, bis ein ausdrücklicher Veröffentlichungsauftrag vorliegt. Der Erststart ist keine dauerhafte pauschale Freigabe. Rückweg und spätere Domainanbindung: [Veröffentlichungsanleitung](VEROEFFENTLICHUNG.md).
+
+## Pflegeänderung vom 27.11.2026: Zuständigkeiten auf der Startseite
+
+- Vom Kontoinhaber bestätigt und ausdrücklich zur Veröffentlichung beauftragt: Dr. Peter Mentges – „Finanzen und Verwaltung“; Dr. Armin Reinartz – „Material und Projektleitung“.
+- Die zusätzliche Zeile steht auf der Startseite im Abschnitt „Wir über uns“ direkt unter dem jeweiligen Namen. Die Kontaktbeschreibung bleibt erhalten.
+- Pflegeort: `responsibility` in `src/data/team.json`; Darstellung ausschließlich in `src/pages/index.astro`.
+- Lokale Prüfung erfolgreich: Inhaltsprüfung einschließlich QR-Decodierung, Produktionsbuild für `https://www.secoursdentaire.de/`, Linkprüfung (16 HTML-Seiten, 656 interne Ziele), Browserprüfung und visuelle Kontrolle bei 1440 und 390 Pixeln. Beide Zuständigkeiten korrekt, kein horizontaler Seitenüberlauf und keine JavaScript-Seitenfehler.
+- GitHub-Veröffentlichung und anschließende Live-Kontrolle erfolgen für genau diesen Änderungsstand; diese lokalen Ergebnisse sind noch kein Nachweis einer Veröffentlichung.

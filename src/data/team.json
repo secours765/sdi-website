@@ -1,6 +1,7 @@
 [
   {
     "name": "Dr. Peter Mentges",
+    "responsibility": "Finanzen und Verwaltung",
     "role": "Kontakt für SDI Deutschland",
     "email": "peter.mentges@t-online.de",
     "text": "Peter Mentges gehört zu den in der Vereinsgeschichte genannten Initiatoren von SDI Deutschland. Er ist auf der bisherigen deutschen Website als Ansprechpartner aufgeführt.",
@@ -8,6 +9,7 @@
   },
   {
     "name": "Dr. Armin Reinartz",
+    "responsibility": "Material und Projektleitung",
     "role": "Kontakt für SDI Deutschland",
     "email": "arminreinartz@t-online.de",
     "text": "Armin Reinartz gehört zu den in der Vereinsgeschichte genannten Initiatoren. 2025 war er an den Erkundungsbesuchen für das geplante Vorhaben im Südsudan beteiligt.",
