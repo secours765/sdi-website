@@ -96,3 +96,7 @@ Die 13 großen Originale sind im öffentlichen Release dokumentation-2026-11 ber
 ## Projektpflege vom 27.11.2026
 
 Vom Nutzer bestätigt: aktuelle Mukono-Beschreibung und Aufnahmebeschluss für die Klinik im Südsudan im November 2026. Die Vorbereitung bleibt als Abschnittsstatus bestehen; die überholte Verneinung einer Zusammenarbeit entfällt. Interne Quellenfelder bleiben erhalten, Quellenzeilen werden auf Uganda und Südsudan nicht mehr angezeigt. Bildunterschriften für Uganda 2024/2026 folgen der Nutzerbestätigung; 2026 verwendet galerie-uganda-03.webp unverändert aus der Galerie. Statistik 2023 ist verlustfrei optimiert, vergrößerbar und als Text lesbar. Der Berichtlink verwendet die vorhandene PDF aus press.json. Diese aktuellen Nutzerangaben ersetzen entgegenstehende ältere Statusnotizen.
+
+## Kamerun-Korrektur vom 28.11.2026
+
+Nutzerbestätigte Hauptbildunterschrift mit Dr. Guignard, Aufbau der Kliniken 1989 durch SDI Schweiz, Unterstützung ab 1999 durch SDI Deutschland und heutiger eigenständiger Klinikbetrieb mit zeitweiser materieller Unterstützung übernommen. 1990: Aufbau Kumba; zusätzlicher Eintrag 1999: Aufbau Duala. Der bestehende Zeitraum 1999–2008 bleibt erhalten. Sichtbare Quellenverweise entfallen, interne Quellenfelder bleiben gespeichert. Im Bilderabschnitt entfällt der Hinweis zum unbekannten Aufnahmejahr; Dateien und Reihenfolge bleiben unverändert.

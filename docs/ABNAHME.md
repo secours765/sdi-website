@@ -104,3 +104,7 @@ Die Veröffentlichung dieses konkreten Stands wurde ausdrücklich beauftragt. Di
 Kamerun-Beschriftung auf der Projektübersicht, aktuelle Uganda-Beschreibung, Statistik 2023, Bildunterschriften 2024/2026 und Südsudan-Aufnahmebeschluss gemäß Nutzerauftrag umgesetzt. Interne Quellenbelege und Galerie-Dateien bleiben erhalten. Berichtlink nutzt die vorhandene Presse-PDF.
 
 Inhaltsprüfung, Produktionsbuild und 664 interne Ziele erfolgreich. Alle drei geänderten Seiten bei 1440, 768 und 390 Pixeln geprüft: Bilder laden, keine horizontalen Überläufe, axe ohne Verstöße. Statistik-Textansicht und Öffnen in voller Größe, PDF-Link (HTTP 200, PDF-Typ), 22 unveränderte Uganda-Galerieeinträge sowie Originalprüfsumme der Statistik erfolgreich geprüft. Keine JavaScript-Seitenfehler. Veröffentlichung ausdrücklich freigegeben; anschließende Live-Prüfung am Produktionscommit erforderlich.
+
+## Kamerun-Prüfung vom 28.11.2026
+
+Nutzerbestätigte Texte und Chronologie umgesetzt. Inhaltsprüfung, Produktionsbuild und 664 interne Ziele erfolgreich. Browser-/Sichtprüfung bei 1440, 768 und 390 Pixeln: Bilder korrekt, Überschrift 1990 fett, Reihenfolge 1989/1990/1996/1999/1999–2008, Quellenzeilen entfernt, Bilderreihenfolge erhalten; keine Seitenfehler oder Überläufe, axe jeweils 0 Verstöße. Alle anderen Inhaltsseiten vor Veröffentlichung gegen den bisherigen Live-Stand verglichen: Hauptinhalte identisch. Veröffentlichung ausdrücklich freigegeben; Live-Kontrolle folgt am Produktionscommit.

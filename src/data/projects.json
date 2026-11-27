@@ -39,11 +39,11 @@
     "location": "Kamerun",
     "status": "Langjähriges Projekt",
     "image": "images/kamerun-team.webp",
-    "imageCaption": "Historische Aufnahme aus dem Kamerun-Material. Genaues Aufnahmejahr nicht gesichert.",
+    "imageCaption": "Aufnahme beim Beginn der Zusammenarbeit und Eröffnung der Kliniken in Kumba und Manyemen mit Dr. Guignard",
     "summary": "Langjährige zahnmedizinische Zusammenarbeit, getragen von persönlichem Austausch und Unterstützung vor Ort.",
     "intro": "Eine lange gemeinsame Geschichte – mit zahnmedizinischer Versorgung, Unterstützung der Kliniken und Vorsorge.",
-    "background": "Die deutschen Unterlagen beschreiben die Unterstützung von Zahnkliniken in Kamerun seit 1989 und die Zusammenarbeit mit der Presbyterian Church of Cameroon. Diese Geschichte beginnt vor der Gründung des deutschen Vereins 1999. Die historischen Bilder geben Einblicke in die damalige Arbeit.",
-    "current": "Kamerun ist nach der aktuellen Angabe des Vereins ein langjährig bestehendes Projekt. Die hier gezeigten Meilensteine und Fotos dokumentieren seine Geschichte. Einzelheiten zu heutigen Standorten, Ausstattung und konkreten Einsätzen werden vor einer Veröffentlichung ergänzt.",
+    "background": "Die Kliniken in Manyemen und Kumba werden 1989 von SDI Schweiz aufgebaut und ab 1999 von SDI Deutschland weiter unterstützt und betreut. Es besteht eine Zusammenarbeit mit der Presbyterian Church Cameroon (PCC).",
+    "current": "Nach 20 Jahren erfolgreicher Zusammenarbeit wird die Kooperation mit der PCC aufgelöst. Die Kliniken arbeiten mit den bestehenden Einrichtungen und dem vorhandenen Personal eigenständig weiter. Es erfolgt lediglich eine zeitweise materielle Unterstützung durch SDI Deutschland.",
     "currentLabel": "Aktueller Projektstatus",
     "timelineKey": "cameroon",
     "gallery": [
@@ -63,7 +63,7 @@
         "src": "images/kamerun-team.webp",
         "thumb": "images/kamerun-team-thumb.webp",
         "alt": "Gruppenfoto vor dem Klinikgebäude in Kamerun",
-        "caption": "Begegnung vor der Klinik. Aufnahmejahr nicht gesichert."
+        "caption": "Begegnung vor der Klinik."
       }
     ]
   },
