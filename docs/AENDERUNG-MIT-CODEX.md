@@ -1,9 +1,10 @@
 # Änderung mit Codex durchführen
 
-## Aktuelle lokale Revision
+## Aktueller Erststart und spätere Änderungen
 
-Die Galerie-Überarbeitung auf `work/lokaler-entwurf-galerien` bleibt auf ausdrücklichen Wunsch nur lokal. Sie entfernt Mitarbeit-/Bewerbungsangebote und ergänzt Länder-Galerien. Nicht nach `main` übernehmen und auch den Arbeitszweig nicht pushen, solange dafür keine neue ausdrückliche Freigabe vorliegt. Die folgenden Veröffentlichungsschritte beschreiben den späteren allgemeinen Ablauf; sie sind keine aktuelle Freigabe.
+Der GitHub-Pages-Erststart wurde jetzt ausdrücklich autorisiert und wird auf `work/pages-erststart-2026-11-27` vorbereitet. Ziel ist `https://secours765.github.io/sdi-website/`; ein erfolgreicher Live-Start wird erst nach Deployment und Kontrolle bestätigt. Der vorherige lokale Stand ist auf `sicherung/vor-pages-2026-11-27` gesichert.
 
+Die Erststartfreigabe gilt nicht dauerhaft: Ein späterer Änderungswunsch erlaubt weiterhin nur Bearbeitung auf einem Arbeitszweig und lokale Prüfung. Nicht nach `main` übernehmen und nichts veröffentlichen, bis dafür ein ausdrücklicher Auftrag vorliegt. Der Informations- und Spendenauftritt bleibt ohne Mitarbeit-/Bewerbungsangebote.
 ## Der normale Ablauf
 
 1. **Projekt öffnen und Zustand prüfen.** In VS Code den Ordner „SDI-Website“ öffnen. Codex beauftragen: „Lies AGENTS.md und prüfe zuerst den Git-Zustand. Veröffentliche noch nichts.“
@@ -41,11 +42,17 @@ Die Galerie-Überarbeitung auf `work/lokaler-entwurf-galerien` bleibt auf ausdr�
 
    Bei Bildern, Galerie, Filtern oder Navigation auch Smartphonebreite, Tastaturbedienung und Browserfunktion prüfen. Nur tatsächlich durchgeführte Prüfungen protokollieren.
 
-5. **Veröffentlichung ausdrücklich beauftragen.** Erst nach Sichtprüfung sagen: **„Diese geprüfte Änderung veröffentlichen.“** Eine bloße Textänderung oder ein lokaler Commit ist keine solche Freigabe. Solange Pages noch nicht aktiviert ist, die erstmalige Websiteveröffentlichung gesondert beauftragen.
+5. **Veröffentlichung ausdrücklich beauftragen.** Erst nach Sichtprüfung sagen: **„Diese geprüfte Änderung veröffentlichen.“** Eine bloße Textänderung oder ein lokaler Commit ist keine solche Freigabe. Die aktuelle Erststartfreigabe ersetzt diese ausdrückliche Freigabe für spätere Änderungen nicht.
 
-6. **Geprüften Stand sichern und übernehmen.** Nur beabsichtigte Dateien aufnehmen; vor dem Commit `git diff --cached` prüfen. Danach committen, den geprüften Arbeitszweig nach `main` übernehmen und `main` pushen. Bei zwischenzeitlichen Änderungen zuerst aktualisieren, Konflikte auflösen und erneut prüfen. Keine unbekannten Dateien pauschal hinzufügen.
+6. **Geprüften Stand sichern und übernehmen.** Nur beabsichtigte Dateien aufnehmen; vor dem Commit `git diff --cached` prüfen. Nach ausdrücklicher Veröffentlichungsfreigabe committen, den geprüften Arbeitszweig pushen und einen Pull Request nach `main` öffnen. Änderungen und erfolgreiche Prüfungen kontrollieren und den Pull Request zusammenführen. `main` ist der Produktionszweig; der Merge löst den Pages-Workflow aus. Der Eigentümer darf dies selbst erledigen, eine zweite freigebende Person ist nicht vorgeschrieben. Bei zwischenzeitlichen Änderungen zuerst aktualisieren, Konflikte auflösen und erneut prüfen. Keine unbekannten Dateien pauschal hinzufügen.
 
-7. **Ergebnis kontrollieren.** Nach späterer Deploymentaktivierung Build und Deploymentstatus für genau diesen Commit prüfen. Die tatsächliche Website öffnen, Änderung und wichtige Links kontrollieren. Bei Fehlern nach [Veröffentlichung und Rückkehr](VEROEFFENTLICHUNG.md) vorgehen.
+7. **Ergebnis kontrollieren.** Build und Deploymentstatus für genau den übernommenen Commit prüfen. Die tatsächliche Website öffnen, Änderung und wichtige Links kontrollieren. Bei Fehlern nach [Veröffentlichung und Rückkehr](VEROEFFENTLICHUNG.md) vorgehen.
+
+## Einen freigegebenen main-Stand erneut veröffentlichen
+
+Wenn ein erneuter Lauf ausdrücklich gewünscht ist, etwa nach einer freigegebenen Änderung der Pages-Domain: in GitHub **Actions → Website veröffentlichen → Run workflow** öffnen und **Branch: main** wählen. Vorher prüfen, dass der aktuelle `main`-Stand der Freigabe entspricht. Der Workflow bezieht Domain und Basispfad aus den Pages-Einstellungen und baut erneut. Nach Erfolg tatsächliche URL, Canonical-URLs, Sitemap, Bilder und Downloads kontrollieren. Andere Zweige dürfen nicht veröffentlichen.
+
+Dieser manuelle Lauf braucht ebenso eine ausdrückliche Freigabe; ein Textänderungswunsch allein reicht nicht. Zum Rückgängigmachen bevorzugt einen geprüften `git revert` auf einem Arbeitszweig und anschließend einen ausdrücklich freigegebenen Pull Request nach `main` verwenden, siehe [Veröffentlichung und Rückkehr](VEROEFFENTLICHUNG.md).
 
 ## Kleine persönliche Übung
 

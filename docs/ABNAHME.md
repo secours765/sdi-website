@@ -1,125 +1,75 @@
 # Abnahme- und Übergabeprotokoll
 
-Stand: **27.11.2026**. Der geprüfte Erststand auf GitHub und die anschließende lokale Galerie-Revision sind getrennte Stände. Erfolgreiche Prüfungen des Erststands gelten nicht automatisch für spätere Änderungen.
+Stand: **27.11.2026**. Der Erststart über GitHub Pages ist ausdrücklich autorisiert. STRATO, DNS und eigene Domain bleiben unverändert.
 
-## Bereitstellung
+## Stände und Sicherung
 
-| Punkt | Stand |
-| --- | --- |
-| Öffentliche Website | **Noch nicht veröffentlicht** |
-| Öffentliches Repository | [secours765/sdi-website](https://github.com/secours765/sdi-website) |
-| Gesicherter Erststand auf `main` | `b9056173179bdf96ea2a64cac6f0575a33ebe573`, erfolgreich gepusht |
-| GitHub-Buildprüfung des Erststands | Erfolgreich |
-| Aktuelle Überarbeitung | Nur lokal auf `work/lokaler-entwurf-galerien`; kein Push dieser Änderungen |
-| Lokale Vorschau | http://127.0.0.1:4321/ – laufender Server, HTTP 200 geprüft |
-| GitHub Pages | Deaktiviert; `has_pages: false`, Pages-API antwortet mit 404 |
-| Andere Website-/Previewdienste | Keine Veröffentlichung eingerichtet |
-| STRATO / Domain / DNS | Keine Änderungen durchgeführt |
-| Dokument-Release | 13 Originaldateien vollständig hochgeladen und mit GitHub-SHA-256/Größe abgeglichen; Release bleibt unveröffentlichter Entwurf |
-| Persönliche Übergabeübung | Vorbereitet, noch nicht durch den Kontoinhaber durchgeführt |
+- Öffentlicher erster Quellstand: `b9056173179bdf96ea2a64cac6f0575a33ebe573`.
+- Akzeptierte lokale Galerie-Revision: `4c78cd8`, gesichert auf `sicherung/vor-pages-2026-11-27`.
+- Produktionsvorbereitung: `work/pages-erststart-2026-11-27`; keine neueren Remote-Änderungen an main beim Start. Der saubere lokale Ausgangsstand wurde erhalten.
+- Ziel: https://secours765.github.io/sdi-website/
+- Website-Deployment und Live-Kontrolle: noch auszuführen; endgültigen Commit und Workflow nach Erfolg ergänzen.
 
-## Werkzeuge
+## Produktionsvorbereitung
 
-| Werkzeug | Tatsächlich festgestellter Stand |
-| --- | --- |
-| Windows | Windows 11, OS-Build 22631 |
-| Shell | Windows PowerShell 5.1 |
-| Node.js | 26.13.1 LTS, portable aus offizieller Quelle |
-| npm | 11.20.0 |
-| Astro / Projektpakete | Versionen reproduzierbar in `package-lock.json` |
-| Git | 2.56.1.windows.1 |
-| GitHub CLI | 2.106.0 |
+- Akzeptiertes Design erhalten; keine Framework- oder pauschalen Paketupdates.
+- Informationen, Spenden und 51 Fotos in Länder-Galerien (7 Kamerun, 22 Uganda, 22 Südsudan). Keine Mitarbeit-/Bewerbungsangebote oder E-Mail-Aktionslinks.
+- Entwurfsleiste und Suchmaschinensperre für Inhaltsseiten entfernt. 404 bleibt nicht indexierbar.
+- Eindeutige Seitentitel und Beschreibungen, Canonical-URLs, Open Graph/Twitter-Vorschau, Sitemap und dynamische robots.txt.
+- Tatsächliche Bildabmessungen zentral erfasst; Startbild mit hoher Ladepriorität und zusätzlicher 800px-Version (82.322 statt 157.424 Byte). Nachgelagerte Fotos bleiben lazy.
+- Impressumsangaben auf Nutzerwunsch von der alten deutschen Website übernommen, ausschließlich Anschrift zu Donnersbergstraße 6 geändert. Fehlende gesetzliche Vertretung/Registernummer nicht erfunden.
+- Datenschutz für tatsächliches GitHub-Pages-Hosting, Verbindungsdaten, externe Downloads, Kontakt, Browserfunktionen und Rechte beschrieben. Keine juristische Prüfung behauptet.
+- Pages-Konfiguration vor Build: `origin → SDI_SITE`, `base_path → SDI_BASE`. Build und Linkprüfung verwenden dieselben Werte.
+- Nur main darf per Push/Merge oder manuellem Workflow veröffentlichen. Build mit Leserechten; Deploy mit Pages-/OIDC-Rechten; ausschließlich dist als Artefakt.
 
-Die projektlokale Erstinstallation war erfolgreich und meldete 0 bekannte Sicherheitslücken. Das beschreibt den damaligen Prüflauf, keine dauerhafte Zusicherung.
+## Tatsächlich ausgeführte Prüfungen des Produktionsstands
 
-## Technische Prüfung des gesicherten Erststands
+- [x] Inhalt: drei Projekte, Südsudan weiterhin „In Vorbereitung“, 184 inventarisierte Dokumentverweise, lokale Dateigrößen/SHA-256, bereinigte Bildmetadaten.
+- [x] Deutsche IBAN-Prüfziffer und EPC-QR-Decodierung erfolgreich; Betrag frei, keine Zahlung ausgeführt.
+- [x] Build für /sdi-website/: 16 HTML-Seiten plus Sitemap/robots; 656 interne Ziele mit exakter Groß-/Kleinschreibung, Bildmaße und Metadaten geprüft; Ausgabe rund 179,5 MiB.
+- [x] Domainwurzel mit absichtlich anderer Test-Origin https://sdi-domain.invalid: Build, Links, Canonicals, Sitemap und robots erfolgreich. Keine Testadresse wird veröffentlicht.
+- [x] Alle 15 Inhaltsseiten auf Desktop 1440px und Smartphone 390px: Bilder vollständig, keine horizontalen Überläufe. axe: 0 Verstöße auf allen Desktopseiten und den zusätzlich geprüften zentralen Mobilseiten. Startseite und Uganda-Timeline zusätzlich visuell geprüft.
+- [x] Downloadsuche, Kategorie/Sprache, Leerzustand, Reset, lokaler Download, Galerie Vor/Zurück/Pfeiltasten/Escape/Fokusrückkehr, mobile Navigation, Skip-Link und IBAN-Kopieren bestanden. Keine E-Mail-Aktionslinks wiederhergestellt.
+- [x] Direkte 404-Seite mit HTTP 404 und funktionierendem Rückweg; Timeline-Abstände bei 390, 768, 1024 und 1440px geometrisch geprüft, ohne Überschneidung.
+- [ ] Isolierte Revert-Probe abschließend protokollieren.
+- [ ] Linux-CI und Deployment für konkreten Produktionscommit abschließend protokollieren.
+- [ ] Live-Website und 102 lokale Website-Downloads anonym abschließend prüfen.
 
-Die folgenden Ergebnisse betreffen den ursprünglichen Entwurf mit 12 Inhaltsseiten und zusätzlicher 404-Seite:
+Die vorherige lokale Revision wurde bereits auf 15 Inhaltsseiten mit 1440px/390px, Galeriebedienung, Downloadfiltern, Kopieren, Tastatur und Timeline bei 390/768/1024/1440px geprüft. Das ist historische Evidenz; die erneute Produktionsprüfung wird separat ergänzt.
 
-- [x] Inhaltsprüfung erfolgreich; Projektstatus und Quellenangaben kontrolliert.
-- [x] Statischer Build an Domainwurzel und unter `/sdi-website/` erfolgreich: 13 erzeugte Seiten.
-- [x] 453 interne Links geprüft; Ausgabegröße rund 171,4 MiB.
-- [x] Alle 12 Inhaltsseiten auf Desktop und Smartphonebreite von 390 Pixeln im Browser geprüft.
-- [x] Relevante Browserfunktionen und Bedienbarkeit geprüft; axe meldete in den ausgeführten Prüfungen 0 Verstöße. Dies ersetzt keine vollständige Barrierefreiheitszertifizierung.
-- [x] Navigation, Galerie, Downloadsuche und Kategorie-/Sprachfilter geprüft.
-- [x] E-Mail-Links und codierte Betreffzeilen geprüft; keine Nachricht versendet.
-- [x] Kopierfunktionen geprüft.
-- [x] IBAN-Prüfziffer und EPC-QR-Format geprüft; QR-Bild erfolgreich decodiert und mit Zahlungsdaten verglichen.
-- [x] Geplanten öffentlichen Git-Bestand geprüft; nur ausgewählte Inhalte übernommen, interne Originalmaterialien ausgeschlossen.
-- [x] Webbilder optimiert und Bildmetadaten bereinigt.
-- [x] Erstcommit unter der bestätigten Identität von secours765 gepusht.
-- [x] GitHub-Buildprüfung für den Erststand erfolgreich.
-- [x] Kein aktiver Pages- oder sonstiger Website-Deploymentworkflow eingerichtet.
+## Dokumente: öffentliche externe Abrufe
 
-Die damalige funktionale Prüfung umfasst auch Bestandteile, die durch die neue Nutzerkorrektur entfallen. Sie rechtfertigt nicht deren Wiederaufnahme.
+Der Release [Dokumentation 2026-11](https://github.com/secours765/sdi-website/releases/tag/dokumentation-2026-11) wurde am 27.11.2026 veröffentlicht. Genau 13 Original-Assets, zusammen **948.070.944 Byte**, alle GitHub-Größen und SHA-256-Digests stimmen mit dem internen Manifest überein.
 
-## GitHub-Schutz des Erststands
+Am 27.11.2026 um 12:31 UTC wurden **191/191 externe Ziele anonym** abgerufen: 13 finale Release-URLs und 178 aktive Schweizer Originalquellen, darunter alle 63 bewusst extern belassenen Dateien. HTTP 200/206, passende Dateisignatur und Gesamtgröße überall bestätigt. Keine Cookies oder Authorization. Range-GET prüfte die Signatur und vollständige Größenangabe; die 948 MB wurden nicht nochmals vollständig heruntergeladen. Die Hashprüfung stützt sich auf zuvor heruntergeladene Originale und die von GitHub gemeldeten Asset-Digests.
 
-- [x] Repositoryeigentümer und authentifiziertes Konto: **secours765**.
-- [x] Repository öffentlich; keine unbekannten Mitbearbeiter. Nur secours765 als Mitbearbeiter festgestellt.
-- [x] Secret Scanning aktiviert.
-- [x] Push Protection aktiviert.
-- [x] `main` gegen Force-Push und Löschen geschützt.
-- [x] Regeln gelten auch für Administratoren.
-- [x] Keine verpflichtende Freigabe durch eine zweite Person.
-- [x] GitHub Pages weiterhin deaktiviert.
+Der sichtbare Katalog enthält 180 Einträge: 102 Website-Dateien, 13 Release-Dateien, 63 Originalverweise, eine geschützte und eine nicht erreichbare Quelle. Die vier Freiwilligeninfos doc-133–136 bleiben ausgeblendet und werden nicht bereitgestellt.
 
-Zwei-Faktor-Einrichtung auf Wunsch des Kontoinhabers vorerst zurückgestellt; keine Blockade dieses Auftrags. Bei späterem Auftrag persönlich einrichten und Wiederherstellung sicher verwahren.
+Bewusste Ausnahmen:
 
-## Neue lokale Revision: Galerien und Informationsauftritt
+- Geschütztes MANUEL3.pdf: nicht abgerufen, kein Passwortschutz umgangen.
+- Seminarflyer 2020: Quelle meldete HTTP 404, kein lokaler Download.
+- 63 Originalverweise bleiben extern wegen Rechte-/Eignungsklärung (Presse/Archiv, Nachrufe, WHO-/CIPRET-Unterlagen, Veranstaltungsbilder).
+- Schweizer/historische Konten und medizinische Texte sind ausdrücklich zeitlich und organisatorisch eingeordnet.
 
-Die ausdrückliche Nutzerkorrektur lautet: **keine Mitarbeit- oder Bewerbungsangebote, sondern Informationen und Spenden**. Entsprechende Seiten, Links, Schaltflächen und E-Mail-Aufrufe entfallen. Allgemeine Kontaktinformationen bleiben davon getrennt.
+## Eigentum und Schutz
 
-Die Überarbeitung umfasst einen sichtbaren Galerieeinstieg, `/galerie/` und eigene Länder-Galerien unter `/galerie/kamerun/`, `/galerie/uganda/` und `/galerie/suedsudan/`. Die Bildauswahl wird in `src/data/galleries.json` gepflegt. Zusätzlich wird die Überschneidung von Jahreszahlen und Linie in der Projektchronologie korrigiert.
+- Authentifiziertes Konto und Eigentümer: **secours765** (ID 361925335).
+- Nur secours765 als Mitbearbeiter, keine offenen Einladungen.
+- Secret Scanning, Push Protection und Dependabot-Sicherheitsupdates aktiviert.
+- main: Force-Push/Löschen verboten, lineare Historie, Schutz auch für Administratoren; keine zweite Person vorgeschrieben.
+- Pages: Quelle workflow, HTTPS erzwungen, keine Custom Domain.
+- Umgebung github-pages: ausschließlich Branch main, keine Tag-Regel.
+- Zwei-Faktor-Einrichtung auf ausdrücklichen Nutzerwunsch zurückgestellt.
 
-**Diese Änderungen bleiben nur lokal auf `work/lokaler-entwurf-galerien`. Kein Push, kein Merge nach `main` und keine Websiteveröffentlichung ohne neue ausdrückliche Freigabe.**
+## Originalmaterial und Werkzeuge
 
-Die neue Revision wurde am 27.11.2026 gesondert geprüft:
+Originale in „SDI Homepage“ unverändert; interne Sicherung mit 81 SHA-256-identischen Dateien außerhalb des öffentlichen Repositorys. Drei einzigartige Präsentationen mit 65 Folien ausgewertet (XML, Bildzuordnungen und relevante Bilder; keine vollständige Office-Folienrenderung). Keine vollständigen Präsentationen oder privaten Auswertungen hochgeladen.
 
-- [x] Inhaltsprüfung einschließlich Dokumenthashes, Bildmetadaten, IBAN und QR-Decodierung erfolgreich.
-- [x] Statischer Build an Domainwurzel und unter /sdi-website/: 16 HTML-Seiten (15 Inhaltsseiten plus 404).
-- [x] 653 interne Ziele einschließlich aller Galerie-Bilder geprüft; Ausgabe rund 179,4 MiB.
-- [x] 15 Inhaltsseiten auf Desktop (1440 px) und Smartphonebreite (390 px) geprüft; axe meldet 0 WCAG-A/AA-Verstöße im ausgeführten Test.
-- [x] Länder-Galerien: Kamerun 7, Uganda 22, Südsudan 22 Fotos; zusammen 51 Aufnahmen.
-- [x] Bildvergrößerung, Schließen/Escape, Fokus-Rückkehr, Vor/Zurück und Pfeiltasten geprüft.
-- [x] Timeline bei 390, 768, 1024 und 1440 px geometrisch auf Abstand zwischen Jahreszahlen und Linie geprüft; ohne Überschneidung. Desktopansicht visuell kontrolliert.
-- [x] Galerie-Fotos aus belegten Länderordnern; mehrdeutige Doppelaufnahme ausgeschlossen. Südsudan weiterhin Erkundung/Vorbereitung.
-- [x] Keine Mitmachen-Seite und keine Bewerbungs-/Mitarbeitslinks. Allgemeine Kontaktangaben bleiben als Text sichtbar.
-- [x] Vier Schweizer Freiwilligen-Informationsblätter aus dem sichtbaren Angebot entfernt; interne Originale erhalten. Sichtbarer Katalog: 180 Einträge, davon 102 lokale Downloads.
-- [x] Suche, Kategorie-/Sprachfilter, Download, mobile Navigation und IBAN-Kopieren geprüft.
-- [x] Lokale Vorschau unter http://127.0.0.1:4321/ erreichbar. Diese Revision wurde nicht gepusht; main enthält weiterhin den dokumentierten Erststand.
+Windows 11 / PowerShell 5.1; Node 26.13.1, npm 11.20.0, Git 2.56.1.windows.1, gh 2.106.0. Abhängigkeiten unverändert über package-lock.json; CI verwendet npm ci.
 
-Browseransichten und maschinenlesbare Prüfberichte liegen ausschließlich im separaten internen Arbeitsbereich. Die Prüfungen ersetzen keine rechtliche Abnahme oder vollständige Barrierefreiheitszertifizierung.
+## Noch nicht persönlich durchgeführt
 
-## Material- und Dokumentstand
+Banking-App-Scan und Kontoinhaberabgleich ohne Zahlung sowie persönliche Pflegeübung wurden nicht als erledigt bestätigt. Impressumsangaben folgen dem Nutzerauftrag und der Altquelle; dies ist keine juristische Vollständigkeitsprüfung. Nicht belegte Registerdaten oder Vorstandsämter wurden nicht ergänzt. Fehlende Einzelportraits sind kein technischer Fehler und wurden nicht erfunden.
 
-- Originalsammlung: deutsche Bestandsseiten, Projektfotos, zwei PPTX- und zwei ODP-Dateien sowie Texte zu Uganda und Südsudan.
-- Die ODP-Dateien sind Dubletten: insgesamt **3 einzigartige Präsentationen mit 65 Folien**. XML-Texte, Bildzuordnungen und relevante Bilder wurden ausgewertet. Keine vollständige Office-Folienrenderung durchgeführt.
-- Inventur: 131 unterschiedliche aktive direkte Dateiverweise auf der Schweizer Downloadseite; mit passenden Direktverweisen weiterer SDI-Seiten **184 Dokumente**.
-- **182 Dokumente tatsächlich heruntergeladen**, 1 ausdrücklich passwortgeschütztes Dokument zurückgestellt, 1 Quelle mit HTTP 404.
-- Ursprüngliche Bereitstellung: 106 lokale Website-Dateien. Im aktuellen lokalen Entwurf nach Nutzerkorrektur: **102 lokale Website-Dateien**, **13 große Originale über Schweizer Quellen** (948.070.944 Byte; zusätzlich im unveröffentlichten GitHub-Release-Entwurf) und **63 Originalverweise bis Rechteprüfung**. **Vier Mitarbeit-Dokumente bleiben nur in der internen Originalsammlung**. Die vollständige Inventur umfasst weiterhin 184 Einträge.
-- Die 13 Originaldateien sind vollständig in den **Release-Entwurf** hochgeladen; Größen und serverseitige SHA-256 stimmen mit den lokalen Originalen überein. Der Entwurf ist nicht öffentlich bereitgestellt. Erst nach tatsächlicher Veröffentlichung und Prüfung darf der Katalog erreichbare Asset-URLs behaupten.
-- Prüfsummen, Originalquellen und Einzelfälle sind im Katalog beziehungsweise internen Inventar festgehalten. Das geschützte Handbuch bleibt eine Ausnahme; kein Schutz wurde umgangen.
-- Lokale Originalkopie im separaten Arbeitsbereich: **81 Dateien, SHA-256-identisch** mit den Originalen. Der lokale Sicherungsbericht enthält Ablageorte. Ein unabhängiges Backup auf einem anderen Datenträger ist damit nicht bestätigt.
-
-## Bestätigte Angaben
-
-- [x] Aktuelle Anschrift: **Donnersbergstraße 6, 67117 Limburgerhof**; Nutzerbestätigung vom 27.11.2026.
-- [x] Deutsche IBAN **DE20 5457 0024 0086 3209 00** weiterhin korrekt; Nutzerbestätigung vom 27.11.2026.
-- [x] Kamerun und Uganda bestehende Projekte; Südsudan in Vorbereitung.
-- [x] Allgemeine Kontaktadressen aus deutschen Unterlagen: `peter.mentges@t-online.de` und `arminreinartz@t-online.de`.
-- [x] Aktueller Inhaltsumfang laut Nutzerkorrektur: Informationen, Galerien und Spenden; keine Mitarbeit-/Bewerbungsangebote.
-
-## Vor öffentlicher Websitefreigabe persönlich prüfen
-
-- [ ] Genaue aktuelle Vereins-/Registerbezeichnung, Vertretung, Registergericht und Registernummer, soweit erforderlich, anhand aktueller Unterlagen abgleichen. Quellen verwenden unterschiedliche Namensfassungen.
-- [ ] Aktualität der allgemeinen Kontaktwege und gewünschte aktuelle Funktionsbezeichnungen bestätigen.
-- [ ] Passende Einzelportraits von Peter Mentges und Armin Reinartz mit eindeutiger Zuordnung und Nutzungsfreigabe bereitstellen; bisher keine gesichert beschrifteten Einzelportraits gefunden.
-- [ ] Empfängerbezeichnung mit tatsächlichem Bankkonto abgleichen und QR-Code in einer unterstützenden Banking-App **ohne Zahlung** testen.
-- [ ] Angaben zu Spendenbescheinigungen nur übernehmen, wenn Grundlage und Ablauf bestätigt sind.
-- [ ] Impressum und Datenschutz mit tatsächlichem späteren Hosting und Verantwortlichkeiten abgleichen. Keine juristische Vollständigkeit allein durch den Entwurf behaupten.
-- [ ] Bildrechte und ungeklärte Fremdmaterialien dokumentbezogen klären.
-- [ ] Persönliche Übung aus [Änderung mit Codex](AENDERUNG-MIT-CODEX.md) selbst ausführen und Verständnis bestätigen.
-- [ ] Nach Sichtprüfung die erstmalige Websiteveröffentlichung ausdrücklich beauftragen.
-
-Abschluss der persönlichen Übung: **offen**. Datum, ausgeführte Schritte und verbliebene Fragen erst nach tatsächlicher Durchführung ergänzen.
+Künftige Änderungen bleiben auf Arbeitszweigen und in der Vorschau, bis ein ausdrücklicher Veröffentlichungsauftrag vorliegt. Der Erststart ist keine dauerhafte pauschale Freigabe. Rückweg und spätere Domainanbindung: [Veröffentlichungsanleitung](VEROEFFENTLICHUNG.md).

@@ -410,5 +410,13 @@
     "source": "Projekte/Südsudan/Fotos/IMG-20250301-WA0038.jpg",
     "sourceSha256": "60009e25e0a228f43be5dafbe308307b5b37e5c57ebfe3b4ab4a99200ebdd863",
     "processing": "WebP und Vorschaubild, EXIF/XMP/IPTC entfernt"
+  },
+  {
+    "file": "images/uganda-gemeinschaft-800.webp",
+    "source": "Projekte/Uganda/Fotos/2.JPG",
+    "sourceSha256": "f92df893da63caae187d3fb8eb31313ec7f2e849930cfbe83d86250e2b5f4561",
+    "processing": "Responsive WebP derivative of selected image, resized to 800px, EXIF/XMP/IPTC removed",
+    "width": 800,
+    "height": 600
   }
 ]

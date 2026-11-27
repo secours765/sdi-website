@@ -32,5 +32,17 @@ for(const file of await fs.readdir(new URL('../public/images/',import.meta.url))
 }
 await checkQr();
 const workflows=await fs.readdir(new URL('../.github/workflows/',import.meta.url));
-for(const f of workflows){const text=await fs.readFile(new URL('../.github/workflows/'+f,import.meta.url),'utf8');assert(!/deploy-pages|pages:\s*write|id-token:\s*write|upload-pages-artifact/.test(text),'Aktive Websiteveröffentlichung nicht erlaubt');}
-console.log('Inhaltsprüfung erfolgreich: '+projects.length+' Projekte, '+docs.length+' Dokumentverweise, lokale Hashes, Bildmetadaten und Deployment-Sperre.');
+for(const f of workflows){
+ const text=await fs.readFile(new URL('../.github/workflows/'+f,import.meta.url),'utf8');
+ if(f!=='pages.yml'){assert(!/deploy-pages|pages:\s*write|id-token:\s*write|upload-pages-artifact/.test(text),'Deployment außerhalb des Pages-Workflows');continue;}
+ assert(!/pull_request|pull_request_target|workflow_run/.test(text),'Keine PR-Deployments');
+ assert(text.includes('branches: [main]')&&text.includes('workflow_dispatch:'),'Produktionstrigger');
+ const guard="if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')";
+ assert.equal(text.split(guard).length-1,2,'Beide Jobs auf main und erlaubte Ereignisse begrenzen');
+ assert(text.includes('permissions: {}')&&text.includes('name: github-pages')&&text.includes('needs: build'));
+ assert(text.indexOf('actions/configure-pages@')<text.indexOf('npm run build'),'Pages-Adresse vor Build');
+ assert(text.includes('SDI_SITE: $'+'{{ steps.pages.outputs.origin }}')&&text.includes('SDI_BASE: $'+'{{ steps.pages.outputs.base_path }}'));
+ assert(text.includes('npm run build && npm run check:links')&&text.includes('path: dist')&&text.includes('npm ci')&&text.includes('npm run check'));
+ const build=text.split('  deploy:')[0];assert(!/pages:\s*write|id-token:\s*write/.test(build),'Build ohne Veröffentlichungsrechte');
+}
+console.log('Inhaltsprüfung erfolgreich: '+projects.length+' Projekte, '+docs.length+' Dokumentverweise, lokale Hashes, Bildmetadaten, QR und begrenzter Pages-Workflow.');

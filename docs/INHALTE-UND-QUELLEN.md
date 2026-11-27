@@ -82,4 +82,4 @@ Der private Sicherungsbericht enthält Zeitpunkt, Ablageort, Dateianzahl und Has
 
 Vier Schweizer Freiwilligen-Informationsblätter (doc-133 bis doc-136) werden mit visible: false und availability: withdrawn aus dem Websiteangebot ausgeschlossen. Die vollständige Inventur und internen Originale bleiben erhalten. Keine Mitarbeitangebote oder Links zu diesen Dateien erneut anzeigen. Der sichtbare Katalog enthält 180 Einträge; 102 Dokumente liegen lokal in public/downloads/.
 
-Die 13 großen Originale sind vollständig und hashidentisch in einen unveröffentlichten GitHub-Release-Entwurf hochgeladen. Solange er unveröffentlicht ist, verweisen sichtbare Downloads auf die erreichbare Schweizer Originalquelle. Keine geplanten GitHub-URLs als fertige Downloads eintragen.
+Die 13 großen Originale sind im öffentlichen Release dokumentation-2026-11 bereitgestellt. GitHub-Größen und SHA-256 stimmen mit den Originalen überein; die finalen Downloadziele wurden anonym auf Status, Dateisignatur und Größe geprüft. Der Katalog verwendet ausschließlich diese bestätigten Release-URLs.

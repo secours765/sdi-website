@@ -1,20 +1,29 @@
 ---
+import { imageSize } from "../lib/images.js";
 import '../styles/global.css';
 import { url } from '../lib/paths.js';
 import site from '../data/site.json';
-const {title = 'Zahnmedizin verbindet.', description = 'SDI Deutschland unterstützt zahnmedizinische Versorgung, Ausbildung und Vorsorge in Kamerun und Uganda. Ein neues Vorhaben im Südsudan ist in Vorbereitung.'} = Astro.props;
+import pages from '../data/pages.json';
 const current = Astro.url.pathname;
+const pagePath = current.slice(import.meta.env.BASE_URL.replace(/\/$/, '').length).replace(/^\//, '');
+const meta = pages.find(page => page.path === pagePath);
+const { title = meta?.title || 'Seite nicht gefunden', description = meta?.description || 'Die gesuchte Seite ist nicht verfügbar. Hier finden Sie den Weg zur Startseite von SDI Deutschland.' } = Astro.props;
+const is404 = Astro.props.notFound === true;
+const canonical = new URL(url(meta?.path ?? pagePath), Astro.site).href;
+const socialImage = new URL(url('images/uganda-gemeinschaft.webp'), Astro.site).href;
 const navigation = [['Wir über uns','wir-ueber-uns/'],['Projekte','projekte/'],['Downloads','downloads/'],['Galerie','galerie/']];
 ---
 <!doctype html>
 <html lang="de">
-<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="description" content={description}/><meta name="robots" content="noindex, nofollow"/><meta name="theme-color" content="#b92235"/><title>{title} · SDI Deutschland</title><link rel="icon" href={url('images/sdi-logo.png')}/></head>
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="description" content={description}/><meta name="robots" content={site.draft || is404 ? "noindex, follow" : "index, follow"}/><meta name="theme-color" content="#b92235"/><title>{title} · SDI Deutschland</title><link rel="icon" href={url('images/sdi-logo.png')}/>{!is404 && <link rel="canonical" href={canonical}/>}
+<meta property="og:type" content="website"/><meta property="og:locale" content="de_DE"/><meta property="og:site_name" content={site.name}/><meta property="og:title" content={title+' · '+site.name}/><meta property="og:description" content={description}/><meta property="og:url" content={canonical}/><meta property="og:image" content={socialImage}/><meta property="og:image:alt" content="Gemeinsame Begegnung im Umfeld des Uganda-Projekts"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content={title+' · '+site.name}/><meta name="twitter:description" content={description}/><meta name="twitter:image" content={socialImage}/>
+</head>
 <body>
 <a class="skip-link" href="#inhalt">Zum Inhalt</a>
-<div class="draft-bar"><div class="container">Lokaler Entwurf <span>Gemeinsam prüfen. Noch nicht veröffentlicht.</span></div></div>
+{site.draft && <div class="draft-bar"><div class="container">Lokaler Entwurf <span>Gemeinsam prüfen. Noch nicht veröffentlicht.</span></div></div>}
 <header class="site-header">
 <div class="container header-inner">
-<a class="brand" href={url()} aria-label="SDI Deutschland – Startseite"><img src={url('images/sdi-logo.png')} alt="" width="64" height="64"/><span><strong>SDI<span class="brand-country"> Deutschland</span></strong><small>Secours Dentaire International</small></span></a>
+<a class="brand" href={url()} aria-label="SDI Deutschland – Startseite"><img src={url('images/sdi-logo.png')} alt="" {...imageSize('images/sdi-logo.png')}/><span><strong>SDI<span class="brand-country"> Deutschland</span></strong><small>Secours Dentaire International</small></span></a>
 <button class="menu-toggle" aria-expanded="false" aria-controls="navigation"><span class="menu-icon" aria-hidden="true"></span>Menü</button>
 <nav id="navigation" aria-label="Hauptnavigation">{navigation.map(([label,path])=><a href={url(path)} aria-current={current.startsWith(url(path))?'page':undefined}>{label}</a>)}<a class="button button-small" href={url('spenden/')}>Spenden</a></nav>
 </div>
