@@ -11,6 +11,8 @@ const context=await browser.newContext({viewport:{width:1440,height:1000},permis
 const page=await context.newPage();
 const errors=[];
 page.on('pageerror',error=>errors.push(error.message));
+const galleryData=JSON.parse(await fs.readFile(new URL('../src/data/galleries.json',import.meta.url),'utf8'));
+const ugandaPhotoCount=galleryData.find(g=>g.slug==='uganda').photos.length;
 const routes=['','wir-ueber-uns/','projekte/','projekte/uganda/','projekte/kamerun/','projekte/suedsudan/','downloads/','galerie/','galerie/kamerun/','galerie/uganda/','galerie/suedsudan/','spenden/','kontakt/','impressum/','datenschutz/'];
 const results=[];
 for(const route of routes){
@@ -51,12 +53,12 @@ await page.goto(new URL('spenden/',base).href);
 await page.locator('[data-copy]').click();
 assert.equal(await page.evaluate(()=>navigator.clipboard.readText()),'DE20545700240086320900');
 await page.goto(new URL('galerie/uganda/',base).href);
-assert.equal(await page.locator('[data-lightbox]').count(),22);
+assert.equal(await page.locator('[data-lightbox]').count(),ugandaPhotoCount);
 await page.locator('[data-lightbox]').first().click();
 await page.locator('.lightbox-next').click();
-assert.equal(await page.locator('#lightbox-count').textContent(),'2 / 22');
+assert.equal(await page.locator('#lightbox-count').textContent(),'2 / '+ugandaPhotoCount);
 await page.keyboard.press('ArrowLeft');
-assert.equal(await page.locator('#lightbox-count').textContent(),'1 / 22');
+assert.equal(await page.locator('#lightbox-count').textContent(),'1 / '+ugandaPhotoCount);
 await page.keyboard.press('Escape');
 assert.equal(await page.locator('a[href^="mailto:"],a[href*="mitmachen"]').count(),0);
 await page.goto(base);await page.keyboard.press('Tab');
