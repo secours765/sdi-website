@@ -2,17 +2,17 @@
 
 ## Aktueller Erststart
 
-**Status: GitHub-Pages-Erststart in Vorbereitung.** Die erste öffentliche Websiteveröffentlichung wurde ausdrücklich autorisiert. Ziel ist [https://secours765.github.io/sdi-website/](https://secours765.github.io/sdi-website/). Ein erfolgreicher Live-Start wird erst nach dem tatsächlichen Deployment und der Kontrolle der Website bestätigt.
+**Status: veröffentlicht und live geprüft am 27.11.2026.** Website: [secours765.github.io/sdi-website/](https://secours765.github.io/sdi-website/). Erststart-Commit: 45d3d88dd983ce5fe3f1d1dc33ebab3ef3fc4f92. [Pages-Workflow erfolgreich](https://github.com/secours765/sdi-website/actions/runs/46000897984). Navigation, Galerie, Spendenfunktionen, 404, Metadaten und alle 102 Website-Downloads wurden auf der tatsächlichen öffentlichen Adresse geprüft.
 
 Die Umsetzung erfolgt auf `work/pages-erststart-2026-11-27`. Der vorherige lokale Stand `4c78cd8` wurde unter `sicherung/vor-pages-2026-11-27` gesichert. Die neue Freigabe erlaubt die Veröffentlichung des geprüften Erststarts einschließlich der Galerie-Überarbeitung; sie ersetzt für diesen konkreten Auftrag die frühere Beschränkung auf lokale Arbeit. Sie ist keine dauerhafte Freigabe für spätere Änderungen.
 
-Das Impressum basiert auf ausdrücklichen Wunsch auf der alten deutschen Website, mit der bestätigten aktuellen Anschrift **Donnersbergstraße 6, 67117 Limburgerhof**. Die vorhandenen Telefon- und Identifikationsangaben der Altquelle werden übernommen. Die Altquelle enthält keine Vertretungs- oder Registerangaben; fehlende Angaben werden nicht erfunden. Der Entwurf behauptet keine juristische Vollständigkeit.
+Das Impressum basiert auf ausdrücklichen Wunsch auf der alten deutschen Website, mit der bestätigten aktuellen Anschrift **Donnersbergstraße 6, 67117 Limburgerhof**. Die vorhandenen Telefon- und Identifikationsangaben der Altquelle werden übernommen. Die Altquelle enthält keine Vertretungs- oder Registerangaben; fehlende Angaben werden nicht erfunden. Es wird keine juristische Vollständigkeit behauptet.
 
 **STRATO, DNS und die eigene Domain werden nicht geändert.** Für den Actions-basierten Pages-Erststart wird keine `CNAME`-Datei angelegt.
 
 ## Repository und Schutz
 
-Das öffentliche Repository [secours765/sdi-website](https://github.com/secours765/sdi-website) gehört **secours765**. Der frühere geprüfte Erststand `b9056173179bdf96ea2a64cac6f0575a33ebe573` wurde bereits erfolgreich auf `main` gesichert; der neue Produktionsstand wird nach erfolgreichem Erststart im Abnahmeprotokoll eingetragen.
+Das öffentliche Repository [secours765/sdi-website](https://github.com/secours765/sdi-website) gehört **secours765**. Der frühere geprüfte Erststand `b9056173179bdf96ea2a64cac6f0575a33ebe573` wurde bereits erfolgreich auf `main` gesichert; der geprüfte Erststart und die Nachkontrollen sind im Abnahmeprotokoll eingetragen.
 
 Öffentliche Lesbarkeit von Quellcode und Dateien erteilt anderen Personen keine Schreibrechte. Weitere Mitbearbeiter werden nur nach ausdrücklicher Benennung hinzugefügt. Nur secours765 wurde als Mitbearbeiter festgestellt. Secret Scanning und Push Protection sind aktiviert. `main` ist vor Force-Push und Löschen geschützt; die Regeln gelten auch für Administratoren. Es gibt keine Pflicht zur Freigabe durch eine zweite Person. Diese Schutzregeln bleiben bestehen.
 

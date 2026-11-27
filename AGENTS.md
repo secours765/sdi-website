@@ -4,7 +4,7 @@ Diese Regeln gelten für das gesamte Repository. Ausdrückliche aktuelle Nutzera
 
 ## Aktueller Auftrag: autorisierter GitHub-Pages-Erststart
 
-- Die erste Websiteveröffentlichung über GitHub Pages wurde ausdrücklich autorisiert. Ziel: `https://secours765.github.io/sdi-website/`. Status bis zum nachgewiesenen erfolgreichen Deployment: Erststart in Vorbereitung.
+- Der ausdrücklich autorisierte Erststart ist am 27.11.2026 erfolgreich veröffentlicht und live geprüft: https://secours765.github.io/sdi-website/. main ist Produktion. Spätere Änderungen sind ohne neuen ausdrücklichen Veröffentlichungsauftrag nur lokal beziehungsweise auf Arbeitszweigen erlaubt.
 - Umsetzung auf `work/pages-erststart-2026-11-27`; der vorherige lokale Stand `4c78cd8` ist auf `sicherung/vor-pages-2026-11-27` gesichert. Die frühere Beschränkung der Galerie-Revision auf ausschließlich lokale Arbeit wird für diesen konkreten Erststart durch die neue Freigabe ersetzt.
 - Der Informations- und Spendenauftritt bleibt ohne Mitarbeitangebote, Bewerbungsseiten, Einsatzwerbung oder dafür bestimmte Links, Schaltflächen und E-Mail-Aufrufe. Allgemeine Kontaktangaben können bestehen bleiben.
 - `/galerie/` führt zu `/galerie/kamerun/`, `/galerie/uganda/` und `/galerie/suedsudan/`. Bilddaten in `src/data/galleries.json` pflegen; Länderzuordnung und Herkunft belegen.

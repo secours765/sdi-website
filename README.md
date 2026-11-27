@@ -1,6 +1,6 @@
 # SDI Deutschland – Website
 
-**Status: GitHub-Pages-Erststart in Vorbereitung.** Die erste öffentliche Websiteveröffentlichung wurde jetzt ausdrücklich autorisiert. Ziel ist [secours765.github.io/sdi-website/](https://secours765.github.io/sdi-website/); ein erfolgreicher Live-Start wird erst nach Deployment und Kontrolle bestätigt. Die Arbeit erfolgt auf `work/pages-erststart-2026-11-27`. Der vorherige lokale Stand `4c78cd8` ist auf `sicherung/vor-pages-2026-11-27` gesichert. Das Repository [secours765/sdi-website](https://github.com/secours765/sdi-website) gehört secours765. STRATO, DNS und eigene Domain bleiben unverändert. Details und tatsächliche Testergebnisse stehen im [Abnahmeprotokoll](docs/ABNAHME.md).
+**Status: veröffentlicht und live geprüft am 27.11.2026.** [Website öffnen](https://secours765.github.io/sdi-website/). Der Erststart erfolgte mit Commit 45d3d88dd983ce5fe3f1d1dc33ebab3ef3fc4f92 über den [erfolgreichen Pages-Lauf](https://github.com/secours765/sdi-website/actions/runs/46000897984). main ist der Produktionszweig; spätere Änderungen benötigen einen eigenen ausdrücklichen Veröffentlichungsauftrag. Der vorherige lokale Stand 4c78cd8 bleibt auf sicherung/vor-pages-2026-11-27 gesichert. Das Repository gehört secours765. STRATO, DNS und eigene Domain wurden nicht verändert. Tatsächliche Testergebnisse stehen im [Abnahmeprotokoll](docs/ABNAHME.md).
 
 Dieses eigenständige Projekt gehört zu SDI Deutschland und ist von JM APPS und anderen Projekten getrennt. Die Website stellt die Arbeit von Secours Dentaire International in Kamerun und Uganda sowie das **Vorhaben im Südsudan in Vorbereitung** vor. Sie bietet Projektinformationen, Länder-Galerien, Dokumentdownloads, allgemeine Kontaktinformationen und deutsche Überweisungsdaten. Mitarbeit, Bewerbungen und Einsatzangebote werden auf ausdrücklichen Nutzerwunsch nicht angeboten; zugehörige Links und E-Mail-Aufrufe gehören nicht zum aktuellen Entwurf. Es gibt keinen Zahlungsdienst, kein Versandformular, kein Benutzerkonto und kein Tracking.
 
@@ -62,7 +62,7 @@ Astro erzeugt statische HTML-Dateien. CSS und wenig JavaScript übernehmen Navig
 | Galerie `/galerie/` | Fotoübersicht mit Einstieg in die drei Länder-Galerien |
 | Länder-Galerien | `/galerie/kamerun/`, `/galerie/uganda/`, `/galerie/suedsudan/` mit weiteren Projektfotos und Vergrößerung |
 | Spenden | Deutsche Bankverbindung, Kopieren und EPC-QR-Code |
-| Kontakt | Sichtbare E-Mail-Adressen und direkte Kontaktwege |
+| Kontakt | Sichtbare E-Mail-Adressen und Postanschrift |
 | Impressum und Datenschutz | Deutsches Quellenmaterial; Impressum nach alter Website mit bestätigter Donnersbergstraße 6, keine erfundenen Vertretungs- oder Registerangaben |
 
 ## Wo Inhalte gepflegt werden
@@ -72,12 +72,14 @@ Astro erzeugt statische HTML-Dateien. CSS und wenig JavaScript übernehmen Navig
 | `src/data/site.json` | Organisationsangaben, Kontakte, Spendenangaben und Entwurfsstatus |
 | `src/data/team.json` | Namen, belegte Beschreibungen, Kontakte und zugeordnete Portraits |
 | `src/data/projects.json` | Projekttexte, Status, Chronologie und Bildzuordnung |
+| `src/data/pages.json` | Seitenpfade, eindeutige Beschreibungen und Sitemap-Einträge |
+| `src/data/image-dimensions.json` | Tatsächliche Breite und Höhe der Webbilder; bei neuen Bildern ergänzen |
 | `src/data/galleries.json` | Länder-Galerien, Fotoauswahl, Bildunterschriften und Alternativtexte |
 | `src/data/downloads.json` | Titel, Kategorien, Sprachen, Originalquellen, Größen und Prüfsummen |
 | `src/pages/` | Seitenaufbau und gegebenenfalls ergänzende Seitentexte |
 | `src/components/` | Wiederverwendbare Gestaltung und Interaktion |
 | `src/styles/global.css` | Farben, Abstände, Schriftgrößen und mobile Darstellung |
-| `src/lib/paths.js` | Pfade für Domain/Unterverzeichnis sowie E-Mail-Links |
+| `src/lib/paths.js` | Pfade für Domainwurzel und Unterverzeichnis |
 | `public/` | Bewusst ausgewählte, veröffentlichungsgeeignete statische Dateien |
 | `scripts/` | Inhalts-, Link- und Browserprüfungen |
 | `docs/` | Pflege, Quellen, Abnahme und spätere Veröffentlichung |
@@ -95,7 +97,7 @@ npm.cmd run preview
 
 `preview` zeigt den gebauten Ausgabeordner `dist/`, üblicherweise unter `http://127.0.0.1:4321/`. Maßgeblich ist die Terminalausgabe. Die Browserprüfung wird mit `npm.cmd run check:browser` gestartet; Voraussetzungen und tatsächlich getestete Ergebnisse sind im Abnahmeprotokoll festzuhalten.
 
-Bei Änderungen zusätzlich die betroffene Seite auf Desktop und Smartphonebreite ansehen. Navigation, Downloadsuche, Filter, Galerie, Tastaturfokus, E-Mail-Betreff und Kopierfunktionen gezielt prüfen. IBAN-Prüfziffer und QR-Decodierung prüfen das technische Format, nicht den Kontoinhaber. Ein Banking-App-Test ohne Zahlung gehört zur Abnahme.
+Bei Änderungen zusätzlich die betroffene Seite auf Desktop und Smartphonebreite ansehen. Navigation, Downloadsuche, Filter, Galerie, Tastaturfokus, sichtbare Kontaktangaben und Kopierfunktion gezielt prüfen. IBAN-Prüfziffer und QR-Decodierung prüfen das technische Format, nicht den Kontoinhaber. Ein Banking-App-Test ohne Zahlung gehört zur Abnahme.
 
 Den autorisierten GitHub-Pages-Zielpfad mit denselben Umgebungswerten für Build und Linkprüfung lokal prüfen:
 
