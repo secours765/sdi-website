@@ -8,7 +8,8 @@ Stand: **27.11.2026**. Der Erststart über GitHub Pages ist ausdrücklich autori
 - Akzeptierte lokale Galerie-Revision: `4c78cd8`, gesichert auf `sicherung/vor-pages-2026-11-27`.
 - Produktionsvorbereitung: `work/pages-erststart-2026-11-27`; keine neueren Remote-Änderungen an main beim Start. Der saubere lokale Ausgangsstand wurde erhalten.
 - Ziel: https://secours765.github.io/sdi-website/
-- Website-Deployment und Live-Kontrolle: noch auszuführen; endgültigen Commit und Workflow nach Erfolg ergänzen.
+- Erstveröffentlichung: Commit 45d3d88dd983ce5fe3f1d1dc33ebab3ef3fc4f92, PR #2 regulär per Squash zusammengeführt. [Pages-Lauf 46000897984](https://github.com/secours765/sdi-website/actions/runs/46000897984) erfolgreich am 27.11.2026, 12:43 UTC. Website per HTTPS öffentlich erreichbar.
+- Die anschließende Abnahmedokumentation ändert ausschließlich Dokumentation; Websitecode und Medien bleiben auf dem live geprüften Stand.
 
 ## Produktionsvorbereitung
 
@@ -32,10 +33,13 @@ Stand: **27.11.2026**. Der Erststart über GitHub Pages ist ausdrücklich autori
 - [x] Downloadsuche, Kategorie/Sprache, Leerzustand, Reset, lokaler Download, Galerie Vor/Zurück/Pfeiltasten/Escape/Fokusrückkehr, mobile Navigation, Skip-Link und IBAN-Kopieren bestanden. Keine E-Mail-Aktionslinks wiederhergestellt.
 - [x] Direkte 404-Seite mit HTTP 404 und funktionierendem Rückweg; Timeline-Abstände bei 390, 768, 1024 und 1440px geometrisch geprüft, ohne Überschneidung.
 - [x] Isolierte Revert-Probe auf 3907b2f: temporäre README-Änderung 92e543d mit git revert als 99aa77d zurückgenommen. Git-Baum danach exakt identisch mit dem zuvor geprüften Ausgangsstand, Arbeitsbaum sauber. Keine Probecommits nach main übernommen oder veröffentlicht.
-- [ ] Linux-CI und Deployment für konkreten Produktionscommit abschließend protokollieren.
-- [ ] Live-Website und 102 lokale Website-Downloads anonym abschließend prüfen.
+- [x] Linux-CI für Arbeitszweig und Pull Request erfolgreich (46000596015 / 46000721813), einschließlich npm ci, Inhaltsprüfung und beiden Adressvarianten. Main-CI 46000897894 und Pages-Build/Deployment 46000897984 erfolgreich für 45d3d88dd983ce5fe3f1d1dc33ebab3ef3fc4f92.
+- [x] Live-Browserprüfung aller 15 Inhaltsseiten auf Desktop/Mobil erfolgreich: Bilder, axe, Navigation, Suche/Filter, Downloads, Galerie, Kopieren, Tastatur, 404 und Timeline. Keine Browserfehler festgestellt. Prüfbericht intern unter qa-pages-live.
+- [x] Live-Metadaten auf allen 15 Inhaltsseiten: eindeutige Titel/Beschreibungen, korrekte Canonicals/Open Graph, keine lokalen oder Testadressen. robots erlaubt Indexierung, Sitemap enthält genau 15 Inhaltsseiten; unbekannte Route liefert die eigene 404-Seite mit HTTP 404.
+- [x] 102/102 lokale Website-Dateien ohne Anmeldung per HTTP 200/206, Dateisignatur und exakter Gesamtgröße geprüft. Die 13 Release-Hauptlinks stimmen mit der öffentlichen API überein, 63 Original-Hauptlinks mit den geprüften Quellen. Zusammen mit den externen Abrufen wurden 293 Dokumentziele geprüft.
+- [x] Live-Downloadseite: 180 Einträge, 178 Downloadaktionen. Geschützte und nicht erreichbare Datei ohne Downloadschaltfläche; vier zurückgezogene Dokumente weder als Zeile noch als Quellenlink vorhanden.
 
-Die vorherige lokale Revision wurde bereits auf 15 Inhaltsseiten mit 1440px/390px, Galeriebedienung, Downloadfiltern, Kopieren, Tastatur und Timeline bei 390/768/1024/1440px geprüft. Das ist historische Evidenz; die erneute Produktionsprüfung wird separat ergänzt.
+Die vorherige lokale Revision wurde bereits auf 15 Inhaltsseiten mit 1440px/390px, Galeriebedienung, Downloadfiltern, Kopieren, Tastatur und Timeline bei 390/768/1024/1440px geprüft. Das ist historische Evidenz; die erneute Produktionsprüfung ist oben dokumentiert.
 
 ## Dokumente: öffentliche externe Abrufe
 
