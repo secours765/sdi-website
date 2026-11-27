@@ -11,7 +11,8 @@
       ],
       "imageContext": "Klinikaußenbereich; auf der datierten Folie 2013 zugeordnet.",
       "presentationYear": 2015,
-      "webImage": "images/uganda-2013.webp"
+      "webImage": "images/uganda-2013.webp",
+      "imageCaption": "Klinikaußenbereich in Mukono"
     },
     {
       "period": "2014–2015",
@@ -24,7 +25,8 @@
       ],
       "imageContext": "Klinikhof, Folie 23 ausdrücklich Oktober 2014; kein bestätigtes Vorher-nachher-Paar.",
       "presentationYear": 2015,
-      "webImage": "images/uganda-2014.webp"
+      "webImage": "images/uganda-2014.webp",
+      "imageCaption": "Klinikhof in Mukono im Oktober 2014"
     },
     {
       "period": "2017–2018",
@@ -63,7 +65,8 @@
       ],
       "imageContext": "Klinikdach mit PV-Anlage; Dateiname verweist auf 2023, kein exaktes Aufnahmedatum bestätigt.",
       "presentationYear": 2024,
-      "webImage": "images/uganda-solar.webp"
+      "webImage": "images/uganda-solar.webp",
+      "imageCaption": "Photovoltaikanlage auf dem Klinikdach"
     },
     {
       "period": "2024",
@@ -74,7 +77,8 @@
       ],
       "imageContext": "Teamfoto auf Folie 3 der Präsentation 2024; Aufnahmejahr unbekannt.",
       "presentationYear": 2024,
-      "webImage": "images/uganda-team.webp"
+      "webImage": "images/uganda-team.webp",
+      "imageCaption": "Das Behandlungsteam 2024"
     },
     {
       "period": "Berichtsstand 2026",
@@ -83,10 +87,11 @@
       "sources": [
         "Projekte/Uganda/Uganda 2026.docx"
       ],
-      "imageContext": "Solarmodule auf dem Dach; Aufnahmejahr nicht belegt.",
+      "imageContext": "Kinder beim Schulunterricht",
       "presentationYear": null,
       "eventYear": null,
-      "webImage": "images/uganda-solar-neu.webp"
+      "webImage": "images/galerie-uganda-03.webp",
+      "imageCaption": "Ausbau des Prophylaxeprogramms"
     }
   ],
   "cameroon": [
@@ -134,12 +139,11 @@
       ]
     },
     {
-      "period": "Nächste Schritte",
-      "title": "Zusammenarbeit vorbereiten",
-      "text": "Mögliche Erweiterungen, zusätzliche Geräte und Schulungen werden geprüft. Ein aufgebautes laufendes SDI-Projekt und feste Einsatzplätze sind damit noch nicht belegt.",
+      "period": "November 2026",
+      "title": "Beginn der Zusammenarbeit",
+      "text": "Im November 2026 wurde beschlossen, die Klinik in das bestehende Projektprogramm aufzunehmen und eine Zusammenarbeit zu beginnen.",
       "sources": [
-        "Projekte/Südsudan/Südsudan.docx",
-        "Aktuelle Projektstatusvorgabe des Auftraggebers"
+        "Aktuelle Bestätigung des Auftraggebers vom 27.11.2026"
       ]
     }
   ]

@@ -442,5 +442,13 @@
     "processing": "WebP, no cropping, metadata removed",
     "width": 1600,
     "height": 1066
+  },
+  {
+    "file": "images/uganda-statistik-2023.png",
+    "source": "Statistik 2023.png",
+    "sourceSha256": "6315faf799f09357676db30b5e086082d0b20d87b38fc2eb4205fdbda863ec7c",
+    "processing": "Lossless PNG optimization, metadata removed, original dimensions retained",
+    "width": 517,
+    "height": 250
   }
 ]
