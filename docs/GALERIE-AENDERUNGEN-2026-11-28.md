@@ -46,3 +46,15 @@ Ergebnis: 7 Kamerun-, 19 Uganda- und 16 Südsudan-Bilder (42 insgesamt). Keine B
 ## Prüfung des lokalen Entwurfs
 
 Inhaltsprüfung, Produktionsbuild und 646 interne Ziele erfolgreich. Sämtliche Zuordnungen gegen die vorab gesicherte Reihenfolge geprüft; alle Bilddateien erhalten. Alle drei Galerien bei 1440/768/390 Pixeln geprüft: korrekte Reihenfolge, Beschriftungen und Alternativtexte, keine leeren Bildunterschriften, kein Überlauf, axe ohne Verstöße. In der Desktop-Vergrößerung jedes Bild geprüft; Vor-/Zurücknavigation, Escape und Fokusrückkehr erfolgreich. Keine JavaScript-Seitenfehler. Hauptinhalte aller Nicht-Galerieseiten gegen Live identisch. Der Nutzer hat den Prüfabschnitt vervollständigt und die Veröffentlichung ausdrücklich freigegeben. Veröffentlichung und anschließende Live-Kontrolle erfolgen für diesen geprüften Stand.
+
+## Zweite Galerie-Korrektur
+
+Ausgangspunkt ist der veröffentlichte Stand 7eef8cf mit 7 Kamerun-, 19 Uganda- und 16 Südsudan-Bildern. Die Reihenfolge und drei Desktop-Spalten wurden vor Änderungen direkt auf der Live-Website abgeglichen.
+
+- Kamerun: Bilder 01–03 „Zahnklinik vor der Erneuerung“, 04–06 „Zahnklinik nach der Erneuerung“, 07 „Team vor dem Eingang“. Bilddateien und Reihenfolge unverändert.
+- Uganda, ursprüngliche Reihe 3 rechts: galerie-uganda-10.webp erhält „Aufbau des digitalen Röntgengerätes“.
+- Uganda, ursprüngliche Reihe 4 Mitte: galerie-uganda-12.webp ausschließlich aus der Galerie entfernt. Dateien erhalten.
+- Uganda, ursprüngliche Reihe 5 Mitte: galerie-uganda-17.webp durch die frühere Website-Datei uganda-labor.webp ersetzt, Beschriftung „Arbeitsplatz im Dentallabor“ erhalten. Beide Varianten stammen laut Bildquellennachweis von IMG-20230221-WA0024.jpg und zeigen dasselbe Zahnlabor-Motiv mit Mitarbeiter. Die frühere Datei wurde bereits im ursprünglichen Websiteentwurf b905617 verwendet. Sie ist mit 504 × 283 Pixeln als Vorschau geeignet.
+- Nach dem Nachrücken: Uganda 18 Bilder, insgesamt 41. Südsudan und übrige Seiteninhalte unverändert; keine Bilddatei gelöscht.
+
+Prüfung: Inhaltsprüfung, Produktionsbuild und Linkprüfung erfolgreich (16 HTML-Seiten, 644 interne Ziele). Browserprüfung aller drei Galerien bei 1440, 768 und 390 Pixeln: Bildzuordnung, Bildladen, Beschriftungen, Vergrößerung, Tastatursteuerung, Fokusrückgabe und Überlauf geprüft; keine axe-WCAG-A/AA-Verstöße. Desktop-, Tablet- und Smartphone-Aufnahmen visuell kontrolliert. Die übrigen Seiteninhalte wurden mit der Live-Website verglichen und sind unverändert.
