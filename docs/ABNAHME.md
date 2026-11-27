@@ -31,7 +31,7 @@ Stand: **27.11.2026**. Der Erststart über GitHub Pages ist ausdrücklich autori
 - [x] Alle 15 Inhaltsseiten auf Desktop 1440px und Smartphone 390px: Bilder vollständig, keine horizontalen Überläufe. axe: 0 Verstöße auf allen Desktopseiten und den zusätzlich geprüften zentralen Mobilseiten. Startseite und Uganda-Timeline zusätzlich visuell geprüft.
 - [x] Downloadsuche, Kategorie/Sprache, Leerzustand, Reset, lokaler Download, Galerie Vor/Zurück/Pfeiltasten/Escape/Fokusrückkehr, mobile Navigation, Skip-Link und IBAN-Kopieren bestanden. Keine E-Mail-Aktionslinks wiederhergestellt.
 - [x] Direkte 404-Seite mit HTTP 404 und funktionierendem Rückweg; Timeline-Abstände bei 390, 768, 1024 und 1440px geometrisch geprüft, ohne Überschneidung.
-- [ ] Isolierte Revert-Probe abschließend protokollieren.
+- [x] Isolierte Revert-Probe auf 3907b2f: temporäre README-Änderung 92e543d mit git revert als 99aa77d zurückgenommen. Git-Baum danach exakt identisch mit dem zuvor geprüften Ausgangsstand, Arbeitsbaum sauber. Keine Probecommits nach main übernommen oder veröffentlicht.
 - [ ] Linux-CI und Deployment für konkreten Produktionscommit abschließend protokollieren.
 - [ ] Live-Website und 102 lokale Website-Downloads anonym abschließend prüfen.
 
