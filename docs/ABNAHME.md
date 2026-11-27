@@ -85,3 +85,16 @@ Künftige Änderungen bleiben auf Arbeitszweigen und in der Vorschau, bis ein au
 - Pflegeort: `responsibility` in `src/data/team.json`; Darstellung ausschließlich in `src/pages/index.astro`.
 - Lokale Prüfung erfolgreich: Inhaltsprüfung einschließlich QR-Decodierung, Produktionsbuild für `https://www.secoursdentaire.de/`, Linkprüfung (16 HTML-Seiten, 656 interne Ziele), Browserprüfung und visuelle Kontrolle bei 1440 und 390 Pixeln. Beide Zuständigkeiten korrekt, kein horizontaler Seitenüberlauf und keine JavaScript-Seitenfehler.
 - GitHub-Veröffentlichung und anschließende Live-Kontrolle erfolgen für genau diesen Änderungsstand; diese lokalen Ergebnisse sind noch kein Nachweis einer Veröffentlichung.
+
+## Freigegebener Stand: Startseitenfotos und Pressebereich, 27.11.2026
+
+Die Veröffentlichung dieses konkreten Stands wurde ausdrücklich beauftragt. Die folgende Prüfung betrifft den finalen Stand mit anklickbarem Feld und separatem PDF-Download.
+
+- Fotos aus Peter.JPG und Armin.jpg über den zugeordneten Namen, gleiche 4:3-Bildrahmen und Ausrichtung, vollständige Motive ohne Beschnitt. Originaldateien anhand der SHA-256-Werte unverändert bestätigt.
+- „Unterstützung transparent machen“ liegt zwischen Vereinsvorstellung und Dokumentationsbereich. „Berichte und Presse“ klappt per Klick oder Tastatur auf; die PDF hat getrennte Links zum Öffnen im neuen Tab und Herunterladen.
+- Inhaltsprüfung einschließlich bereinigter Bildmetadaten und QR erfolgreich.
+- Produktionsbuild für die HTTPS-Domain erfolgreich: 16 HTML-Seiten, 660 interne Ziele, Bildmaße und Metadaten geprüft.
+- Browser- und Sichtprüfung bei 1440, 768 und 390 Pixeln erfolgreich: Bilder korrekt zugeordnet, gleiche Bildrahmen, Tastaturbedienung, keine horizontalen Seitenüberläufe und keine JavaScript-Seitenfehler. axe meldet jeweils 0 Verstöße.
+- PDF-Abruf und tatsächlicher Browserdownload erfolgreich: HTTP 200, application/pdf, 531.876 Byte, SHA-256 identisch mit dem Katalogeintrag; heruntergeladene Datei bytegleich mit dem bereitgestellten Original.
+- Andere Seiten, Originalmaterialien, Domain- und Hostingkonfiguration unverändert. Der zuvor bei 320 Pixeln festgestellte Überlauf im bestehenden oberen Hero-Bereich gehört nicht zu diesem Umbau.
+- Die anschließende Veröffentlichung und Live-Kontrolle sind gesondert am Produktionscommit zu prüfen; die hier dokumentierten lokalen Prüfungen ersetzen diesen Schritt nicht.

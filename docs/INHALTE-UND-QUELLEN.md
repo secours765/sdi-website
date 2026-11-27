@@ -33,7 +33,7 @@ Diese Änderungen liegen nur lokal auf `work/lokaler-entwurf-galerien` und sind 
 6. Alternativtext nach dem sichtbaren Motiv schreiben; eine Bildunterschrift kann Ort, gesichertes Jahr und Quelle ergänzen. Unbekannte Personen nicht benennen.
 7. Zuschnitt auf Desktop und Smartphone prüfen, Galerie per Tastatur öffnen und schließen.
 
-Die bereitgestellten Fotos enthalten kein eindeutig beschriftetes Einzelportrait von Peter Mentges oder Armin Reinartz. Fehlende Portraits bleiben als Abnahmepunkt offen. Eine Bilddatei erscheint sowohl im Uganda- als auch im Südsudan-Ordner; eine solche widersprüchliche Ablage ist allein keine belastbare Länderzuordnung.
+Für die Startseite wurden inzwischen die vom Nutzer zugeordneten Dateien Peter.JPG und Armin.jpg bereitgestellt. Sie zeigen Projektaufnahmen mit weiteren Personen und werden als vollständige Motive verwendet; siehe den Pflegeabschnitt am Ende dieser Anleitung. Eine Bilddatei erscheint sowohl im Uganda- als auch im Südsudan-Ordner; eine solche widersprüchliche Ablage ist allein keine belastbare Länderzuordnung.
 
 ## Downloadkatalog pflegen
 
@@ -83,3 +83,12 @@ Der private Sicherungsbericht enthält Zeitpunkt, Ablageort, Dateianzahl und Has
 Vier Schweizer Freiwilligen-Informationsblätter (doc-133 bis doc-136) werden mit visible: false und availability: withdrawn aus dem Websiteangebot ausgeschlossen. Die vollständige Inventur und internen Originale bleiben erhalten. Keine Mitarbeitangebote oder Links zu diesen Dateien erneut anzeigen. Der sichtbare Katalog enthält 180 Einträge; 102 Dokumente liegen lokal in public/downloads/.
 
 Die 13 großen Originale sind im öffentlichen Release dokumentation-2026-11 bereitgestellt. GitHub-Größen und SHA-256 stimmen mit den Originalen überein; die finalen Downloadziele wurden anonym auf Status, Dateisignatur und Größe geprüft. Der Katalog verwendet ausschließlich diese bestätigten Release-URLs.
+
+## Startseite: Fotos und Pressebereich (27.11.2026)
+
+- Auf Nutzerauftrag ersetzen die Dateien `Peter.JPG` und `Armin.jpg` den Textblock über den Ansprechpartnern. Die Zuordnung zu den Namen folgt dem Nutzerauftrag und den Dateinamen. Die vollständigen Motive bleiben erhalten; die Originaldateien werden nicht verändert.
+- Webfassungen: `public/images/peter-mentges.webp` und `public/images/armin-reinartz.webp`, maximal 960 Pixel breit, ohne EXIF-/XMP-/IPTC-Metadaten. `homeImage` in `src/data/team.json` steuert ausschließlich die Startseite. Bildgrößen und Originalprüfsummen stehen in den vorhandenen Bildkatalogen.
+- Zwischen „Wir über uns“ und „Wissen zugänglich machen“ liegt „Unterstützung transparent machen“ mit dem Bereich „Berichte und Presse“.
+- `src/data/press.json` enthält Titel, Herausgeber, Format, Dateigröße, SHA-256, Quelldateiname, Bereitstellungsdatum und lokalen PDF-Pfad. Weitere Presseberichte hier ergänzen. Der Schweizer Downloadkatalog bleibt separat.
+- Die bereitgestellte PDF „Einsatz mit Secours Dentaire International im Südsudan - zm-online.PDF“ wird unverändert einschließlich Quellen- und Urheberhinweisen eingebunden. Sie hat sechs Seiten und 531.876 Byte. Keine pauschale Lizenz wird daraus abgeleitet.
+- Die Veröffentlichung dieses konkreten Stands wurde ausdrücklich beauftragt. „Berichte und Presse“ ist ein per Klick und Tastatur bedienbares Aufklappfeld; die PDF lässt sich in einem neuen Tab öffnen oder direkt herunterladen. Künftige Änderungen benötigen weiterhin eine eigene Veröffentlichungsfreigabe.
