@@ -1,10 +1,13 @@
 # SDI Deutschland – Website
 
-**Status: Website noch nicht veröffentlicht.** Der Entwurf wird lokal entwickelt. GitHub Pages, andere Website-Deployments, STRATO und DNS bleiben bis zur ausdrücklichen Abnahme unverändert. Das öffentliche Repository [secours765/sdi-website](https://github.com/secours765/sdi-website) ist angelegt; der geprüfte Erstpush und die weiteren Testergebnisse werden im [Abnahmeprotokoll](docs/ABNAHME.md) festgehalten.
+**Status: GitHub-Pages-Erststart in Vorbereitung.** Die erste öffentliche Websiteveröffentlichung wurde jetzt ausdrücklich autorisiert. Ziel ist [secours765.github.io/sdi-website/](https://secours765.github.io/sdi-website/); ein erfolgreicher Live-Start wird erst nach Deployment und Kontrolle bestätigt. Die Arbeit erfolgt auf `work/pages-erststart-2026-11-27`. Der vorherige lokale Stand `4c78cd8` ist auf `sicherung/vor-pages-2026-11-27` gesichert. Das Repository [secours765/sdi-website](https://github.com/secours765/sdi-website) gehört secours765. STRATO, DNS und eigene Domain bleiben unverändert. Details und tatsächliche Testergebnisse stehen im [Abnahmeprotokoll](docs/ABNAHME.md).
 
-Dieses eigenständige Projekt gehört zu SDI Deutschland und ist von JM APPS und anderen Projekten getrennt. Die Website stellt die Arbeit von Secours Dentaire International in Kamerun und Uganda sowie das **Vorhaben im Südsudan in Vorbereitung** vor. Sie bietet Dokumentdownloads, direkte E-Mail-Anfragen und deutsche Überweisungsdaten. Es gibt keinen Zahlungsdienst, kein Versandformular, kein Benutzerkonto und kein Tracking.
+Dieses eigenständige Projekt gehört zu SDI Deutschland und ist von JM APPS und anderen Projekten getrennt. Die Website stellt die Arbeit von Secours Dentaire International in Kamerun und Uganda sowie das **Vorhaben im Südsudan in Vorbereitung** vor. Sie bietet Projektinformationen, Länder-Galerien, Dokumentdownloads, allgemeine Kontaktinformationen und deutsche Überweisungsdaten. Mitarbeit, Bewerbungen und Einsatzangebote werden auf ausdrücklichen Nutzerwunsch nicht angeboten; zugehörige Links und E-Mail-Aufrufe gehören nicht zum aktuellen Entwurf. Es gibt keinen Zahlungsdienst, kein Versandformular, kein Benutzerkonto und kein Tracking.
 
 ## Lokal starten
+
+Am einfachsten im Websiteordner **Start-Vorschau.cmd** doppelt anklicken. Das Fenster lässt den lokalen Server laufen. Aktuelle Adresse: **http://127.0.0.1:4321/**; Länder-Galerien unter **http://127.0.0.1:4321/galerie/**.
+
 
 Im Terminal den **neuen Websiteordner** öffnen, nicht den Originalmaterialordner „SDI Homepage“:
 
@@ -51,15 +54,16 @@ Astro erzeugt statische HTML-Dateien. CSS und wenig JavaScript übernehmen Navig
 
 | Bereich | Zweck |
 | --- | --- |
-| Startseite | Vorstellung, Projekte, Mitmachen und Spenden |
+| Startseite | Vorstellung, Projekte, Galerie und Spenden |
 | Wir über uns | Ziele, Arbeitsweise, Verbindung zu SDI Schweiz, Ansprechpartner |
 | Projekte | Übersicht und eigene Seiten für Kamerun, Uganda und Südsudan |
 | Uganda | Quellenbasierte Entwicklungsgeschichte mit Meilensteinen und Bildern |
 | Downloads | Dokumentkatalog mit Suche, Kategorien, Sprache und Quellenhinweisen |
-| Mitmachen | Ablauf und projektbezogene E-Mail-Anfragen |
+| Galerie `/galerie/` | Fotoübersicht mit Einstieg in die drei Länder-Galerien |
+| Länder-Galerien | `/galerie/kamerun/`, `/galerie/uganda/`, `/galerie/suedsudan/` mit weiteren Projektfotos und Vergrößerung |
 | Spenden | Deutsche Bankverbindung, Kopieren und EPC-QR-Code |
 | Kontakt | Sichtbare E-Mail-Adressen und direkte Kontaktwege |
-| Impressum und Datenschutz | Abgeglichene deutsche Angaben mit dokumentierten Freigabepunkten |
+| Impressum und Datenschutz | Deutsches Quellenmaterial; Impressum nach alter Website mit bestätigter Donnersbergstraße 6, keine erfundenen Vertretungs- oder Registerangaben |
 
 ## Wo Inhalte gepflegt werden
 
@@ -68,6 +72,7 @@ Astro erzeugt statische HTML-Dateien. CSS und wenig JavaScript übernehmen Navig
 | `src/data/site.json` | Organisationsangaben, Kontakte, Spendenangaben und Entwurfsstatus |
 | `src/data/team.json` | Namen, belegte Beschreibungen, Kontakte und zugeordnete Portraits |
 | `src/data/projects.json` | Projekttexte, Status, Chronologie und Bildzuordnung |
+| `src/data/galleries.json` | Länder-Galerien, Fotoauswahl, Bildunterschriften und Alternativtexte |
 | `src/data/downloads.json` | Titel, Kategorien, Sprachen, Originalquellen, Größen und Prüfsummen |
 | `src/pages/` | Seitenaufbau und gegebenenfalls ergänzende Seitentexte |
 | `src/components/` | Wiederverwendbare Gestaltung und Interaktion |
@@ -92,15 +97,25 @@ npm.cmd run preview
 
 Bei Änderungen zusätzlich die betroffene Seite auf Desktop und Smartphonebreite ansehen. Navigation, Downloadsuche, Filter, Galerie, Tastaturfokus, E-Mail-Betreff und Kopierfunktionen gezielt prüfen. IBAN-Prüfziffer und QR-Decodierung prüfen das technische Format, nicht den Kontoinhaber. Ein Banking-App-Test ohne Zahlung gehört zur Abnahme.
 
-Ein späterer GitHub-Pages-Unterpfad lässt sich lokal prüfen:
+Den autorisierten GitHub-Pages-Zielpfad mit denselben Umgebungswerten für Build und Linkprüfung lokal prüfen:
 
 ```powershell
+$env:SDI_SITE = 'https://secours765.github.io'
 $env:SDI_BASE = '/sdi-website/'
 npm.cmd run build
+npm.cmd run check:links
 npm.cmd run preview
 ```
 
-Dann `/sdi-website/` öffnen. Anschließend `Remove-Item Env:SDI_BASE` ausführen und für die lokale Domainwurzel erneut bauen. Keine Produktionsdomain und keine `CNAME`-Datei ohne Bestätigung setzen.
+Dann in der lokalen Vorschau `/sdi-website/` öffnen. Anschließend `Remove-Item Env:SDI_BASE, Env:SDI_SITE -ErrorAction SilentlyContinue` ausführen und für die lokale Domainwurzel erneut bauen. Im Pages-Workflow liefert `actions/configure-pages` vor dem Build die Werte `origin` und `base_path` für `SDI_SITE` und `SDI_BASE`; Build und Linkprüfung verwenden dieselben Werte. Eine spätere eigene Domain wird gesondert bestätigt, nicht jetzt eingetragen. Für den Actions-basierten Pages-Betrieb ist keine `CNAME`-Datei erforderlich.
+
+## Veröffentlichen und später pflegen
+
+`main` ist der Produktionszweig. Der autorisierte Erststart richtet `.github/workflows/pages.yml` ein. Er baut und prüft die Website vor dem Deployment und lädt ausschließlich `dist/` hoch. Ein Push auf `main` oder ein bewusst gestarteter Lauf von **Actions → Website veröffentlichen → Run workflow → Branch: main** kann veröffentlichen. Andere Zweige und Pull Requests veröffentlichen nicht; beide Workflow-Jobs und die Umgebung `github-pages` sind auf `main` begrenzt.
+
+Spätere Änderungswünsche erlauben weiterhin nur Bearbeitung auf einem Arbeitszweig und lokale Prüfung. Erst **„Diese geprüfte Änderung veröffentlichen“** erlaubt die produktive Übernahme. Die jetzige Erststartfreigabe ist keine dauerhafte Veröffentlichungsfreigabe. Auch ein manueller Workflowlauf setzt den ausdrücklichen Auftrag für den aktuellen Stand voraus.
+
+Die spätere Domainumstellung und der nötige erneute Workflowlauf sind in der [STRATO-Checkliste](docs/STRATO-CHECKLISTE.md) beschrieben. Die vorhandenen Schutzregeln bleiben bestehen; eine zweite freigebende Person ist nicht vorgeschrieben.
 
 ## Pflegen und sichern
 

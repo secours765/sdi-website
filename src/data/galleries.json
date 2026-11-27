@@ -1,0 +1,332 @@
+[
+  {
+    "slug": "kamerun",
+    "name": "Kamerun",
+    "status": "Langjähriges Projekt",
+    "intro": "Historische Einblicke in Behandlungsräume und Begegnungen aus dem Kamerun-Projekt. Die Fotos sind aus älteren Diaaufnahmen entstanden; genaue Aufnahmejahre sind nicht gesichert.",
+    "photos": [
+      {
+        "src": "images/galerie-kamerun-01.webp",
+        "thumb": "images/galerie-kamerun-01-thumb.webp",
+        "alt": "Historischer Behandlungsraum in Kamerun.",
+        "caption": "Historischer Behandlungsraum in Kamerun."
+      },
+      {
+        "src": "images/galerie-kamerun-02.webp",
+        "thumb": "images/galerie-kamerun-02-thumb.webp",
+        "alt": "Ausstattung eines Behandlungsraums. Historische Aufnahme.",
+        "caption": "Ausstattung eines Behandlungsraums. Historische Aufnahme."
+      },
+      {
+        "src": "images/galerie-kamerun-03.webp",
+        "thumb": "images/galerie-kamerun-03-thumb.webp",
+        "alt": "Einblick in die damaligen Klinikräume.",
+        "caption": "Einblick in die damaligen Klinikräume."
+      },
+      {
+        "src": "images/galerie-kamerun-04.webp",
+        "thumb": "images/galerie-kamerun-04-thumb.webp",
+        "alt": "Zahnmedizinische Zusammenarbeit vor Ort. Historische Aufnahme.",
+        "caption": "Zahnmedizinische Zusammenarbeit vor Ort. Historische Aufnahme."
+      },
+      {
+        "src": "images/galerie-kamerun-05.webp",
+        "thumb": "images/galerie-kamerun-05-thumb.webp",
+        "alt": "Einblick in eine Behandlung. Historische Aufnahme.",
+        "caption": "Einblick in eine Behandlung. Historische Aufnahme."
+      },
+      {
+        "src": "images/galerie-kamerun-06.webp",
+        "thumb": "images/galerie-kamerun-06-thumb.webp",
+        "alt": "Zusammenarbeit im Behandlungsraum. Historische Aufnahme.",
+        "caption": "Zusammenarbeit im Behandlungsraum. Historische Aufnahme."
+      },
+      {
+        "src": "images/galerie-kamerun-07.webp",
+        "thumb": "images/galerie-kamerun-07-thumb.webp",
+        "alt": "Begegnung vor der Zahnklinik. Historische Aufnahme.",
+        "caption": "Begegnung vor der Zahnklinik. Historische Aufnahme."
+      }
+    ]
+  },
+  {
+    "slug": "uganda",
+    "name": "Uganda",
+    "status": "Langjähriges Projekt",
+    "intro": "Begegnungen, Räume, Technik und Labor: Bilder aus der Zusammenarbeit in Mukono. Soweit nicht anders angegeben, ist das Aufnahmejahr nicht unabhängig bestätigt.",
+    "photos": [
+      {
+        "src": "images/galerie-uganda-01.webp",
+        "thumb": "images/galerie-uganda-01-thumb.webp",
+        "alt": "Gemeinsame Veranstaltung im Umfeld des Uganda-Projekts.",
+        "caption": "Gemeinsame Veranstaltung im Umfeld des Uganda-Projekts."
+      },
+      {
+        "src": "images/galerie-uganda-02.webp",
+        "thumb": "images/galerie-uganda-02-thumb.webp",
+        "alt": "Menschen und ein Prophylaxebanner bei einer Veranstaltung.",
+        "caption": "Menschen und ein Prophylaxebanner bei einer Veranstaltung."
+      },
+      {
+        "src": "images/galerie-uganda-03.webp",
+        "thumb": "images/galerie-uganda-03-thumb.webp",
+        "alt": "Zusammenkunft in einer Halle.",
+        "caption": "Zusammenkunft in einer Halle."
+      },
+      {
+        "src": "images/galerie-uganda-04.webp",
+        "thumb": "images/galerie-uganda-04-thumb.webp",
+        "alt": "Begegnungen bei einer Veranstaltung vor Ort.",
+        "caption": "Begegnungen bei einer Veranstaltung vor Ort."
+      },
+      {
+        "src": "images/galerie-uganda-05.webp",
+        "thumb": "images/galerie-uganda-05-thumb.webp",
+        "alt": "Austausch während einer Veranstaltung.",
+        "caption": "Austausch während einer Veranstaltung."
+      },
+      {
+        "src": "images/galerie-uganda-06.webp",
+        "thumb": "images/galerie-uganda-06-thumb.webp",
+        "alt": "Einblicke in eine gemeinsame Veranstaltung.",
+        "caption": "Einblicke in eine gemeinsame Veranstaltung."
+      },
+      {
+        "src": "images/galerie-uganda-07.webp",
+        "thumb": "images/galerie-uganda-07-thumb.webp",
+        "alt": "Solarmodule auf dem Klinikdach.",
+        "caption": "Solarmodule auf dem Klinikdach."
+      },
+      {
+        "src": "images/galerie-uganda-08.webp",
+        "thumb": "images/galerie-uganda-08-thumb.webp",
+        "alt": "Transportkiste aus dem Projektmaterial.",
+        "caption": "Transportkiste aus dem Projektmaterial."
+      },
+      {
+        "src": "images/galerie-uganda-09.webp",
+        "thumb": "images/galerie-uganda-09-thumb.webp",
+        "alt": "Zahnmedizinische Ausstattung aus dem Projektmaterial.",
+        "caption": "Zahnmedizinische Ausstattung aus dem Projektmaterial."
+      },
+      {
+        "src": "images/galerie-uganda-10.webp",
+        "thumb": "images/galerie-uganda-10-thumb.webp",
+        "alt": "Arbeit an einer Behandlungseinheit.",
+        "caption": "Arbeit an einer Behandlungseinheit."
+      },
+      {
+        "src": "images/galerie-uganda-11.webp",
+        "thumb": "images/galerie-uganda-11-thumb.webp",
+        "alt": "Panoramaröntgengerät in den Klinikräumen.",
+        "caption": "Panoramaröntgengerät in den Klinikräumen."
+      },
+      {
+        "src": "images/galerie-uganda-12.webp",
+        "thumb": "images/galerie-uganda-12-thumb.webp",
+        "alt": "Ein Raum während der dokumentierten Klinikentwicklung.",
+        "caption": "Ein Raum während der dokumentierten Klinikentwicklung."
+      },
+      {
+        "src": "images/galerie-uganda-13.webp",
+        "thumb": "images/galerie-uganda-13-thumb.webp",
+        "alt": "Ausstattung eines früheren Behandlungsraums.",
+        "caption": "Ausstattung eines früheren Behandlungsraums."
+      },
+      {
+        "src": "images/galerie-uganda-14.webp",
+        "thumb": "images/galerie-uganda-14-thumb.webp",
+        "alt": "Einblick in die technische Ausstattung.",
+        "caption": "Einblick in die technische Ausstattung."
+      },
+      {
+        "src": "images/galerie-uganda-15.webp",
+        "thumb": "images/galerie-uganda-15-thumb.webp",
+        "alt": "Ein Arbeitsplatz aus dem Laborbereich.",
+        "caption": "Ein Arbeitsplatz aus dem Laborbereich."
+      },
+      {
+        "src": "images/galerie-uganda-16.webp",
+        "thumb": "images/galerie-uganda-16-thumb.webp",
+        "alt": "Arbeitsplatz im Dentallabor.",
+        "caption": "Arbeitsplatz im Dentallabor."
+      },
+      {
+        "src": "images/galerie-uganda-17.webp",
+        "thumb": "images/galerie-uganda-17-thumb.webp",
+        "alt": "Arbeit an der Laborausstattung.",
+        "caption": "Arbeit an der Laborausstattung."
+      },
+      {
+        "src": "images/galerie-uganda-18.webp",
+        "thumb": "images/galerie-uganda-18-thumb.webp",
+        "alt": "Blick auf das Klinikgebäude und die Dachkonstruktion.",
+        "caption": "Blick auf das Klinikgebäude und die Dachkonstruktion."
+      },
+      {
+        "src": "images/galerie-uganda-19.webp",
+        "thumb": "images/galerie-uganda-19-thumb.webp",
+        "alt": "Photovoltaik auf dem Klinikdach.",
+        "caption": "Photovoltaik auf dem Klinikdach."
+      },
+      {
+        "src": "images/galerie-uganda-20.webp",
+        "thumb": "images/galerie-uganda-20-thumb.webp",
+        "alt": "Technik für die Stromversorgung der Klinik.",
+        "caption": "Technik für die Stromversorgung der Klinik."
+      },
+      {
+        "src": "images/uganda-2013.webp",
+        "thumb": "images/uganda-2013-thumb.webp",
+        "alt": "Klinikaußenbereich in Mukono, in den Unterlagen 2013 zugeordnet",
+        "caption": "Klinikaußenbereich. In der Präsentation dem Jahr 2013 zugeordnet."
+      },
+      {
+        "src": "images/uganda-2014.webp",
+        "thumb": "images/uganda-2014-thumb.webp",
+        "alt": "Klinikhof in Mukono im Oktober 2014",
+        "caption": "Klinikhof. Präsentationsfolie ausdrücklich mit Oktober 2014 bezeichnet."
+      }
+    ]
+  },
+  {
+    "slug": "suedsudan",
+    "name": "Südsudan",
+    "status": "In Vorbereitung",
+    "intro": "Bilder aus dem Material zu den Erkundungsbesuchen 2025 in Nzara. Sie zeigen Begegnungen und bereits vorhandene Infrastruktur. Ein aufgebautes laufendes SDI-Projekt oder feste Einsatzplätze sind damit nicht verbunden.",
+    "photos": [
+      {
+        "src": "images/galerie-suedsudan-01.webp",
+        "thumb": "images/galerie-suedsudan-01-thumb.webp",
+        "alt": "Anreise im Rahmen der Erkundung.",
+        "caption": "Anreise im Rahmen der Erkundung."
+      },
+      {
+        "src": "images/galerie-suedsudan-02.webp",
+        "thumb": "images/galerie-suedsudan-02-thumb.webp",
+        "alt": "Begegnung bei der Anreise.",
+        "caption": "Begegnung bei der Anreise."
+      },
+      {
+        "src": "images/galerie-suedsudan-03.webp",
+        "thumb": "images/galerie-suedsudan-03-thumb.webp",
+        "alt": "Zugang zum Krankenhausgelände.",
+        "caption": "Zugang zum Krankenhausgelände."
+      },
+      {
+        "src": "images/galerie-suedsudan-04.webp",
+        "thumb": "images/galerie-suedsudan-04-thumb.webp",
+        "alt": "Besucher und Ansprechpartner beim Kennenlernen vor Ort.",
+        "caption": "Besucher und Ansprechpartner beim Kennenlernen vor Ort."
+      },
+      {
+        "src": "images/galerie-suedsudan-05.webp",
+        "thumb": "images/galerie-suedsudan-05-thumb.webp",
+        "alt": "Bestehendes Gebäude auf dem Krankenhausgelände.",
+        "caption": "Bestehendes Gebäude auf dem Krankenhausgelände."
+      },
+      {
+        "src": "images/galerie-suedsudan-06.webp",
+        "thumb": "images/galerie-suedsudan-06-thumb.webp",
+        "alt": "Unterwegs in der Umgebung während der Erkundung.",
+        "caption": "Unterwegs in der Umgebung während der Erkundung."
+      },
+      {
+        "src": "images/galerie-suedsudan-07.webp",
+        "thumb": "images/galerie-suedsudan-07-thumb.webp",
+        "alt": "Einblick in das Gelände bei einem Besuch.",
+        "caption": "Einblick in das Gelände bei einem Besuch."
+      },
+      {
+        "src": "images/galerie-suedsudan-08.webp",
+        "thumb": "images/galerie-suedsudan-08-thumb.webp",
+        "alt": "Vorhandene Gebäude und Wege auf dem Gelände.",
+        "caption": "Vorhandene Gebäude und Wege auf dem Gelände."
+      },
+      {
+        "src": "images/galerie-suedsudan-09.webp",
+        "thumb": "images/galerie-suedsudan-09-thumb.webp",
+        "alt": "Gespräch mit Ansprechpartnern vor Ort.",
+        "caption": "Gespräch mit Ansprechpartnern vor Ort."
+      },
+      {
+        "src": "images/galerie-suedsudan-10.webp",
+        "thumb": "images/galerie-suedsudan-10-thumb.webp",
+        "alt": "Ein weiteres Bestandsgebäude auf dem Gelände.",
+        "caption": "Ein weiteres Bestandsgebäude auf dem Gelände."
+      },
+      {
+        "src": "images/galerie-suedsudan-11.webp",
+        "thumb": "images/galerie-suedsudan-11-thumb.webp",
+        "alt": "Einblick in einen vorhandenen Gebäudetrakt.",
+        "caption": "Einblick in einen vorhandenen Gebäudetrakt."
+      },
+      {
+        "src": "images/galerie-suedsudan-12.webp",
+        "thumb": "images/galerie-suedsudan-12-thumb.webp",
+        "alt": "Bestandsaufnahme vorhandener technischer Ausstattung.",
+        "caption": "Bestandsaufnahme vorhandener technischer Ausstattung."
+      },
+      {
+        "src": "images/galerie-suedsudan-13.webp",
+        "thumb": "images/galerie-suedsudan-13-thumb.webp",
+        "alt": "Einblick in die vorhandene Ausstattung.",
+        "caption": "Einblick in die vorhandene Ausstattung."
+      },
+      {
+        "src": "images/galerie-suedsudan-14.webp",
+        "thumb": "images/galerie-suedsudan-14-thumb.webp",
+        "alt": "Technische Infrastruktur in einem Bestandsraum.",
+        "caption": "Technische Infrastruktur in einem Bestandsraum."
+      },
+      {
+        "src": "images/galerie-suedsudan-15.webp",
+        "thumb": "images/galerie-suedsudan-15-thumb.webp",
+        "alt": "Ausstattung im vorhandenen Behandlungsbereich.",
+        "caption": "Ausstattung im vorhandenen Behandlungsbereich."
+      },
+      {
+        "src": "images/galerie-suedsudan-16.webp",
+        "thumb": "images/galerie-suedsudan-16-thumb.webp",
+        "alt": "Übersicht über das Gelände.",
+        "caption": "Übersicht über das Gelände."
+      },
+      {
+        "src": "images/galerie-suedsudan-17.webp",
+        "thumb": "images/galerie-suedsudan-17-thumb.webp",
+        "alt": "Gebäude und Umgebung während der Erkundung.",
+        "caption": "Gebäude und Umgebung während der Erkundung."
+      },
+      {
+        "src": "images/galerie-suedsudan-18.webp",
+        "thumb": "images/galerie-suedsudan-18-thumb.webp",
+        "alt": "Begegnung im vorhandenen Behandlungsraum.",
+        "caption": "Begegnung im vorhandenen Behandlungsraum."
+      },
+      {
+        "src": "images/galerie-suedsudan-19.webp",
+        "thumb": "images/galerie-suedsudan-19-thumb.webp",
+        "alt": "Menschen vor einem Bestandsgebäude in Nzara.",
+        "caption": "Menschen vor einem Bestandsgebäude in Nzara."
+      },
+      {
+        "src": "images/galerie-suedsudan-20.webp",
+        "thumb": "images/galerie-suedsudan-20-thumb.webp",
+        "alt": "Beobachtungen zur Arbeit vor Ort während eines Besuchs.",
+        "caption": "Beobachtungen zur Arbeit vor Ort während eines Besuchs."
+      },
+      {
+        "src": "images/galerie-suedsudan-21.webp",
+        "thumb": "images/galerie-suedsudan-21-thumb.webp",
+        "alt": "Einblick in einen vorhandenen Arbeitsplatz.",
+        "caption": "Einblick in einen vorhandenen Arbeitsplatz."
+      },
+      {
+        "src": "images/galerie-suedsudan-22.webp",
+        "thumb": "images/galerie-suedsudan-22-thumb.webp",
+        "alt": "Gespräch am Arbeitsplatz vor Ort.",
+        "caption": "Gespräch am Arbeitsplatz vor Ort."
+      }
+    ]
+  }
+]

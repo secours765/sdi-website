@@ -1,0 +1,518 @@
+{
+  "images/galerie-kamerun-01-thumb.webp": {
+    "width": 640,
+    "height": 423
+  },
+  "images/galerie-kamerun-01.webp": {
+    "width": 1800,
+    "height": 1190
+  },
+  "images/galerie-kamerun-02-thumb.webp": {
+    "width": 640,
+    "height": 423
+  },
+  "images/galerie-kamerun-02.webp": {
+    "width": 1800,
+    "height": 1190
+  },
+  "images/galerie-kamerun-03-thumb.webp": {
+    "width": 640,
+    "height": 423
+  },
+  "images/galerie-kamerun-03.webp": {
+    "width": 1800,
+    "height": 1190
+  },
+  "images/galerie-kamerun-04-thumb.webp": {
+    "width": 640,
+    "height": 423
+  },
+  "images/galerie-kamerun-04.webp": {
+    "width": 1800,
+    "height": 1190
+  },
+  "images/galerie-kamerun-05-thumb.webp": {
+    "width": 640,
+    "height": 423
+  },
+  "images/galerie-kamerun-05.webp": {
+    "width": 1800,
+    "height": 1190
+  },
+  "images/galerie-kamerun-06-thumb.webp": {
+    "width": 640,
+    "height": 423
+  },
+  "images/galerie-kamerun-06.webp": {
+    "width": 1800,
+    "height": 1190
+  },
+  "images/galerie-kamerun-07-thumb.webp": {
+    "width": 640,
+    "height": 423
+  },
+  "images/galerie-kamerun-07.webp": {
+    "width": 1800,
+    "height": 1190
+  },
+  "images/galerie-suedsudan-01-thumb.webp": {
+    "width": 640,
+    "height": 480
+  },
+  "images/galerie-suedsudan-01.webp": {
+    "width": 640,
+    "height": 480
+  },
+  "images/galerie-suedsudan-02-thumb.webp": {
+    "width": 640,
+    "height": 480
+  },
+  "images/galerie-suedsudan-02.webp": {
+    "width": 640,
+    "height": 480
+  },
+  "images/galerie-suedsudan-03-thumb.webp": {
+    "width": 640,
+    "height": 480
+  },
+  "images/galerie-suedsudan-03.webp": {
+    "width": 640,
+    "height": 480
+  },
+  "images/galerie-suedsudan-04-thumb.webp": {
+    "width": 640,
+    "height": 480
+  },
+  "images/galerie-suedsudan-04.webp": {
+    "width": 640,
+    "height": 480
+  },
+  "images/galerie-suedsudan-05-thumb.webp": {
+    "width": 640,
+    "height": 480
+  },
+  "images/galerie-suedsudan-05.webp": {
+    "width": 640,
+    "height": 480
+  },
+  "images/galerie-suedsudan-06-thumb.webp": {
+    "width": 640,
+    "height": 853
+  },
+  "images/galerie-suedsudan-06.webp": {
+    "width": 1200,
+    "height": 1600
+  },
+  "images/galerie-suedsudan-07-thumb.webp": {
+    "width": 640,
+    "height": 853
+  },
+  "images/galerie-suedsudan-07.webp": {
+    "width": 1200,
+    "height": 1600
+  },
+  "images/galerie-suedsudan-08-thumb.webp": {
+    "width": 640,
+    "height": 853
+  },
+  "images/galerie-suedsudan-08.webp": {
+    "width": 1200,
+    "height": 1600
+  },
+  "images/galerie-suedsudan-09-thumb.webp": {
+    "width": 640,
+    "height": 480
+  },
+  "images/galerie-suedsudan-09.webp": {
+    "width": 1600,
+    "height": 1200
+  },
+  "images/galerie-suedsudan-10-thumb.webp": {
+    "width": 640,
+    "height": 480
+  },
+  "images/galerie-suedsudan-10.webp": {
+    "width": 1600,
+    "height": 1200
+  },
+  "images/galerie-suedsudan-11-thumb.webp": {
+    "width": 640,
+    "height": 480
+  },
+  "images/galerie-suedsudan-11.webp": {
+    "width": 1600,
+    "height": 1200
+  },
+  "images/galerie-suedsudan-12-thumb.webp": {
+    "width": 640,
+    "height": 853
+  },
+  "images/galerie-suedsudan-12.webp": {
+    "width": 1200,
+    "height": 1600
+  },
+  "images/galerie-suedsudan-13-thumb.webp": {
+    "width": 640,
+    "height": 853
+  },
+  "images/galerie-suedsudan-13.webp": {
+    "width": 1200,
+    "height": 1600
+  },
+  "images/galerie-suedsudan-14-thumb.webp": {
+    "width": 640,
+    "height": 853
+  },
+  "images/galerie-suedsudan-14.webp": {
+    "width": 1200,
+    "height": 1600
+  },
+  "images/galerie-suedsudan-15-thumb.webp": {
+    "width": 640,
+    "height": 1138
+  },
+  "images/galerie-suedsudan-15.webp": {
+    "width": 900,
+    "height": 1600
+  },
+  "images/galerie-suedsudan-16-thumb.webp": {
+    "width": 640,
+    "height": 480
+  },
+  "images/galerie-suedsudan-16.webp": {
+    "width": 1600,
+    "height": 1200
+  },
+  "images/galerie-suedsudan-17-thumb.webp": {
+    "width": 640,
+    "height": 480
+  },
+  "images/galerie-suedsudan-17.webp": {
+    "width": 1600,
+    "height": 1200
+  },
+  "images/galerie-suedsudan-18-thumb.webp": {
+    "width": 640,
+    "height": 480
+  },
+  "images/galerie-suedsudan-18.webp": {
+    "width": 1600,
+    "height": 1200
+  },
+  "images/galerie-suedsudan-19-thumb.webp": {
+    "width": 640,
+    "height": 480
+  },
+  "images/galerie-suedsudan-19.webp": {
+    "width": 1600,
+    "height": 1200
+  },
+  "images/galerie-suedsudan-20-thumb.webp": {
+    "width": 640,
+    "height": 853
+  },
+  "images/galerie-suedsudan-20.webp": {
+    "width": 1200,
+    "height": 1600
+  },
+  "images/galerie-suedsudan-21-thumb.webp": {
+    "width": 640,
+    "height": 853
+  },
+  "images/galerie-suedsudan-21.webp": {
+    "width": 1200,
+    "height": 1600
+  },
+  "images/galerie-suedsudan-22-thumb.webp": {
+    "width": 640,
+    "height": 480
+  },
+  "images/galerie-suedsudan-22.webp": {
+    "width": 1600,
+    "height": 1200
+  },
+  "images/galerie-uganda-01-thumb.webp": {
+    "width": 640,
+    "height": 853
+  },
+  "images/galerie-uganda-01.webp": {
+    "width": 960,
+    "height": 1280
+  },
+  "images/galerie-uganda-02-thumb.webp": {
+    "width": 640,
+    "height": 480
+  },
+  "images/galerie-uganda-02.webp": {
+    "width": 1080,
+    "height": 810
+  },
+  "images/galerie-uganda-03-thumb.webp": {
+    "width": 640,
+    "height": 853
+  },
+  "images/galerie-uganda-03.webp": {
+    "width": 810,
+    "height": 1080
+  },
+  "images/galerie-uganda-04-thumb.webp": {
+    "width": 640,
+    "height": 853
+  },
+  "images/galerie-uganda-04.webp": {
+    "width": 810,
+    "height": 1080
+  },
+  "images/galerie-uganda-05-thumb.webp": {
+    "width": 640,
+    "height": 853
+  },
+  "images/galerie-uganda-05.webp": {
+    "width": 960,
+    "height": 1280
+  },
+  "images/galerie-uganda-06-thumb.webp": {
+    "width": 640,
+    "height": 853
+  },
+  "images/galerie-uganda-06.webp": {
+    "width": 810,
+    "height": 1080
+  },
+  "images/galerie-uganda-07-thumb.webp": {
+    "width": 640,
+    "height": 480
+  },
+  "images/galerie-uganda-07.webp": {
+    "width": 640,
+    "height": 480
+  },
+  "images/galerie-uganda-08-thumb.webp": {
+    "width": 640,
+    "height": 480
+  },
+  "images/galerie-uganda-08.webp": {
+    "width": 640,
+    "height": 480
+  },
+  "images/galerie-uganda-09-thumb.webp": {
+    "width": 480,
+    "height": 640
+  },
+  "images/galerie-uganda-09.webp": {
+    "width": 480,
+    "height": 640
+  },
+  "images/galerie-uganda-10-thumb.webp": {
+    "width": 480,
+    "height": 640
+  },
+  "images/galerie-uganda-10.webp": {
+    "width": 480,
+    "height": 640
+  },
+  "images/galerie-uganda-11-thumb.webp": {
+    "width": 480,
+    "height": 640
+  },
+  "images/galerie-uganda-11.webp": {
+    "width": 480,
+    "height": 640
+  },
+  "images/galerie-uganda-12-thumb.webp": {
+    "width": 640,
+    "height": 853
+  },
+  "images/galerie-uganda-12.webp": {
+    "width": 750,
+    "height": 1000
+  },
+  "images/galerie-uganda-13-thumb.webp": {
+    "width": 640,
+    "height": 853
+  },
+  "images/galerie-uganda-13.webp": {
+    "width": 750,
+    "height": 1000
+  },
+  "images/galerie-uganda-14-thumb.webp": {
+    "width": 562,
+    "height": 1000
+  },
+  "images/galerie-uganda-14.webp": {
+    "width": 562,
+    "height": 1000
+  },
+  "images/galerie-uganda-15-thumb.webp": {
+    "width": 562,
+    "height": 1000
+  },
+  "images/galerie-uganda-15.webp": {
+    "width": 562,
+    "height": 1000
+  },
+  "images/galerie-uganda-16-thumb.webp": {
+    "width": 283,
+    "height": 504
+  },
+  "images/galerie-uganda-16.webp": {
+    "width": 283,
+    "height": 504
+  },
+  "images/galerie-uganda-17-thumb.webp": {
+    "width": 504,
+    "height": 283
+  },
+  "images/galerie-uganda-17.webp": {
+    "width": 504,
+    "height": 283
+  },
+  "images/galerie-uganda-18-thumb.webp": {
+    "width": 607,
+    "height": 1080
+  },
+  "images/galerie-uganda-18.webp": {
+    "width": 607,
+    "height": 1080
+  },
+  "images/galerie-uganda-19-thumb.webp": {
+    "width": 640,
+    "height": 480
+  },
+  "images/galerie-uganda-19.webp": {
+    "width": 1280,
+    "height": 960
+  },
+  "images/galerie-uganda-20-thumb.webp": {
+    "width": 540,
+    "height": 1080
+  },
+  "images/galerie-uganda-20.webp": {
+    "width": 540,
+    "height": 1080
+  },
+  "images/kamerun-behandlung-thumb.webp": {
+    "width": 600,
+    "height": 397
+  },
+  "images/kamerun-behandlung.webp": {
+    "width": 1600,
+    "height": 1058
+  },
+  "images/kamerun-raum-thumb.webp": {
+    "width": 600,
+    "height": 397
+  },
+  "images/kamerun-raum.webp": {
+    "width": 1600,
+    "height": 1058
+  },
+  "images/kamerun-team-thumb.webp": {
+    "width": 600,
+    "height": 397
+  },
+  "images/kamerun-team.webp": {
+    "width": 1600,
+    "height": 1058
+  },
+  "images/sdi-logo.png": {
+    "width": 240,
+    "height": 294
+  },
+  "images/spenden-qr.png": {
+    "width": 424,
+    "height": 424
+  },
+  "images/suedsudan-gebaeude-thumb.webp": {
+    "width": 600,
+    "height": 450
+  },
+  "images/suedsudan-gebaeude.webp": {
+    "width": 640,
+    "height": 480
+  },
+  "images/suedsudan-gespraech-thumb.webp": {
+    "width": 600,
+    "height": 450
+  },
+  "images/suedsudan-gespraech.webp": {
+    "width": 1600,
+    "height": 1200
+  },
+  "images/suedsudan-partner-thumb.webp": {
+    "width": 600,
+    "height": 450
+  },
+  "images/suedsudan-partner.webp": {
+    "width": 640,
+    "height": 480
+  },
+  "images/uganda-2013-thumb.webp": {
+    "width": 600,
+    "height": 450
+  },
+  "images/uganda-2013.webp": {
+    "width": 872,
+    "height": 654
+  },
+  "images/uganda-2014-thumb.webp": {
+    "width": 600,
+    "height": 450
+  },
+  "images/uganda-2014.webp": {
+    "width": 999,
+    "height": 750
+  },
+  "images/uganda-gemeinschaft-800.webp": {
+    "width": 800,
+    "height": 600
+  },
+  "images/uganda-gemeinschaft-thumb.webp": {
+    "width": 600,
+    "height": 450
+  },
+  "images/uganda-gemeinschaft.webp": {
+    "width": 1080,
+    "height": 810
+  },
+  "images/uganda-labor-thumb.webp": {
+    "width": 504,
+    "height": 283
+  },
+  "images/uganda-labor.webp": {
+    "width": 504,
+    "height": 283
+  },
+  "images/uganda-roentgen-thumb.webp": {
+    "width": 480,
+    "height": 640
+  },
+  "images/uganda-roentgen.webp": {
+    "width": 480,
+    "height": 640
+  },
+  "images/uganda-solar-neu-thumb.webp": {
+    "width": 600,
+    "height": 450
+  },
+  "images/uganda-solar-neu.webp": {
+    "width": 640,
+    "height": 480
+  },
+  "images/uganda-solar-thumb.webp": {
+    "width": 600,
+    "height": 450
+  },
+  "images/uganda-solar.webp": {
+    "width": 1280,
+    "height": 960
+  },
+  "images/uganda-team-thumb.webp": {
+    "width": 600,
+    "height": 338
+  },
+  "images/uganda-team.webp": {
+    "width": 1008,
+    "height": 567
+  }
+}

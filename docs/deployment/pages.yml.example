@@ -1,42 +1,41 @@
-# INAKTIVE VORLAGE. Erst nach ausdrücklicher Websitefreigabe nach
-# .github/workflows/pages.yml kopieren und GitHub Pages konfigurieren.
-# Veröffentlichungen ausschließlich durch einen Push auf main.
+# Referenzkopie des aktiven Pages-Workflows. Pflege in .github/workflows/pages.yml.
 name: Website veröffentlichen
-
 on:
   push:
     branches: [main]
-
-permissions:
-  contents: read
-
+  workflow_dispatch:
+permissions: {}
 concurrency:
   group: github-pages-production
   cancel-in-progress: false
-
 jobs:
   build:
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
     runs-on: ubuntu-latest
-    env:
-      SDI_BASE: /sdi-website/
+    permissions:
+      contents: read
+      pages: read
     steps:
       - uses: actions/checkout@v6
+      - name: Pages-Adresse ermitteln
+        id: pages
+        uses: actions/configure-pages@v5
       - uses: actions/setup-node@v7
         with:
           node-version: '26.13.1'
           cache: npm
       - run: npm ci
       - run: npm run check
-      - run: npm run build
-      - run: npm run check:links
-      - uses: actions/configure-pages@v5
+      - name: Website bauen und Links prüfen
+        run: npm run build && npm run check:links
+        env:
+          SDI_SITE: ${{ steps.pages.outputs.origin }}
+          SDI_BASE: ${{ steps.pages.outputs.base_path }}
       - uses: actions/upload-pages-artifact@v4
         with:
           path: dist
-
   deploy:
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
     needs: build
     runs-on: ubuntu-latest
     permissions:
@@ -46,6 +45,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Geprüfte Websiteausgabe veröffentlichen
+      - name: Geprüfte Website veröffentlichen
         id: deployment
         uses: actions/deploy-pages@v4

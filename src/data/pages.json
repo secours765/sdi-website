@@ -1,0 +1,77 @@
+[
+  {
+    "path": "",
+    "title": "Zahnmedizin verbindet.",
+    "description": "SDI Deutschland unterstützt zahnmedizinische Versorgung, Ausbildung und Vorsorge in Kamerun und Uganda. Ein Vorhaben im Südsudan ist in Vorbereitung."
+  },
+  {
+    "path": "wir-ueber-uns/",
+    "title": "Wir über uns",
+    "description": "Lernen Sie SDI Deutschland kennen: unsere Ziele, Ansprechpartner und die Zusammenarbeit mit den Partnern vor Ort und SDI Schweiz."
+  },
+  {
+    "path": "projekte/",
+    "title": "Unsere Projekte",
+    "description": "Unsere Projekte im Überblick: langjährige Partnerschaften in Kamerun und Uganda sowie ein neues Vorhaben im Südsudan in Vorbereitung."
+  },
+  {
+    "path": "projekte/kamerun/",
+    "title": "Kamerun",
+    "description": "Historische Einblicke in die zahnmedizinische Zusammenarbeit und Unterstützung von SDI Deutschland in Kamerun."
+  },
+  {
+    "path": "projekte/uganda/",
+    "title": "Uganda",
+    "description": "Die Entwicklung der Partnerschaft in Mukono seit 2013: Behandlungsräume, Ausbildung, Labor und Solarstrom für die Klinik."
+  },
+  {
+    "path": "projekte/suedsudan/",
+    "title": "Südsudan",
+    "description": "Das Vorhaben am St. Theresa Hospital in Nzara: Erkundungsbesuche, Kontakte und die Vorbereitung künftiger zahnmedizinischer Unterstützung."
+  },
+  {
+    "path": "downloads/",
+    "title": "Downloads",
+    "description": "Durchsuchbare SDI-Dokumentation: Handbücher, Prophylaxematerialien, Poster und Berichte mit Quellen, Sprache, Dateigröße und Prüfsummen."
+  },
+  {
+    "path": "galerie/",
+    "title": "Galerie",
+    "description": "51 Projektaufnahmen aus Kamerun, Uganda und dem Südsudan. Wählen Sie ein Land und entdecken Sie Begegnungen, Orte und Klinikentwicklung."
+  },
+  {
+    "path": "galerie/kamerun/",
+    "title": "Galerie Kamerun",
+    "description": "Projektbilder aus Kamerun: historische Einblicke in die Zusammenarbeit und die Kliniken vor Ort."
+  },
+  {
+    "path": "galerie/uganda/",
+    "title": "Galerie Uganda",
+    "description": "Projektbilder aus Uganda: Einblicke in Klinikentwicklung, Technik, Labor und gemeinsame Begegnungen in Mukono."
+  },
+  {
+    "path": "galerie/suedsudan/",
+    "title": "Galerie Südsudan",
+    "description": "Projektbilder aus Südsudan: Begegnungen und bestehende Infrastruktur bei den Erkundungsbesuchen. Das Vorhaben ist in Vorbereitung."
+  },
+  {
+    "path": "spenden/",
+    "title": "Spenden",
+    "description": "Unterstützen Sie SDI Deutschland mit einer Spende auf das deutsche Vereinskonto. Bankverbindung, IBAN zum Kopieren und Überweisungs-QR-Code."
+  },
+  {
+    "path": "kontakt/",
+    "title": "Kontakt",
+    "description": "Kontaktinformationen von SDI Deutschland und den Ansprechpartnern Dr. Peter Mentges und Dr. Armin Reinartz."
+  },
+  {
+    "path": "impressum/",
+    "title": "Impressum",
+    "description": "Anbieter- und Kontaktangaben von Secours Dentaire International, Deutschland e.V. in Limburgerhof."
+  },
+  {
+    "path": "datenschutz/",
+    "title": "Datenschutz",
+    "description": "Informationen zum Datenschutz bei SDI Deutschland: GitHub Pages, externe Downloads, Kontakt und die Funktionen dieser Website."
+  }
+]

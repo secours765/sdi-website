@@ -1,6 +1,6 @@
 # STRATO- und Domainphase – erst nach Freigabe
 
-**Diese Schritte sind vorbereitet und wurden nicht ausgeführt.** Die bisherige Website und vorhandene E-Mail-Konfiguration bleiben erhalten.
+**Diese Schritte sind vorbereitet und wurden nicht ausgeführt.** Der separat autorisierte Pages-Erststart unter `https://secours765.github.io/sdi-website/` ändert keine STRATO-, DNS- oder eigene Domainkonfiguration. Die bisherige Website unter ihrer bestehenden Domain und die vorhandene E-Mail-Konfiguration bleiben erhalten.
 
 ## Ausgangslage erfassen und sichern
 
@@ -14,12 +14,24 @@
 
 ## Ziel festlegen
 
-- [ ] Entscheiden, ob die statische Website bei GitHub Pages oder auf tatsächlich vorhandenem STRATO-Webspace liegen soll.
+- [ ] Bestätigen, ob die eigene Domain auf GitHub Pages zeigen soll. Tatsächlich vorhandenen STRATO-Webspace nur bei konkretem Bedarf als alternative Website- oder Downloadablage prüfen.
 - [ ] Bei GitHub Pages die Domainverifizierung passend zum Eigentümerkonto **secours765** nach der dann aktuellen offiziellen Anleitung einrichten.
 - [ ] Bevorzugte Hauptadresse festlegen: Domainwurzel oder `www`; die andere Variante soll kontrolliert weiterleiten.
 - [ ] Notwendige DNS-Zielwerte aus aktuellen offiziellen Hostingangaben übernehmen, nicht aus alten Beispielen raten.
 - [ ] Für große Dokumentoriginale GitHub-Release-Assets oder gegebenenfalls STRATO-Speicher getrennt planen.
-- [ ] Basis-Pfad, endgültige Domain, Datenschutzangaben und gegebenenfalls `CNAME` erst nach ausdrücklicher Bestätigung anpassen.
+- [ ] Endgültige Domain und geänderte Datenschutzangaben erst nach ausdrücklicher Bestätigung festlegen. Im Actions-basierten Pages-Workflow liefert `configure-pages` Domain und Basispfad automatisch; keine `CNAME`-Datei anlegen.
+
+## Pages-Domain setzen und neu bauen
+
+Diese Schritte gehören erst zur gesondert freigegebenen Domainumstellung:
+
+1. Nach Sicherung und Domainverifizierung im Repository **Settings → Pages → Custom domain** öffnen, die bestätigte Domain eintragen und **Save** wählen. Anschließend die geplanten DNS-Einträge gezielt beim Domainanbieter setzen; E-Mail-Einträge erhalten.
+2. **Enforce HTTPS** aktivieren, sobald Zertifikat und Einstellung bereit sind. Die erforderliche Bereitstellungszeit abwarten und den tatsächlichen Zustand prüfen.
+3. Danach **Actions → Website veröffentlichen → Run workflow → Branch: main** ausführen. Vor dem Start kontrollieren, dass `main` dem ausdrücklich freigegebenen Stand entspricht.
+4. Der Workflow ruft `actions/configure-pages` vor dem Build auf. Dessen `origin` und `base_path` werden als `SDI_SITE` und `SDI_BASE` für Build und Linkprüfung verwendet. So wird die Ausgabe für die neue Adresse neu erzeugt; eine bloße Änderung der Pages-Einstellung ersetzt diesen Build nicht.
+5. Nach erfolgreichem Deployment neue URL, Canonical-URLs, Sitemap, Bilder/Assets, Navigation und Downloads prüfen. Domainwurzel und `www` sowie Weiterleitungen und HTTPS gesondert kontrollieren.
+
+Bei einer Veröffentlichung mit eigenem GitHub-Actions-Workflow ist keine `CNAME`-Datei nötig. [GitHub-Anleitung zur eigenen Domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
 
 ## Geplante Umstellung prüfen
 
@@ -39,5 +51,6 @@
 - [ ] Bei Problemen die betroffenen Websiteeinträge auf die gesicherten Werte zurückstellen; E-Mail-Einträge unverändert erhalten.
 - [ ] DNS-Caches und TTL berücksichtigen; die Rückstellung wirkt nicht überall sofort.
 - [ ] Nach Rückstellung bisherige Website, HTTPS und E-Mail erneut prüfen und tatsächlichen Zustand dokumentieren.
+- [ ] Falls auch die Pages-Einstellung „Custom domain“ zurückgenommen oder geändert wird, den ausdrücklich freigegebenen `main`-Stand erneut über „Website veröffentlichen“ bauen und deployen. Danach Canonical-URLs, Sitemap und Assets für die wieder gültige Adresse prüfen.
 
 Erst die ausdrückliche Freigabe der konkreten Umstellung erlaubt diese Änderungen. Diese Checkliste ändert keine STRATO- oder DNS-Einstellung.

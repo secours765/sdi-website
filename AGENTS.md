@@ -2,6 +2,15 @@
 
 Diese Regeln gelten für das gesamte Repository. Ausdrückliche aktuelle Nutzeranweisungen gehen vor. Notwendige reversible Arbeiten, lokale Prüfungen und bereits autorisierte Schritte selbstständig erledigen; keine zusätzlichen allgemeinen Freigaben erfinden.
 
+## Aktueller Auftrag: autorisierter GitHub-Pages-Erststart
+
+- Die erste Websiteveröffentlichung über GitHub Pages wurde ausdrücklich autorisiert. Ziel: `https://secours765.github.io/sdi-website/`. Status bis zum nachgewiesenen erfolgreichen Deployment: Erststart in Vorbereitung.
+- Umsetzung auf `work/pages-erststart-2026-11-27`; der vorherige lokale Stand `4c78cd8` ist auf `sicherung/vor-pages-2026-11-27` gesichert. Die frühere Beschränkung der Galerie-Revision auf ausschließlich lokale Arbeit wird für diesen konkreten Erststart durch die neue Freigabe ersetzt.
+- Der Informations- und Spendenauftritt bleibt ohne Mitarbeitangebote, Bewerbungsseiten, Einsatzwerbung oder dafür bestimmte Links, Schaltflächen und E-Mail-Aufrufe. Allgemeine Kontaktangaben können bestehen bleiben.
+- `/galerie/` führt zu `/galerie/kamerun/`, `/galerie/uganda/` und `/galerie/suedsudan/`. Bilddaten in `src/data/galleries.json` pflegen; Länderzuordnung und Herkunft belegen.
+- Impressum auf ausdrücklichen Wunsch aus der alten deutschen Website übernehmen, einschließlich vorhandener Telefon- und Identifikationsangaben, mit der bestätigten aktuellen Anschrift Donnersbergstraße 6. Die Altquelle nennt keine Vertretungs- oder Registerangaben; fehlende Daten nicht erfinden. Keine juristische Vollständigkeit behaupten.
+- Tests eines älteren Stands nicht als Prüfung neuer Änderungen darstellen. Galerie, fehlende Mitarbeitverweise und Timeline-Darstellung auf schmalen Bildschirmen bei betroffenen Änderungen prüfen.
+- STRATO, DNS, eigene Domain und `CNAME` bleiben in diesem Erststart unverändert. Die Zwei-Faktor-Einrichtung ist auf Nutzerwunsch zurückgestellt und keine Voraussetzung dieses Auftrags.
 ## Fakten und Quellen
 
 - Vereinsangaben, Personen, Funktionen, Projektdaten, Jahreszahlen, Bankdaten und Zitate nur anhand belegter Quellen pflegen. Keine Lücken mit plausiblen Erfindungen schließen.
@@ -25,7 +34,7 @@ Diese Regeln gelten für das gesamte Repository. Ausdrückliche aktuelle Nutzera
 ## Technik und Qualität
 
 - Statische Astro-Ausgabe, schlankes CSS und wenig JavaScript bevorzugen. Inhaltsdaten und Komponenten getrennt halten.
-- Pfade über den vorhandenen BASE_URL-Helfer bilden. Domainwurzel und `/sdi-website/` müssen funktionieren. Keine bestätigte Produktionsdomain voraussetzen.
+- Pfade über den vorhandenen BASE_URL-Helfer bilden. Domainwurzel und `/sdi-website/` müssen funktionieren. Die autorisierte Pages-Adresse ist bekannt; eine eigene Domain nicht voraussetzen. Im Produktionsworkflow `SDI_SITE` aus `configure-pages.outputs.origin` und `SDI_BASE` aus `configure-pages.outputs.base_path` ableiten; Build und Linkprüfung mit denselben Werten ausführen.
 - Erforderliche Abhängigkeiten projektlokal und mit Lockdatei pflegen. Offizielle Dokumentationen bei aktuellen technischen Fragen verwenden.
 - Unter Windows keine Ausführungsrichtlinien oder systemweiten Sicherheitseinstellungen verändern oder umgehen. `npm.cmd` ist der reguläre Windows-Aufruf.
 - Änderungen angemessen prüfen: Inhalt, statischer Build, interne Links und betroffene Browserfunktionen. Keine Prüfungen behaupten, die nicht ausgeführt wurden.
@@ -40,12 +49,12 @@ Diese Regeln gelten für das gesamte Repository. Ausdrückliche aktuelle Nutzera
 - Unbekannten Personen keine Schreib- oder Verwaltungsrechte geben; Mitbearbeiter nur nach ausdrücklicher Benennung. Eigentümerrechte von secours765 erhalten.
 - Git-Autorenidentität bewusst lokal konfigurieren, bevorzugt mit der im Konto bestätigten GitHub-Noreply-Adresse. Keine private E-Mail-Adresse aus Vermutungen eintragen.
 - Vor dem ersten öffentlichen Upload genau die vorgesehenen Dateien und die Git-Historie auf vertrauliche Inhalte prüfen. Eine `.gitignore` entfernt bereits getrackte Dateien nicht.
-- **Die einmalige Erstpush-Freigabe des Startauftrags erlaubt die geprüfte Repositoryanlage und erste Sicherung, nicht dauerhaft beliebige Veröffentlichungen.**
-- In dieser Aufbauphase bleiben **GitHub Pages und sämtliche Website-Deployments deaktiviert**. Keine öffentliche Vorschauplattform, keine STRATO-/DNS-Änderungen.
-- Eine reine Build-Prüfung in GitHub Actions ist erlaubt. Pages-Konfiguration ausschließlich als inaktive Vorlage außerhalb von `.github/workflows/` bereithalten.
-- Nach erster Abnahme ist `main` der Produktionszweig. Spätere Arbeiten standardmäßig auf Arbeitszweigen durchführen.
+- **Weder die einmalige Erstpush-Freigabe noch die jetzige Pages-Erststartfreigabe ist eine dauerhafte Freigabe für spätere Veröffentlichungen.**
+- Der konkrete GitHub-Pages-Erststart ist autorisiert. Keine weiteren Hosting-/Vorschauplattformen, STRATO-/DNS- oder eigene Domainänderungen daraus ableiten.
+- Aktiver Pages-Workflow: `.github/workflows/pages.yml`. Auslöser nur Push auf `main` und bewusstes `workflow_dispatch`. Beide Jobs durch `github.ref == 'refs/heads/main'` und erlaubte Ereignisse absichern; Umgebung `github-pages` ausschließlich für `main` zulassen. Andere Zweige und Pull Requests dürfen nicht deployen.
+- `main` ist der Produktionszweig. Spätere Änderungswünsche zunächst nur auf einem Arbeitszweig und lokal bearbeiten und prüfen.
 - Ein Änderungswunsch erlaubt Bearbeitung und lokale Prüfung, aber keine Veröffentlichung. Erst die ausdrückliche Anweisung **„Diese geprüfte Änderung veröffentlichen“** erlaubt produktive Übernahme nach `main` und Push/Merge.
-- Nach späterer Aktivierung darf ausschließlich ein erfolgreich geprüfter Push/Merge auf `main` den gebauten Ausgabeordner `dist/` veröffentlichen. Andere Zweige und Pull Requests dürfen keine Produktion deployen.
-- Keine erforderliche Freigabe durch eine zweite Person einrichten: Der Eigentümer muss allein pflegen können.
+- Veröffentlichung nur des erfolgreich geprüften `main`-Stands: durch Push/Merge auf `main` oder ausdrücklich beauftragten manuellen Workflowlauf auf `main`. `configure-pages` vor dem Build ausführen; ausschließlich `dist/` als Pages-Artefakt verwenden. Build-Job nur Leserechte; nur Deploy-Job erhält `pages: write` und `id-token: write`.
+- Bestehende Schutzregeln einschließlich Schutz vor Force-Push/Löschen, Secret Scanning und Push Protection erhalten. Keine erforderliche Freigabe durch eine zweite Person einrichten: Der Eigentümer muss allein pflegen können.
 - Zum Rückgängigmachen bevorzugt nachvollziehbare `git revert`-Commits; keine erzwungenen Pushes oder Historienüberschreibungen.
 - Persönliche Übung, Banking-App-Test, Zwei-Faktor-Prüfung oder Veröffentlichung niemals als erledigt darstellen, solange der Kontoinhaber sie nicht tatsächlich bestätigt hat.

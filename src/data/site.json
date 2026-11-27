@@ -14,11 +14,12 @@
     "verifiedOwner": false,
     "ibanConfirmedOn": "2026-11-27"
   },
-  "draft": true,
+  "draft": false,
   "address": {
     "street": "Donnersbergstraße 6",
     "postalCode": "67117",
     "city": "Limburgerhof",
     "confirmedOn": "2026-11-27"
-  }
+  },
+  "legalSource": "Bisheriges Impressum; Übernahme außer Anschrift vom Nutzer am 27.11.2026 bestätigt"
 }

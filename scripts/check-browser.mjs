@@ -11,7 +11,7 @@ const context=await browser.newContext({viewport:{width:1440,height:1000},permis
 const page=await context.newPage();
 const errors=[];
 page.on('pageerror',error=>errors.push(error.message));
-const routes=['','wir-ueber-uns/','projekte/','projekte/uganda/','projekte/kamerun/','projekte/suedsudan/','downloads/','mitmachen/','spenden/','kontakt/','impressum/','datenschutz/'];
+const routes=['','wir-ueber-uns/','projekte/','projekte/uganda/','projekte/kamerun/','projekte/suedsudan/','downloads/','galerie/','galerie/kamerun/','galerie/uganda/','galerie/suedsudan/','spenden/','kontakt/','impressum/','datenschutz/'];
 const results=[];
 for(const route of routes){
  const response=await page.goto(new URL(route,base).href,{waitUntil:'networkidle'});
@@ -50,27 +50,33 @@ assert(await galleryLink.evaluate(el=>el===document.activeElement),'Lightbox foc
 await page.goto(new URL('spenden/',base).href);
 await page.locator('[data-copy]').click();
 assert.equal(await page.evaluate(()=>navigator.clipboard.readText()),'DE20545700240086320900');
-await page.goto(new URL('kontakt/',base).href);
-await page.locator('[data-copy]').first().click();
-assert.equal(await page.evaluate(()=>navigator.clipboard.readText()),'peter.mentges@t-online.de');
-const mailto=await page.locator('a[href^="mailto:"]').first().getAttribute('href');
-assert(mailto.includes('subject='));
-assert(!mailto.includes(' '));
+await page.goto(new URL('galerie/uganda/',base).href);
+assert.equal(await page.locator('[data-lightbox]').count(),22);
+await page.locator('[data-lightbox]').first().click();
+await page.locator('.lightbox-next').click();
+assert.equal(await page.locator('#lightbox-count').textContent(),'2 / 22');
+await page.keyboard.press('ArrowLeft');
+assert.equal(await page.locator('#lightbox-count').textContent(),'1 / 22');
+await page.keyboard.press('Escape');
+assert.equal(await page.locator('a[href^="mailto:"],a[href*="mitmachen"]').count(),0);
 await page.goto(base);await page.keyboard.press('Tab');
 assert.equal(await page.locator('.skip-link').evaluate(el=>el===document.activeElement),true);
 await page.keyboard.press('Enter');assert.equal(new URL(page.url()).hash,'#inhalt');
+const missing=await page.goto(new URL('nicht-vorhandene-seite/',base).href);assert.equal(missing.status(),404);assert.equal(await page.locator('h1').textContent(),'Hier geht es weiter.');assert.equal(await page.locator('main a').getAttribute('href'),new URL(base).pathname);
+const timeline=[];for(const width of [390,768,1024,1440]){await page.setViewportSize({width,height:1000});await page.goto(new URL('projekte/uganda/',base).href);const measurement=await page.locator('.timeline').evaluate(el=>{const line=el.getBoundingClientRect().left+parseFloat(getComputedStyle(el,'::before').left);return [...el.querySelectorAll('.timeline-year')].map(year=>{const rect=year.getBoundingClientRect();return {year:year.textContent.trim(),left:rect.left,right:rect.right,line};});});for(const m of measurement)assert(width<=620?m.left>m.line+8:m.right<m.line-8,'Timelineüberschneidung '+width+' '+m.year);timeline.push({width,measurement});}
 await context.close();
 const mobile=await browser.newContext({viewport:{width:390,height:844},deviceScaleFactor:1,isMobile:true,hasTouch:true});
 const mp=await mobile.newPage();
 for(const route of routes){
- await mp.goto(new URL(route,base).href,{waitUntil:'networkidle'});
+ await mp.goto(new URL(route,base).href,{waitUntil:'networkidle'});await mp.locator('img[src]').evaluateAll(async images=>{images.forEach(img=>img.loading='eager');await Promise.all(images.map(img=>img.decode().catch(()=>{})));});
  assert(await mp.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1),'Horizontal overflow: '+route);
+ if(['','projekte/uganda/','galerie/uganda/','spenden/'].includes(route)){const axe=await new AxeBuilder({page:mp}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();assert.equal(axe.violations.length,0,'Mobile axe: '+route);}
  if(['','downloads/','projekte/uganda/','spenden/'].includes(route))await mp.screenshot({path:path.join(output,(route.replaceAll('/','-')||'start')+'mobile.png'),fullPage:true});
 }
 await mp.goto(base);await mp.locator('.menu-toggle').click();assert.equal(await mp.locator('.menu-toggle').getAttribute('aria-expanded'),'true');await mp.locator('#navigation').getByRole('link',{name:'Downloads',exact:true}).click();await mp.waitForURL('**/downloads/');
 const reduce=await browser.newContext({reducedMotion:'reduce',viewport:{width:390,height:844}});const rp=await reduce.newPage();await rp.goto(base);assert(await rp.evaluate(()=>matchMedia('(prefers-reduced-motion: reduce)').matches));
 await browser.close();
-await fs.writeFile(path.join(output,'browser-results.json'),JSON.stringify({date:'2026-11-27',base,routes:results,errors,checks:['Desktop1440','Mobile390','navigation','search+category+language','empty-state','local-download','gallery+escape+focus-return','clipboard-IBAN+email','mailto','skip-link','reduced-motion']},null,2));
+await fs.writeFile(path.join(output,'browser-results.json'),JSON.stringify({date:'2026-11-27',base,routes:results,errors,timeline,checks:['Desktop1440','Mobile390','404-direct','timeline390-768-1024-1440','mobile-axe-key-pages','navigation','search+category+language','empty-state','local-download','gallery+escape+focus-return','clipboard-IBAN','no-recruitment-links','gallery-next-previous-keys','skip-link','reduced-motion']},null,2));
 const violations=results.flatMap(r=>r.accessibility.map(v=>({route:r.route,...v})));
 if(violations.length||errors.length){console.error(JSON.stringify({violations,errors},null,2));process.exit(1);}
 console.log('Browserprüfung bestanden: '+routes.length+' Seiten Desktop/Mobil; axe keine WCAG A/AA Verstöße; Suche/Filter/Download/Galerie/Kopieren/Tastatur geprüft.');

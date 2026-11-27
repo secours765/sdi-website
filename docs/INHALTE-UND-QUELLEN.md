@@ -17,6 +17,12 @@ Im alten Datenschutztext stehen sachfremde Bausteine zu einer „Bruderschafts-H
 - Südsudan bleibt „in Vorbereitung“. Zwei Erkundungsbesuche 2025 und Kontakte können beschrieben werden; geplante Geräteausstattung oder Schulung nicht als abgeschlossen darstellen.
 - Die alten Schweizer Kamerun-Texte enthalten einen historischen Stand. Daraus keine heutigen deutschen Einsatzplätze, Ansprechpartner oder Wirkungszahlen ableiten.
 
+## Länder-Galerien
+
+Die aktuelle lokale Revision konzentriert sich auf Informationen und Spenden; Mitarbeit- und Bewerbungsangebote entfallen. Die Galerieübersicht unter `/galerie/` führt zu eigenen Seiten für Kamerun, Uganda und Südsudan. Auswahl, Alternativtexte und Bildunterschriften liegen in `src/data/galleries.json`. Weitere Fotos ergänzen die Projektgeschichten, ohne ungesicherte Jahres- oder Personenzuordnungen einzuführen. Die Südsudan-Galerie dokumentiert Erkundungen und Kontakte; sie darf keine fertig aufgebaute SDI-Klinik suggerieren.
+
+Diese Änderungen liegen nur lokal auf `work/lokaler-entwurf-galerien` und sind nicht Teil des bereits gesicherten Erststands auf GitHub.
+
 ## Bilder ergänzen
 
 1. Bildquelle und Nutzungsrecht klären, eindeutiges Projekt und Motiv bestimmen. Bei Portraits muss die Personenzuordnung bestätigt sein.
@@ -71,3 +77,9 @@ Alle Fotos, Logos, Texte und Dokumente behalten ihre jeweiligen Rechte. Dieses R
 - **SDI-Website:** ausgewählte öffentliche Projektdateien und Quellcode.
 
 Der private Sicherungsbericht enthält Zeitpunkt, Ablageort, Dateianzahl und Hashabgleich. Die öffentliche Dokumentation enthält keine unnötigen privaten Rechnerpfade. Eine erfolgreiche Kopie oder OneDrive-Synchronisierung wird nur als solche bezeichnet; ein unabhängiges Backup auf einem weiteren Datenträger muss gesondert bestätigt werden.
+
+## Umfang nach der lokalen Nutzerkorrektur
+
+Vier Schweizer Freiwilligen-Informationsblätter (doc-133 bis doc-136) werden mit visible: false und availability: withdrawn aus dem Websiteangebot ausgeschlossen. Die vollständige Inventur und internen Originale bleiben erhalten. Keine Mitarbeitangebote oder Links zu diesen Dateien erneut anzeigen. Der sichtbare Katalog enthält 180 Einträge; 102 Dokumente liegen lokal in public/downloads/.
+
+Die 13 großen Originale sind im öffentlichen Release dokumentation-2026-11 bereitgestellt. GitHub-Größen und SHA-256 stimmen mit den Originalen überein; die finalen Downloadziele wurden anonym auf Status, Dateisignatur und Größe geprüft. Der Katalog verwendet ausschließlich diese bestätigten Release-URLs.
