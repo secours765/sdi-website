@@ -526,5 +526,9 @@
   "images/montreux.webp": {
     "width": 1600,
     "height": 1066
+  },
+  "images/uganda-statistik-2023.png": {
+    "width": 517,
+    "height": 250
   }
 }

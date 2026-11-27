@@ -8,7 +8,7 @@ const read=async name=>JSON.parse(await fs.readFile(new URL('../src/data/'+name+
 const projects=await read('projects'),docs=await read('downloads'),team=await read('team');
 assert.equal(projects.length,3);
 assert.equal(projects.find(p=>p.slug==='suedsudan').status,'In Vorbereitung');
-assert(projects.find(p=>p.slug==='suedsudan').current.includes('nicht bestätigt'));
+assert(projects.find(p=>p.slug==='suedsudan').current.includes('Im November 2026 wurde beschlossen, die Klinik in das bestehende Projektprogramm aufzunehmen und eine Zusammenarbeit zu beginnen.'));
 for(const person of team)assert(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(person.email));
 assert.equal(new Set(docs.map(d=>d.id)).size,docs.length,'Doppelte Dokument-IDs');
 assert.equal(new Set(docs.map(d=>d.originalUrl)).size,docs.length,'Doppelte Quell-URLs');
