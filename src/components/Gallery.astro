@@ -3,4 +3,4 @@ import { imageSize } from "../lib/images.js";
 import {url} from '../lib/paths.js';
 const {images=[]}=Astro.props;
 ---
-<div class="gallery">{images.map(image=><figure><a href={url(image.src)} data-lightbox data-caption={image.caption} aria-label={image.caption+' – vergrößern'}><img src={url(image.thumb||image.src)} alt={image.alt} loading="lazy" {...imageSize(image.thumb||image.src)}/><span>Vergrößern</span></a><figcaption>{image.caption}</figcaption></figure>)}</div>
+<div class="gallery">{images.map(image=><figure><a href={url(image.src)} data-lightbox data-caption={image.caption} aria-label={(image.caption || image.alt)+' – vergrößern'}><img src={url(image.thumb||image.src)} alt={image.alt} loading="lazy" {...imageSize(image.thumb||image.src)}/><span>Vergrößern</span></a>{image.caption && <figcaption>{image.caption}</figcaption>}</figure>)}</div>
