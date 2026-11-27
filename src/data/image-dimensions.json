@@ -522,5 +522,9 @@
   "images/armin-reinartz.webp": {
     "width": 960,
     "height": 720
+  },
+  "images/montreux.webp": {
+    "width": 1600,
+    "height": 1066
   }
 }
