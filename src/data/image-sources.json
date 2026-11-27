@@ -434,5 +434,13 @@
     "processing": "WebP, orientation applied, resized without cropping, EXIF/XMP/IPTC removed",
     "width": 960,
     "height": 720
+  },
+  {
+    "file": "images/montreux.webp",
+    "source": "Montreux.jpg",
+    "sourceSha256": "0ec6b87a8fa6773f6df8831649c5b4781de8febd2d95511a92136a3a2b6b3a44",
+    "processing": "WebP, no cropping, metadata removed",
+    "width": 1600,
+    "height": 1066
   }
 ]
